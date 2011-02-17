@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-17 11:34+0200\n"
-"PO-Revision-Date: 2011-02-17 11:06+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2011-02-17 13:17+0200\n"
+"PO-Revision-Date: 2011-02-17 11:17+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,89 +19,89 @@ msgstr ""
 
 #: src/gtkman.glade:6
 msgid "Manual page viewer"
-msgstr ""
+msgstr "Εφαρμογή εμφάνισης σελίδων εγχειριδίου"
 
 #: src/gtkman.glade:20
 msgid "_File"
-msgstr ""
+msgstr "_Αρχείο"
 
 #: src/gtkman.glade:41
 msgid "_Help"
-msgstr ""
+msgstr "_Βοήθεια"
 
 #: src/gtkman.glade:72
 msgid "Manual page:"
-msgstr ""
+msgstr "Σελίδα:"
 
 #: src/gtkman.glade:98
 msgid "Section:"
-msgstr ""
+msgstr "Τμήμα:"
 
 #: src/gtkman.glade:163 gtkman.desktop.in.h:1
 msgid "A simple GTK+2 manual page viewer"
-msgstr ""
+msgstr "Μια απλή εφαρμογή εμφάνισης σελίδων εγχειριδίου, βασισμένη στο GTK+2"
 
 #: src/gtkman.glade:841
-msgid "<translator-credits>"
-msgstr ""
+msgid "translator-credits"
+msgstr "Γιώργος Βλαχάβας <vlahavas~at~gmail~dot~com>"
 
 #: src/gtkman:45
 #, python-format
 msgid "No manual page found for \"%(name)s\""
-msgstr ""
+msgstr "Δεν βρέθηκε καμία σελίδα εγχειριδίου για το \"%(name)s\""
 
 #: src/gtkman:73
 msgid "USAGE:"
-msgstr ""
+msgstr "ΧΡΗΣΗ:"
 
 #: src/gtkman:73
 msgid "[OPTIONS] [[section] manpage]"
-msgstr ""
+msgstr "[ΕΠΙΛΟΓΕΣ] [[ΤΜΗΜΑ] ΣΕΛΙΔΑ]"
 
 #: src/gtkman:75
 msgid "OPTIONS:"
-msgstr ""
+msgstr "ΕΠΙΛΟΓΕΣ:"
 
 #: src/gtkman:76
 msgid "this help message"
-msgstr ""
+msgstr "αυτό το μήνυμα βοήθειας"
 
 #: src/gtkman:134
 msgid "Any"
-msgstr ""
+msgstr "Οποιοδήποτε"
 
 #: src/gtkman:135
 msgid "User commands (1)"
-msgstr ""
+msgstr "Εντολές χρήση (1)"
 
 #: src/gtkman:136
 msgid "System calls (2)"
-msgstr ""
+msgstr "Κλήσεις συστήματος (2)"
 
 #: src/gtkman:137
 msgid "C library functions (3)"
-msgstr ""
+msgstr "Συναρτήσεις βιβλιοθήκης γλώσσας C (3)"
 
 #: src/gtkman:138
 msgid "Devices and special files (4)"
-msgstr ""
+msgstr "Συσκευές και ειδικά αρχεία (4)"
 
 #: src/gtkman:139
 msgid "File formats and conventions (5)"
-msgstr ""
+msgstr "Τύποι αρχείων και συμβάσεις (5)"
 
 #: src/gtkman:140
 msgid "Games et. al (6)"
-msgstr ""
+msgstr "Παιγνίδια κλπ (6)"
 
 #: src/gtkman:141
 msgid "Miscellanea (7)"
-msgstr ""
+msgstr "Διάφορα (7)"
 
 #: src/gtkman:142
 msgid "System administration tools and deamons (8)"
-msgstr ""
+msgstr "Εργαλεία διαχείρισης συστήματος και δαίμονες (8)"
 
 #: gtkman.desktop.in.h:2
 msgid "GTKMan Manual Page Viewer"
-msgstr ""
+msgstr "Εφαρμογή εμφάνισης σελίδων εγχειριδίου GTKMan"
