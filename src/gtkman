@@ -117,8 +117,8 @@ class GTKMan:
 		builder = gtk.Builder()
 		if os.path.exists('gtkman.glade'):
 			builder.add_from_file('gtkman.glade')
-		elif os.path.exists('/usr/share/salixtools/gtkman/gtkman.glade'):
-			builder.add_from_file('/usr/share/salixtools/gtkman/gtkman.glade')
+		elif os.path.exists('/usr/share/gtkman/gtkman.glade'):
+			builder.add_from_file('/usr/share/gtkman/gtkman.glade')
 		self.window = builder.get_object('gtkman')
 
 		#
