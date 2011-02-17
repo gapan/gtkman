@@ -1,0 +1,39 @@
+gtkman
+George Vlahavas
+%%mtime(%m/%d/%Y)
+
+%!target: man
+%!encoding: utf-8
+
+= NAME =
+
+gtkman - A simple GTK+2 manual page viewer
+
+= SYNOPSIS =
+
+**gtkman** [//OPTIONS//] [[//SECTION//] //manpage//]
+
+= DESCRIPTION =
+
+**gtkman** is a simple manual page viewer written in Python and using
+the GTK+2 toolkit. It displays manual pages in simple text form. A
+specific section to look for a certain manual page can be specified. It
+can also be launched from the command line in place of the classic
+**man** command, specifying the manual page and optionally the section.
+
+= GENERAL OPTIONS =
+
+: **-h**, **--help**
+Prints a usage message briefly summarizing command-line usage and exits.
+
+= WEBSITE =
+
+http://www.salixos.org
+
+= AUTHORS =
+
+gtkman was written by George Vlahavas <gapan~at~salixos~dot~org>
+
+= SEE ALSO =
+
+**man**(1)

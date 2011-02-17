@@ -1,0 +1,10 @@
+[Desktop Entry]
+_Name=GTKMan Manual Page Viewer
+_Comment=A simple GTK+2 manual page viewer
+Exec=gtkman
+Icon=gtk-help
+Terminal=false
+Type=Application
+Categories=Application;Utility;
+StartupNotify=true
+Encoding=UTF-8
