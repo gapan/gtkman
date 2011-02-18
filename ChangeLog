@@ -1,2 +1,8 @@
+* version 0.2
+	- Remember last window size when started
+	- Set the system monospace font as the default font
+	- Added translations for German, French, Italian, Danish,
+	  Spanish...
+
 * version 0.1 (2011-02-17)
-	Initial release
+	- Initial release

@@ -11,7 +11,11 @@ cd ..
 
 intltool-merge po/ -d -u gtkman.desktop.in gtkman.desktop
 
-cd man
-txt2tags gtkman.t2t
-cd ..
+if [ -x $( which txt2tags ) ]; then
+	cd man
+	txt2tags gtkman.t2t
+	cd ..
+else
+	echo "WARNING: txt2tags is not installed. The gtkman manpage will be created."
+fi
 
