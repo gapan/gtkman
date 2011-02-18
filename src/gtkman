@@ -5,6 +5,7 @@ import os
 import sys
 import commands
 import pango
+import ConfigParser
 
 # Internationalization
 import locale
@@ -17,21 +18,32 @@ gtk.glade.bindtextdomain("gtkman", "/usr/share/locale")
 gtk.glade.textdomain("gtkman")
 
 class GTKMan:
+	config = ConfigParser.RawConfigParser()
+	config_file = os.path.expanduser('~/.config/gtkman')
+	win_height = 0
+	win_width = 0
+
 	def set_default_window_size(self):
 		try:
-			w = gtk.gdk.get_default_root_window()
-			p = gtk.gdk.atom_intern('_NET_WORKAREA')
-			width, height = w.property_get(p)[2][2:4]
-			if width < 650:
-				req_width = width
-			else:
-				req_width = 650
-			req_height = height*0.8
-			if req_height < 400:
-				req_height = height
-			self.window.set_default_size(int(req_width), int(req_height))
-		except TypeError:
-			self.window.set_default_size(640, 400)
+			self.config.read(self.config_file)
+			width = self.config.getint('Window', 'width')
+			height = self.config.getint('Window', 'height')
+			self.window.set_default_size(width, height)
+		except (ConfigParser.NoOptionError, ConfigParser.NoSectionError):
+			try:
+				w = gtk.gdk.get_default_root_window()
+				p = gtk.gdk.atom_intern('_NET_WORKAREA')
+				width, height = w.property_get(p)[2][2:4]
+				if width < 650:
+					req_width = width
+				else:
+					req_width = 650
+				req_height = height*0.8
+				if req_height < 400:
+					req_height = height
+				self.window.set_default_size(int(req_width), int(req_height))
+			except TypeError:
+				self.window.set_default_size(640, 400)
 
 	def manpage(self, section, page):
 		if section == 0:
@@ -65,8 +77,21 @@ class GTKMan:
 			section = self.combobox_section.get_active()
 			output = self.manpage(section, manpage)
 			self.textbuffer_manpage.set_text(output)
-	
+
+	def on_gtkman_configure_event(self, widget, data=None):
+		self.win_width, self.win_height = self.window.get_size()
+
 	def gtk_main_quit(self, widget, data=None):
+		if not os.path.isdir(os.path.expanduser('~/.config')):
+			os.mkdir(os.path.expanduser('~/.config'))
+		try:
+			self.config.add_section('Window')
+		except ConfigParser.DuplicateSectionError:
+			pass
+		self.config.set('Window', 'width', self.win_width)
+		self.config.set('Window', 'height', self.win_height)
+		with open(self.config_file, 'wb') as configfile:
+			self.config.write(configfile)
 		gtk.main_quit()
 
 	def display_help(self):

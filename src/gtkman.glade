@@ -6,6 +6,7 @@
     <property name="title" translatable="yes">Manual page viewer</property>
     <property name="icon_name">gtk-help</property>
     <signal name="destroy" handler="gtk_main_quit"/>
+    <signal name="configure_event" handler="on_gtkman_configure_event"/>
     <child>
       <object class="GtkVBox" id="vbox1">
         <property name="visible">True</property>
