@@ -162,7 +162,7 @@
     <property name="program_name">GTKMan</property>
     <property name="copyright">Copyright &#xA9; 2011 George Vlahavas</property>
     <property name="comments" translatable="yes">A simple GTK+2 manual page viewer</property>
-    <property name="website">http://www.salixos.org</property>
+    <property name="website">http://www.salixos.org/wiki/index.php/GTKMan</property>
     <property name="license">                    GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
