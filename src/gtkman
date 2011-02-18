@@ -175,8 +175,8 @@ class GTKMan:
 		# Set default window size
 		self.set_default_window_size()
 		
-		# Set font
-		self.textview_manpage.modify_font(pango.FontDescription('terminus 12'))
+		# Set the system monospace font as the default font
+		self.textview_manpage.modify_font(pango.FontDescription('monospace'))
 
 		builder.connect_signals(self)
 
