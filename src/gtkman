@@ -68,15 +68,11 @@ class GTKMan:
 		self.textbuffer_manpage.set_text(output)
 		
 	def on_entry_search_icon_release(self, widget, icon, event):
-		if icon.value_name == 'GTK_ENTRY_ICON_PRIMARY':
-			if len(self.entry_search.get_text()) != 0:
-				self.entry_search.set_text('')
-		else:
-			searchstr = self.entry_search.get_text()
-			manpage = self.manpage_stripchars(searchstr)
-			section = self.combobox_section.get_active()
-			output = self.manpage(section, manpage)
-			self.textbuffer_manpage.set_text(output)
+		searchstr = self.entry_search.get_text()
+		manpage = self.manpage_stripchars(searchstr)
+		section = self.combobox_section.get_active()
+		output = self.manpage(section, manpage)
+		self.textbuffer_manpage.set_text(output)
 
 	def on_gtkman_configure_event(self, widget, data=None):
 		self.win_width, self.win_height = self.window.get_size()
