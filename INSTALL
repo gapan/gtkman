@@ -1,0 +1,15 @@
+Installation
+------------
+
+To install, just run:
+
+ ./compile.sh
+
+followed by:
+
+ ./install.sh
+
+as root. You can set DESTDIR to change the installation target:
+
+DESTDIR=/my/custom/installation/target ./install.sh
+
