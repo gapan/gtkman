@@ -2,106 +2,106 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-02-17 13:17+0200\n"
-"PO-Revision-Date: 2011-02-17 11:06+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2011-02-21 18:14+0000\n"
+"Last-Translator: JRD <jrd@enialis.net>\n"
 "Language-Team: French <>\n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
 #: src/gtkman.glade:6
 msgid "Manual page viewer"
-msgstr ""
+msgstr "Visionneuse de pages de manuel"
 
 #: src/gtkman.glade:20
 msgid "_File"
-msgstr ""
+msgstr "_Fichier"
 
 #: src/gtkman.glade:41
 msgid "_Help"
-msgstr ""
+msgstr "_Aide"
 
 #: src/gtkman.glade:72
 msgid "Manual page:"
-msgstr ""
+msgstr "Page de manuel :"
 
 #: src/gtkman.glade:98
 msgid "Section:"
-msgstr ""
+msgstr "Section :"
 
 #: src/gtkman.glade:163 gtkman.desktop.in.h:1
 msgid "A simple GTK+2 manual page viewer"
-msgstr ""
+msgstr "Une simple visionneuse de pages de manuel en GTK+2"
 
 #: src/gtkman.glade:841
 msgid "translator-credits"
-msgstr ""
+msgstr "Crédits-Traducteurs"
 
 #: src/gtkman:45
 #, python-format
 msgid "No manual page found for \"%(name)s\""
-msgstr ""
+msgstr "Aucune page de manuel pour « %(name)s »"
 
 #: src/gtkman:73
 msgid "USAGE:"
-msgstr ""
+msgstr "UTILISATION :"
 
 #: src/gtkman:73
 msgid "[OPTIONS] [[section] manpage]"
-msgstr ""
+msgstr "[OPTIONS] [[section] page_de_manuel]"
 
 #: src/gtkman:75
 msgid "OPTIONS:"
-msgstr ""
+msgstr "OPTIONS :"
 
 #: src/gtkman:76
 msgid "this help message"
-msgstr ""
+msgstr "ce message d'aide"
 
 #: src/gtkman:134
 msgid "Any"
-msgstr ""
+msgstr "N'importe laquelle"
 
 #: src/gtkman:135
 msgid "User commands (1)"
-msgstr ""
+msgstr "Commandes de l'utilisateur (1)"
 
 #: src/gtkman:136
 msgid "System calls (2)"
-msgstr ""
+msgstr "Appels système (2)"
 
 #: src/gtkman:137
 msgid "C library functions (3)"
-msgstr ""
+msgstr "Fonctions de la bibliothèque C (3)"
 
 #: src/gtkman:138
 msgid "Devices and special files (4)"
-msgstr ""
+msgstr "Périphériques et fichiers spéciaux (4)"
 
 #: src/gtkman:139
 msgid "File formats and conventions (5)"
-msgstr ""
+msgstr "Formats de fichiers et conventions (5)"
 
 #: src/gtkman:140
 msgid "Games et. al (6)"
-msgstr ""
+msgstr "Jeux (6)"
 
 #: src/gtkman:141
 msgid "Miscellanea (7)"
-msgstr ""
+msgstr "Divers (7)"
 
 #: src/gtkman:142
 msgid "System administration tools and deamons (8)"
-msgstr ""
+msgstr "Outils d'administration système et démons (8)"
 
 #: gtkman.desktop.in.h:2
 msgid "GTKMan Manual Page Viewer"
-msgstr ""
+msgstr "GTKMan - visionneuse de pages de manuel"
