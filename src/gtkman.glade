@@ -58,24 +58,22 @@
                       <object class="GtkImageMenuItem" id="imagemenuitem_findnext">
                         <property name="label" translatable="yes">Find _Next</property>
                         <property name="visible">True</property>
-                        <property name="sensitive">False</property>
                         <property name="use_underline">True</property>
                         <property name="image">image1</property>
                         <property name="use_stock">False</property>
                         <accelerator key="F3" signal="activate"/>
-                        <signal name="activate" handler="on_imagemenuitem_findprev_activate"/>
+                        <signal name="activate" handler="on_imagemenuitem_findnext_activate"/>
                       </object>
                     </child>
                     <child>
                       <object class="GtkImageMenuItem" id="imagemenuitem_findprev">
                         <property name="label" translatable="yes">Find _Previous</property>
                         <property name="visible">True</property>
-                        <property name="sensitive">False</property>
                         <property name="use_underline">True</property>
                         <property name="image">image2</property>
                         <property name="use_stock">False</property>
                         <accelerator key="F3" signal="activate" modifiers="GDK_SHIFT_MASK"/>
-                        <signal name="activate" handler="on_imagemenuitem_findnext_activate"/>
+                        <signal name="activate" handler="on_imagemenuitem_findprev_activate"/>
                       </object>
                     </child>
                   </object>

@@ -101,10 +101,65 @@ class GTKMan:
 		self.dialog_find.show()
 
 	def on_imagemenuitem_findnext_activate(self, widget):
-		print 'next'
+		sel_start_iter = self.textbuffer_manpage.get_iter_at_mark(self.textbuffer_manpage.get_insert())
+		cur_pos = self.textbuffer_manpage.get_property("cursor-position")
+		sel_end_iter = self.textbuffer_manpage.get_iter_at_mark(self.textbuffer_manpage.get_insert())
+		sel_end_iter.forward_chars(len(self.entry_find.get_text()))
+		text = self.textbuffer_manpage.get_text(sel_start_iter, sel_end_iter, False)
+		sel_start_iter.forward_char()
+		sel_end_iter.forward_char()
+		count = cur_pos
+		found = False
+		match_case = self.checkbutton_matchcase.get_active()
+		length_all = self.textbuffer_manpage.get_char_count()
+		while not found:
+			if match_case == True:
+				text1 = self.textbuffer_manpage.get_text(sel_start_iter, sel_end_iter, False)
+				text2 = text
+			else:
+				text1 = self.textbuffer_manpage.get_text(sel_start_iter, sel_end_iter, False).lower()
+				text2 = text.lower()
+			if text1 == text2:
+				self.textbuffer_manpage.select_range(sel_start_iter, sel_end_iter)
+				self.textview_manpage.scroll_to_mark(self.textbuffer_manpage.get_insert(), 0)
+				found = True
+			else:
+				sel_start_iter.forward_char()
+				sel_end_iter.forward_char()
+				count+=1
+				if count == length_all:
+					return False
 
 	def on_imagemenuitem_findprev_activate(self, widget):
-		print 'prev'
+		sel_start_iter = self.textbuffer_manpage.get_iter_at_mark(self.textbuffer_manpage.get_insert())
+		cur_pos = self.textbuffer_manpage.get_property("cursor-position")
+		if cur_pos == 0:
+			return False
+		sel_end_iter = self.textbuffer_manpage.get_iter_at_mark(self.textbuffer_manpage.get_insert())
+		sel_end_iter.forward_chars(len(self.entry_find.get_text()))
+		text = self.textbuffer_manpage.get_text(sel_start_iter, sel_end_iter, False)
+		sel_start_iter.backward_char()
+		sel_end_iter.backward_char()
+		count = cur_pos
+		found = False
+		match_case = self.checkbutton_matchcase.get_active()
+		while not found:
+			if match_case == True:
+				text1 = self.textbuffer_manpage.get_text(sel_start_iter, sel_end_iter, False)
+				text2 = text
+			else:
+				text1 = self.textbuffer_manpage.get_text(sel_start_iter, sel_end_iter, False).lower()
+				text2 = text.lower()
+			if text1 == text2:
+				self.textbuffer_manpage.select_range(sel_start_iter, sel_end_iter)
+				self.textview_manpage.scroll_to_mark(self.textbuffer_manpage.get_insert(), 0)
+				found = True
+			else:
+				sel_start_iter.backward_char()
+				sel_end_iter.backward_char()
+				count-=1
+				if count == 0:
+					return False
 
 	def on_button_find_clicked(self, widget):
 		self.find_text(self.entry_find.get_text())
@@ -113,7 +168,9 @@ class GTKMan:
 	def on_button_findcancel_clicked(self, widget):
 		self.dialog_find.hide()
 
-	def find_text(self, text):
+	def on_entry_find_activate(self, widget):
+		self.dialog_find.hide()
+		text = self.entry_find.get_text()
 		length  = len(text)
 		start_iter = self.textbuffer_manpage.get_start_iter()
 		end_iter = self.textbuffer_manpage.get_end_iter()
@@ -143,10 +200,6 @@ class GTKMan:
 				count+=1
 				if count == length_all:
 					return False
-
-	def on_entry_find_activate(self, widget):
-		self.find_text(self.entry_find.get_text())
-		self.dialog_find.hide()
 
 	def on_imagemenuitem_about_activate(self, widget):
 		self.aboutdialog.show()
