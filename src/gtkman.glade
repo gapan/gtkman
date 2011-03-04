@@ -1010,7 +1010,7 @@ Public License instead of this License.  But first, please read
                 <property name="has_default">True</property>
                 <property name="receives_default">True</property>
                 <property name="use_stock">True</property>
-                <signal name="clicked" handler="on_button_find_clicked"/>
+                <signal name="clicked" handler="on_entry_find_activate"/>
               </object>
               <packing>
                 <property name="expand">False</property>

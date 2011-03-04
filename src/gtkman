@@ -161,10 +161,6 @@ class GTKMan:
 				if count == 0:
 					return False
 
-	def on_button_find_clicked(self, widget):
-		self.find_text(self.entry_find.get_text())
-		self.dialog_find.hide()
-
 	def on_button_findcancel_clicked(self, widget):
 		self.dialog_find.hide()
 
