@@ -128,7 +128,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="invisible_char">&#x25CF;</property>
-                <property name="secondary_icon_stock">gtk-find</property>
+                <property name="secondary_icon_stock">gtk-jump-to</property>
                 <property name="secondary_icon_activatable">True</property>
                 <property name="secondary_icon_sensitive">True</property>
                 <signal name="activate" handler="on_entry_search_activate"/>
