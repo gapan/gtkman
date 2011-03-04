@@ -58,6 +58,7 @@
                       <object class="GtkImageMenuItem" id="imagemenuitem_findnext">
                         <property name="label" translatable="yes">Find _Next</property>
                         <property name="visible">True</property>
+                        <property name="sensitive">False</property>
                         <property name="use_underline">True</property>
                         <property name="image">image1</property>
                         <property name="use_stock">False</property>
@@ -69,6 +70,7 @@
                       <object class="GtkImageMenuItem" id="imagemenuitem_findprev">
                         <property name="label" translatable="yes">Find _Previous</property>
                         <property name="visible">True</property>
+                        <property name="sensitive">False</property>
                         <property name="use_underline">True</property>
                         <property name="image">image2</property>
                         <property name="use_stock">False</property>

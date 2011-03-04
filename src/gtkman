@@ -61,6 +61,8 @@ class GTKMan:
 		return manpage.lstrip(' ').partition(' ')[0].partition(';')[0].partition('|')[0].partition('&')[0]
 
 	def on_entry_search_activate(self, widget):
+		self.imagemenuitem_findnext.set_sensitive(False)
+		self.imagemenuitem_findprev.set_sensitive(False)
 		searchstr = self.entry_search.get_text()
 		manpage = self.manpage_stripchars(searchstr)
 		section = self.combobox_section.get_active()
@@ -165,6 +167,8 @@ class GTKMan:
 		self.dialog_find.hide()
 
 	def on_entry_find_activate(self, widget):
+		self.imagemenuitem_findnext.set_sensitive(False)
+		self.imagemenuitem_findprev.set_sensitive(False)
 		self.dialog_find.hide()
 		text = self.entry_find.get_text()
 		length  = len(text)
@@ -190,6 +194,8 @@ class GTKMan:
 				self.textbuffer_manpage.select_range(sel_start_iter, sel_end_iter)
 				self.textview_manpage.scroll_to_mark(self.textbuffer_manpage.get_insert(), 0)
 				found = True
+				self.imagemenuitem_findnext.set_sensitive(True)
+				self.imagemenuitem_findprev.set_sensitive(True)
 			else:
 				sel_start_iter.forward_char()
 				sel_end_iter.forward_char()
@@ -267,7 +273,10 @@ class GTKMan:
 		self.liststore_section.append([7, _('Miscellanea (7)')])
 		self.liststore_section.append([8, _('System administration tools and deamons (8)')])
 		self.combobox_section.set_active(0)
-	
+		# Menu items that need to be toggled
+		self.imagemenuitem_findnext = builder.get_object('imagemenuitem_findnext')
+		self.imagemenuitem_findprev = builder.get_object('imagemenuitem_findprev')
+
 		#
 		# Find dialog
 		#
