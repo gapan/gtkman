@@ -37,7 +37,7 @@ class GTKMan:
 				if width < 650:
 					req_width = width
 				else:
-					req_width = 650
+					req_width = 670
 				req_height = height*0.8
 				if req_height < 400:
 					req_height = height
