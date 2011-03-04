@@ -2,103 +2,127 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-17 13:17+0200\n"
+"POT-Creation-Date: 2011-03-04 17:22+0200\n"
 "PO-Revision-Date: 2011-02-21 18:14+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/gtkman.glade:6
 msgid "Manual page viewer"
 msgstr "Εμφάνιση σελίδων εγχειριδίου"
 
-#: src/gtkman.glade:20
+#: src/gtkman.glade:21
 msgid "_File"
 msgstr "_Αρχείο"
 
-#: src/gtkman.glade:41
+#: src/gtkman.glade:42
+msgid "_Search"
+msgstr ""
+
+#: src/gtkman.glade:59
+msgid "Find _Next"
+msgstr ""
+
+#: src/gtkman.glade:71
+msgid "Find _Previous"
+msgstr ""
+
+#: src/gtkman.glade:88
 msgid "_Help"
 msgstr "_Βοήθεια"
 
-#: src/gtkman.glade:72
+#: src/gtkman.glade:119
 msgid "Manual page:"
 msgstr "Σελίδα:"
 
-#: src/gtkman.glade:98
+#: src/gtkman.glade:145
 msgid "Section:"
 msgstr "Τμήμα:"
 
-#: src/gtkman.glade:163 gtkman.desktop.in.h:1
+#: src/gtkman.glade:210 gtkman.desktop.in.h:1
 msgid "A simple GTK+2 manual page viewer"
 msgstr "Μια απλή εφαρμογή εμφάνισης σελίδων εγχειριδίου, βασισμένη στο GTK+2"
 
-#: src/gtkman.glade:841
+#: src/gtkman.glade:888
 msgid "translator-credits"
 msgstr "Γιώργος Βλαχάβας <vlahavas~at~gmail~dot~com>"
 
-#: src/gtkman:45
+#: src/gtkman.glade:921
+msgid "Find"
+msgstr ""
+
+#: src/gtkman.glade:948
+msgid "Find what:"
+msgstr ""
+
+#: src/gtkman.glade:972
+msgid "Match case"
+msgstr ""
+
+#: src/gtkman:57
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr "Δεν βρέθηκε καμία σελίδα εγχειριδίου για το \"%(name)s\""
 
-#: src/gtkman:73
+#: src/gtkman:96
 msgid "USAGE:"
 msgstr "ΧΡΗΣΗ:"
 
-#: src/gtkman:73
+#: src/gtkman:96
 msgid "[OPTIONS] [[section] manpage]"
 msgstr "[ΕΠΙΛΟΓΕΣ] [[ΤΜΗΜΑ] ΣΕΛΙΔΑ]"
 
-#: src/gtkman:75
+#: src/gtkman:98
 msgid "OPTIONS:"
 msgstr "ΕΠΙΛΟΓΕΣ:"
 
-#: src/gtkman:76
+#: src/gtkman:99
 msgid "this help message"
 msgstr "αυτό το μήνυμα βοήθειας"
 
-#: src/gtkman:134
+#: src/gtkman:266
 msgid "Any"
 msgstr "Οποιοδήποτε"
 
-#: src/gtkman:135
+#: src/gtkman:267
 msgid "User commands (1)"
 msgstr "Εντολές χρήστη (1)"
 
-#: src/gtkman:136
+#: src/gtkman:268
 msgid "System calls (2)"
 msgstr "Κλήσεις συστήματος (2)"
 
-#: src/gtkman:137
+#: src/gtkman:269
 msgid "C library functions (3)"
 msgstr "Συναρτήσεις βιβλιοθήκης γλώσσας C (3)"
 
-#: src/gtkman:138
+#: src/gtkman:270
 msgid "Devices and special files (4)"
 msgstr "Συσκευές και ειδικά αρχεία (4)"
 
-#: src/gtkman:139
+#: src/gtkman:271
 msgid "File formats and conventions (5)"
 msgstr "Τύποι αρχείων και συμβάσεις (5)"
 
-#: src/gtkman:140
+#: src/gtkman:272
 msgid "Games et. al (6)"
 msgstr "Παιγνίδια κλπ (6)"
 
-#: src/gtkman:141
+#: src/gtkman:273
 msgid "Miscellanea (7)"
 msgstr "Διάφορα (7)"
 
-#: src/gtkman:142
+#: src/gtkman:274
 msgid "System administration tools and deamons (8)"
 msgstr "Εργαλεία διαχείρισης συστήματος και δαίμονες (8)"
 
