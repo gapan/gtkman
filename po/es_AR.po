@@ -2,19 +2,19 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-04 17:22+0200\n"
-"PO-Revision-Date: 2011-02-21 18:14+0000\n"
+"PO-Revision-Date: 2011-03-07 02:39+0000\n"
 "Last-Translator: seacat <seacat.linux@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: es_AR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es_AR\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/gtkman.glade:6
@@ -27,15 +27,15 @@ msgstr "_Archivo"
 
 #: src/gtkman.glade:42
 msgid "_Search"
-msgstr ""
+msgstr "Bu_scar"
 
 #: src/gtkman.glade:59
 msgid "Find _Next"
-msgstr ""
+msgstr "Buscar siguie_nte"
 
 #: src/gtkman.glade:71
 msgid "Find _Previous"
-msgstr ""
+msgstr "Buscar an_terior"
 
 #: src/gtkman.glade:88
 msgid "_Help"
@@ -59,15 +59,15 @@ msgstr "Créditos-Traductor"
 
 #: src/gtkman.glade:921
 msgid "Find"
-msgstr ""
+msgstr "Buscar"
 
 #: src/gtkman.glade:948
 msgid "Find what:"
-msgstr ""
+msgstr "Buscar:"
 
 #: src/gtkman.glade:972
 msgid "Match case"
-msgstr ""
+msgstr "Coincidir mayúsculas y minúsculas"
 
 #: src/gtkman:57
 #, python-format

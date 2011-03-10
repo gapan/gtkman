@@ -2,19 +2,19 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-04 17:22+0200\n"
-"PO-Revision-Date: 2011-02-21 18:14+0000\n"
+"PO-Revision-Date: 2011-03-04 19:58+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/gtkman.glade:6
@@ -27,15 +27,15 @@ msgstr "_Αρχείο"
 
 #: src/gtkman.glade:42
 msgid "_Search"
-msgstr ""
+msgstr "Ανα_ζήτηση"
 
 #: src/gtkman.glade:59
 msgid "Find _Next"
-msgstr ""
+msgstr "Εύρεση επόμε_νου"
 
 #: src/gtkman.glade:71
 msgid "Find _Previous"
-msgstr ""
+msgstr "Εύρεση _προηγούμενου"
 
 #: src/gtkman.glade:88
 msgid "_Help"
@@ -59,15 +59,15 @@ msgstr "Γιώργος Βλαχάβας <vlahavas~at~gmail~dot~com>"
 
 #: src/gtkman.glade:921
 msgid "Find"
-msgstr ""
+msgstr "Εύρεση"
 
 #: src/gtkman.glade:948
 msgid "Find what:"
-msgstr ""
+msgstr "Εύρεση του:"
 
 #: src/gtkman.glade:972
 msgid "Match case"
-msgstr ""
+msgstr "_Ταίριασμα πεζών-κεφαλαίων"
 
 #: src/gtkman:57
 #, python-format

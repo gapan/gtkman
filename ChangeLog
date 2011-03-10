@@ -1,3 +1,6 @@
+* version 0.3
+	- Added Find text functionality
+
 * version 0.2 (2011-02-21)
 	- Remember last window size when started
 	- Set the system monospace font as the default font

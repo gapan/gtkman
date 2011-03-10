@@ -2,130 +2,130 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-04 17:22+0200\n"
-"PO-Revision-Date: 2011-02-21 18:14+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2011-03-05 08:57+0000\n"
+"Last-Translator: gambit73 <gambit73@gmail.com>\n"
 "Language-Team: Dutch <>\n"
-"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/gtkman.glade:6
 msgid "Manual page viewer"
-msgstr ""
+msgstr "Toon handleiding"
 
 #: src/gtkman.glade:21
 msgid "_File"
-msgstr ""
+msgstr "_File"
 
 #: src/gtkman.glade:42
 msgid "_Search"
-msgstr ""
+msgstr "_Zoek"
 
 #: src/gtkman.glade:59
 msgid "Find _Next"
-msgstr ""
+msgstr "Zoek _Volgend"
 
 #: src/gtkman.glade:71
 msgid "Find _Previous"
-msgstr ""
+msgstr "Zoek _Eerder"
 
 #: src/gtkman.glade:88
 msgid "_Help"
-msgstr ""
+msgstr "_Help"
 
 #: src/gtkman.glade:119
 msgid "Manual page:"
-msgstr ""
+msgstr "Handleiding pagina:"
 
 #: src/gtkman.glade:145
 msgid "Section:"
-msgstr ""
+msgstr "Sectie:"
 
 #: src/gtkman.glade:210 gtkman.desktop.in.h:1
 msgid "A simple GTK+2 manual page viewer"
-msgstr ""
+msgstr "Een eenvoudige GTK+2 handleiding toner"
 
 #: src/gtkman.glade:888
 msgid "translator-credits"
-msgstr ""
+msgstr "vertaler-credits"
 
 #: src/gtkman.glade:921
 msgid "Find"
-msgstr ""
+msgstr "Zoek"
 
 #: src/gtkman.glade:948
 msgid "Find what:"
-msgstr ""
+msgstr "Zoeken naar:"
 
 #: src/gtkman.glade:972
 msgid "Match case"
-msgstr ""
+msgstr "Hoofdlettergevoelig"
 
 #: src/gtkman:57
 #, python-format
 msgid "No manual page found for \"%(name)s\""
-msgstr ""
+msgstr "Geen handleiding gevonden voor \"%(name)s\""
 
 #: src/gtkman:96
 msgid "USAGE:"
-msgstr ""
+msgstr "GEBRUIK:"
 
 #: src/gtkman:96
 msgid "[OPTIONS] [[section] manpage]"
-msgstr ""
+msgstr "[OPTIONS] [[section] manpage]"
 
 #: src/gtkman:98
 msgid "OPTIONS:"
-msgstr ""
+msgstr "OPTIES:"
 
 #: src/gtkman:99
 msgid "this help message"
-msgstr ""
+msgstr "Dit Help-bericht"
 
 #: src/gtkman:266
 msgid "Any"
-msgstr ""
+msgstr "Willekeurig"
 
 #: src/gtkman:267
 msgid "User commands (1)"
-msgstr ""
+msgstr "Gebruiker commando's (1)"
 
 #: src/gtkman:268
 msgid "System calls (2)"
-msgstr ""
+msgstr "System calls (2)"
 
 #: src/gtkman:269
 msgid "C library functions (3)"
-msgstr ""
+msgstr "C library functies (3)"
 
 #: src/gtkman:270
 msgid "Devices and special files (4)"
-msgstr ""
+msgstr "Apparaten en speciale bestanden (4)"
 
 #: src/gtkman:271
 msgid "File formats and conventions (5)"
-msgstr ""
+msgstr "Bestandsformaten en conventies (5)"
 
 #: src/gtkman:272
 msgid "Games et. al (6)"
-msgstr ""
+msgstr "Spelletjes enz. (6)"
 
 #: src/gtkman:273
 msgid "Miscellanea (7)"
-msgstr ""
+msgstr "Diversen (7)"
 
 #: src/gtkman:274
 msgid "System administration tools and deamons (8)"
-msgstr ""
+msgstr "Tools voor systeembeheer en daemons (8)"
 
 #: gtkman.desktop.in.h:2
 msgid "GTKMan Manual Page Viewer"
-msgstr ""
+msgstr "GTKMan Handleiding toner"

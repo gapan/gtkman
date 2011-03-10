@@ -8,58 +8,58 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-04 17:22+0200\n"
-"PO-Revision-Date: 2011-03-05 03:46+0000\n"
-"Last-Translator: smaug <marcoantoniofrias@gmail.com>\n"
+"PO-Revision-Date: 2011-03-10 20:25+0000\n"
+"Last-Translator: Kerd <kerd89@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
+"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/gtkman.glade:6
 msgid "Manual page viewer"
-msgstr "Visor de páginas del manual"
+msgstr ""
 
 #: src/gtkman.glade:21
 msgid "_File"
-msgstr "_Archivo"
+msgstr "_File"
 
 #: src/gtkman.glade:42
 msgid "_Search"
-msgstr "Bú_squeda"
+msgstr "_Cerca "
 
 #: src/gtkman.glade:59
 msgid "Find _Next"
-msgstr "Buscar Siguie_nte"
+msgstr ""
 
 #: src/gtkman.glade:71
 msgid "Find _Previous"
-msgstr "Buscar An_terior"
+msgstr ""
 
 #: src/gtkman.glade:88
 msgid "_Help"
-msgstr "A_yuda"
+msgstr "_Aiuto "
 
 #: src/gtkman.glade:119
 msgid "Manual page:"
-msgstr "Página del manual:"
+msgstr "Pagine di manuale"
 
 #: src/gtkman.glade:145
 msgid "Section:"
-msgstr "Sección:"
+msgstr "Sezione:"
 
 #: src/gtkman.glade:210 gtkman.desktop.in.h:1
 msgid "A simple GTK+2 manual page viewer"
-msgstr "Un visor GTK+2 simple de páginas del manual"
+msgstr ""
 
 #: src/gtkman.glade:888
 msgid "translator-credits"
-msgstr "Créditos-Traductor"
+msgstr ""
 
 #: src/gtkman.glade:921
 msgid "Find"
-msgstr "Buscar"
+msgstr ""
 
 #: src/gtkman.glade:948
 msgid "Find what:"
@@ -67,12 +67,12 @@ msgstr ""
 
 #: src/gtkman.glade:972
 msgid "Match case"
-msgstr "Coincidir mayúsculas y minúsculas"
+msgstr ""
 
 #: src/gtkman:57
 #, python-format
 msgid "No manual page found for \"%(name)s\""
-msgstr "No se encontraron páginas para \"%(name)s\""
+msgstr ""
 
 #: src/gtkman:96
 msgid "USAGE:"
@@ -80,52 +80,52 @@ msgstr "USO:"
 
 #: src/gtkman:96
 msgid "[OPTIONS] [[section] manpage]"
-msgstr "[OPCIONES] [[sección] página del manual]"
+msgstr ""
 
 #: src/gtkman:98
 msgid "OPTIONS:"
-msgstr "OPCIONES:"
+msgstr "OPZIONI:"
 
 #: src/gtkman:99
 msgid "this help message"
-msgstr "este mensaje de ayuda"
+msgstr "questo messaggio di aiuto"
 
 #: src/gtkman:266
 msgid "Any"
-msgstr "Cualquiera"
+msgstr "Qualsiasi"
 
 #: src/gtkman:267
 msgid "User commands (1)"
-msgstr "Comandos del usuario (1)"
+msgstr "Comandi utenti (1)"
 
 #: src/gtkman:268
 msgid "System calls (2)"
-msgstr "Llamadas del sistema (2)"
+msgstr ""
 
 #: src/gtkman:269
 msgid "C library functions (3)"
-msgstr "Funciones de biblioteca de C (3)"
+msgstr ""
 
 #: src/gtkman:270
 msgid "Devices and special files (4)"
-msgstr "Archivos especiales y dispositivos (4)"
+msgstr ""
 
 #: src/gtkman:271
 msgid "File formats and conventions (5)"
-msgstr "Convenciones y formatos de archivo (5)"
+msgstr ""
 
 #: src/gtkman:272
 msgid "Games et. al (6)"
-msgstr "Juegos y otros (6)"
+msgstr ""
 
 #: src/gtkman:273
 msgid "Miscellanea (7)"
-msgstr "Miscelánea (7)"
+msgstr ""
 
 #: src/gtkman:274
 msgid "System administration tools and deamons (8)"
-msgstr "Demonios y herramientas de administración del sistema (8)"
+msgstr ""
 
 #: gtkman.desktop.in.h:2
 msgid "GTKMan Manual Page Viewer"
-msgstr "Visor de Páginas del Manual GTKMan"
+msgstr ""
