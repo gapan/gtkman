@@ -16,6 +16,6 @@ if [ -x $( which txt2tags ) ]; then
 	txt2tags gtkman.t2t
 	cd ..
 else
-	echo "WARNING: txt2tags is not installed. The gtkman manpage will be created."
+	echo "WARNING: txt2tags is not installed. The gtkman manpage will not be created."
 fi
 
