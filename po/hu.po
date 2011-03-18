@@ -8,124 +8,124 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-04 17:22+0200\n"
-"PO-Revision-Date: 2011-03-10 20:34+0000\n"
-"Last-Translator: Kerd <kerd89@gmail.com>\n"
+"PO-Revision-Date: 2011-03-15 11:00+0000\n"
+"Last-Translator: Polesz <polesz@nedudu.hu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it\n"
+"Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/gtkman.glade:6
 msgid "Manual page viewer"
-msgstr ""
+msgstr "Kézikönyvoldal néző"
 
 #: src/gtkman.glade:21
 msgid "_File"
-msgstr "_File"
+msgstr "_Fájl"
 
 #: src/gtkman.glade:42
 msgid "_Search"
-msgstr "_Cerca "
+msgstr "_Keresés"
 
 #: src/gtkman.glade:59
 msgid "Find _Next"
-msgstr "Trova _Prossimo"
+msgstr "_Következő keresése"
 
 #: src/gtkman.glade:71
 msgid "Find _Previous"
-msgstr "Trova _Precedente "
+msgstr "_Előző keresése"
 
 #: src/gtkman.glade:88
 msgid "_Help"
-msgstr "_Aiuto "
+msgstr "_Súgó"
 
 #: src/gtkman.glade:119
 msgid "Manual page:"
-msgstr "Pagine di manuale"
+msgstr "Kézikönyvoldal:"
 
 #: src/gtkman.glade:145
 msgid "Section:"
-msgstr "Sezione:"
+msgstr "Fejezet:"
 
 #: src/gtkman.glade:210 gtkman.desktop.in.h:1
 msgid "A simple GTK+2 manual page viewer"
-msgstr ""
+msgstr "Egyszerű GTK+2 kézikönyvoldal megjelenítő"
 
 #: src/gtkman.glade:888
 msgid "translator-credits"
-msgstr ""
+msgstr "Peter Polonkai <polesz@nedudu.hu>"
 
 #: src/gtkman.glade:921
 msgid "Find"
-msgstr ""
+msgstr "Keresés"
 
 #: src/gtkman.glade:948
 msgid "Find what:"
-msgstr ""
+msgstr "Mit keres:"
 
 #: src/gtkman.glade:972
 msgid "Match case"
-msgstr ""
+msgstr "Kis/nagybetű megkülönböztetés"
 
 #: src/gtkman:57
 #, python-format
 msgid "No manual page found for \"%(name)s\""
-msgstr ""
+msgstr "Nem található kézikönyvoldal ehhez \"%(name)s\""
 
 #: src/gtkman:96
 msgid "USAGE:"
-msgstr "USO:"
+msgstr "HASZNÁLAT:"
 
 #: src/gtkman:96
 msgid "[OPTIONS] [[section] manpage]"
-msgstr ""
+msgstr "[OPCIÓK] [[szekció] kézikönyvoldal]"
 
 #: src/gtkman:98
 msgid "OPTIONS:"
-msgstr "OPZIONI:"
+msgstr "OPCIÓK:"
 
 #: src/gtkman:99
 msgid "this help message"
-msgstr "questo messaggio di aiuto"
+msgstr "ez a súgó üzenet"
 
 #: src/gtkman:266
 msgid "Any"
-msgstr "Qualsiasi"
+msgstr "Bármely"
 
 #: src/gtkman:267
 msgid "User commands (1)"
-msgstr "Comandi utenti (1)"
+msgstr "Felhasználó parancsok (1)"
 
 #: src/gtkman:268
 msgid "System calls (2)"
-msgstr "Le chiamate di sistema (2)"
+msgstr "Rendszer hívások (2)"
 
 #: src/gtkman:269
 msgid "C library functions (3)"
-msgstr "Funzioni libreria C (3)"
+msgstr "C könyvtár funkciók (3)"
 
 #: src/gtkman:270
 msgid "Devices and special files (4)"
-msgstr "Dispositivi e file speciali (4)"
+msgstr "Eszközök és speciális fájlok (4)"
 
 #: src/gtkman:271
 msgid "File formats and conventions (5)"
-msgstr "I formati di file e convenzioni (5)"
+msgstr "Fájl formátumok és konvenciók (5)"
 
 #: src/gtkman:272
 msgid "Games et. al (6)"
-msgstr ""
+msgstr "Játékok (6)"
 
 #: src/gtkman:273
 msgid "Miscellanea (7)"
-msgstr "Miscellanea (7)"
+msgstr "Egyéb (7)"
 
 #: src/gtkman:274
 msgid "System administration tools and deamons (8)"
-msgstr ""
+msgstr "Rendszer adminisztrációs eszközök és démonok (8)"
 
 #: gtkman.desktop.in.h:2
 msgid "GTKMan Manual Page Viewer"
-msgstr "GTKMan  Visualizzatore di Pagina Manuale"
+msgstr "GTKMan Kézikönyvoldal megjelenítő"
