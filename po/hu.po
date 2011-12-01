@@ -1,15 +1,18 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Laszlo Dvornik <rezuri@zoho.com>, 2011.
+# Peter Polonkai <polesz@nedudu.hu>, 2011.
+# Péter Polonkai <polesz@nedudu.hu>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-03-04 17:22+0200\n"
-"PO-Revision-Date: 2011-03-22 15:57+0000\n"
-"Last-Translator: Polesz <polesz@nedudu.hu>\n"
+"PO-Revision-Date: 2011-08-30 04:41+0000\n"
+"Last-Translator: dvornik <rezuri@zoho.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +22,7 @@ msgstr ""
 
 #: src/gtkman.glade:6
 msgid "Manual page viewer"
-msgstr "Kézikönyvoldal néző"
+msgstr "Kézikönyvoldal megjelenítő"
 
 #: src/gtkman.glade:21
 msgid "_File"
@@ -31,11 +34,11 @@ msgstr "_Keresés"
 
 #: src/gtkman.glade:59
 msgid "Find _Next"
-msgstr "_Következő keresése"
+msgstr "Kö_vetkező találat"
 
 #: src/gtkman.glade:71
 msgid "Find _Previous"
-msgstr "_Előző keresése"
+msgstr "_Előző találat"
 
 #: src/gtkman.glade:88
 msgid "_Help"
@@ -47,7 +50,7 @@ msgstr "Kézikönyvoldal:"
 
 #: src/gtkman.glade:145
 msgid "Section:"
-msgstr "Fejezet:"
+msgstr "Szakasz:"
 
 #: src/gtkman.glade:210 gtkman.desktop.in.h:1
 msgid "A simple GTK+2 manual page viewer"
@@ -55,7 +58,9 @@ msgstr "Egyszerű GTK+2 kézikönyvoldal megjelenítő"
 
 #: src/gtkman.glade:888
 msgid "translator-credits"
-msgstr "Peter Polonkai <polesz@nedudu.hu>"
+msgstr ""
+"Dvornik László <rezuri@zoho.com>\n"
+"Polonkai Péter <polesz@nedudu.hu>"
 
 #: src/gtkman.glade:921
 msgid "Find"
@@ -63,16 +68,16 @@ msgstr "Keresés"
 
 #: src/gtkman.glade:948
 msgid "Find what:"
-msgstr "Mit keres:"
+msgstr "Keresés:"
 
 #: src/gtkman.glade:972
 msgid "Match case"
-msgstr "Kis/nagybetű megkülönböztetés"
+msgstr "Kis- és nagybetűk megkülönböztetése"
 
 #: src/gtkman:57
 #, python-format
 msgid "No manual page found for \"%(name)s\""
-msgstr "Nem található kézikönyvoldal ehhez \"%(name)s\""
+msgstr "Nem található kézikönyvoldal ehhez: \"%(name)s\""
 
 #: src/gtkman:96
 msgid "USAGE:"
@@ -80,31 +85,31 @@ msgstr "HASZNÁLAT:"
 
 #: src/gtkman:96
 msgid "[OPTIONS] [[section] manpage]"
-msgstr "[OPCIÓK] [[szekció] kézikönyvoldal]"
+msgstr "[KAPCSOLÓK] [[szakasz] kézikönyvoldal]"
 
 #: src/gtkman:98
 msgid "OPTIONS:"
-msgstr "OPCIÓK:"
+msgstr "KAPCSOLÓK:"
 
 #: src/gtkman:99
 msgid "this help message"
-msgstr "ez a súgó üzenet"
+msgstr "ezen súgóüzenet"
 
 #: src/gtkman:266
 msgid "Any"
-msgstr "Bármely"
+msgstr "Bármelyik"
 
 #: src/gtkman:267
 msgid "User commands (1)"
-msgstr "Felhasználó parancsok (1)"
+msgstr "Felhasználói parancsok (1)"
 
 #: src/gtkman:268
 msgid "System calls (2)"
-msgstr "Rendszer hívások (2)"
+msgstr "Rendszerhívások (2)"
 
 #: src/gtkman:269
 msgid "C library functions (3)"
-msgstr "C könyvtár funkciók (3)"
+msgstr "C programkönyvtár függvények (3)"
 
 #: src/gtkman:270
 msgid "Devices and special files (4)"
@@ -112,7 +117,7 @@ msgstr "Eszközök és speciális fájlok (4)"
 
 #: src/gtkman:271
 msgid "File formats and conventions (5)"
-msgstr "Fájl formátumok és konvenciók (5)"
+msgstr "Fájlformátumok és konvenciók (5)"
 
 #: src/gtkman:272
 msgid "Games et. al (6)"
@@ -120,12 +125,14 @@ msgstr "Játékok (6)"
 
 #: src/gtkman:273
 msgid "Miscellanea (7)"
-msgstr "Egyéb (7)"
+msgstr "Egyebek (7)"
 
 #: src/gtkman:274
 msgid "System administration tools and deamons (8)"
-msgstr "Rendszer adminisztrációs eszközök és démonok (8)"
+msgstr "Rendszeradminisztrációs eszközök és démonok (8)"
 
 #: gtkman.desktop.in.h:2
 msgid "GTKMan Manual Page Viewer"
-msgstr "GTKMan Kézikönyvoldal megjelenítő"
+msgstr "GTKMan kézikönyvoldal megjelenítő"
+
+
