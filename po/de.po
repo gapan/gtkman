@@ -2,19 +2,19 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-04 17:22+0200\n"
+"POT-Creation-Date: 2011-12-27 22:52+0200\n"
 "PO-Revision-Date: 2011-03-22 15:57+0000\n"
 "Last-Translator: lupinix <chrisdersch@googlemail.com>\n"
 "Language-Team: German <None>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: src/gtkman.glade:6
@@ -25,107 +25,120 @@ msgstr "Handbuchseiten_Betrachter"
 msgid "_File"
 msgstr "_Datei"
 
-#: src/gtkman.glade:42
+#: src/gtkman.glade:56
 msgid "_Search"
 msgstr "_Suche"
 
-#: src/gtkman.glade:59
+#: src/gtkman.glade:73
 msgid "Find _Next"
 msgstr "_Nächste"
 
-#: src/gtkman.glade:71
+#: src/gtkman.glade:85
 msgid "Find _Previous"
 msgstr "_Vorherige"
 
-#: src/gtkman.glade:88
+#: src/gtkman.glade:102
 msgid "_Help"
 msgstr "_Hilfe"
 
-#: src/gtkman.glade:119
+#: src/gtkman.glade:158
 msgid "Manual page:"
 msgstr "Handbuchseite:"
 
-#: src/gtkman.glade:145
+#: src/gtkman.glade:184 src/gtkman.glade:1158
 msgid "Section:"
 msgstr "Kategorie:"
 
-#: src/gtkman.glade:210 gtkman.desktop.in.h:1
+#: src/gtkman.glade:251 gtkman.desktop.in.h:1
 msgid "A simple GTK+2 manual page viewer"
 msgstr "Ein einfacher GTK+2 Handbuchseiten-Betrachter"
 
-#: src/gtkman.glade:888
+#: src/gtkman.glade:929
 msgid "translator-credits"
 msgstr ""
 "Thorsten Mühlfelder <thenktor~at~gmx.de>\n"
 "\n"
 "Christian Dersch <chrisdersch~at~googlemail.com>"
 
-#: src/gtkman.glade:921
+#: src/gtkman.glade:962
 msgid "Find"
 msgstr "Suchen"
 
-#: src/gtkman.glade:948
+#: src/gtkman.glade:989
 msgid "Find what:"
 msgstr "Zu Suchen:"
 
-#: src/gtkman.glade:972
+#: src/gtkman.glade:1013
 msgid "Match case"
 msgstr "Groß-/ und Kleinschreibung beachten"
 
-#: src/gtkman:57
+#: src/gtkman.glade:1085
+msgid "Creating index"
+msgstr ""
+
+#: src/gtkman.glade:1104
+msgid "Creating manual page index..."
+msgstr ""
+
+#: src/gtkman.glade:1131
+#, fuzzy
+msgid "Manual page index"
+msgstr "Handbuchseiten_Betrachter"
+
+#: src/gtkman:116
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr "Keine Handbuchseite für \"%(name)s\" gefunden"
 
-#: src/gtkman:96
+#: src/gtkman:155
 msgid "USAGE:"
 msgstr "BENUTZUNG:"
 
-#: src/gtkman:96
+#: src/gtkman:155
 msgid "[OPTIONS] [[section] manpage]"
 msgstr "[OPTIONEN] [[Kategorie] Handbuchseite]"
 
-#: src/gtkman:98
+#: src/gtkman:157
 msgid "OPTIONS:"
 msgstr "OPTIONEN:"
 
-#: src/gtkman:99
+#: src/gtkman:158
 msgid "this help message"
 msgstr "diese Hilfe"
 
-#: src/gtkman:266
+#: src/gtkman:388 src/gtkman:426
 msgid "Any"
 msgstr "Alle"
 
-#: src/gtkman:267
+#: src/gtkman:389 src/gtkman:427
 msgid "User commands (1)"
 msgstr "Nutzerbefehle und Kommandos (1)"
 
-#: src/gtkman:268
+#: src/gtkman:390 src/gtkman:428
 msgid "System calls (2)"
 msgstr "Systemaufrufe (2)"
 
-#: src/gtkman:269
+#: src/gtkman:391 src/gtkman:429
 msgid "C library functions (3)"
 msgstr "Subroutinen und Bibliotheksaufrufe (3)"
 
-#: src/gtkman:270
+#: src/gtkman:392 src/gtkman:430
 msgid "Devices and special files (4)"
 msgstr "Geräte und Spezialdateien (4)"
 
-#: src/gtkman:271
+#: src/gtkman:393 src/gtkman:431
 msgid "File formats and conventions (5)"
 msgstr "Dateiformate (5)"
 
-#: src/gtkman:272
+#: src/gtkman:394 src/gtkman:432
 msgid "Games et. al (6)"
 msgstr "Spiele (6)"
 
-#: src/gtkman:273
+#: src/gtkman:395 src/gtkman:433
 msgid "Miscellanea (7)"
 msgstr "Verschiedenes, Makropakete und Konventionen (7)"
 
-#: src/gtkman:274
+#: src/gtkman:396 src/gtkman:434
 msgid "System administration tools and deamons (8)"
 msgstr "Systemverwaltung (8)"
 

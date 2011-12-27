@@ -78,7 +78,7 @@ class GTKMan:
 								elif section.startswith('8'):
 									section8.append(name)
 		else:
-			return False
+			return None
 		return [sorted(set(section1)), sorted(set(section2)), sorted(set(section3)), sorted(set(section4)), sorted(set(section5)), \
 			sorted(set(section6)), sorted(set(section7)), sorted(set(section8))]
 	

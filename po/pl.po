@@ -1,22 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 #   <sgasior1@gmail.com>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-03-04 17:22+0200\n"
+"POT-Creation-Date: 2011-12-27 22:52+0200\n"
 "PO-Revision-Date: 2011-11-09 16:08+0000\n"
 "Last-Translator: ink3 <sgasior1@gmail.com>\n"
 "Language-Team: Polish (http://www.transifex.net/projects/p/salix/team/pl/)\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2)\n"
 
 #: src/gtkman.glade:6
 msgid "Manual page viewer"
@@ -26,109 +27,120 @@ msgstr "Przeglądarka manuali"
 msgid "_File"
 msgstr "_Fplik"
 
-#: src/gtkman.glade:42
+#: src/gtkman.glade:56
 msgid "_Search"
 msgstr "_Szukaj"
 
-#: src/gtkman.glade:59
+#: src/gtkman.glade:73
 msgid "Find _Next"
 msgstr "Znajdź _Następny"
 
-#: src/gtkman.glade:71
+#: src/gtkman.glade:85
 msgid "Find _Previous"
 msgstr "Znajdź _Poprzedni"
 
-#: src/gtkman.glade:88
+#: src/gtkman.glade:102
 msgid "_Help"
 msgstr "_Help"
 
-#: src/gtkman.glade:119
+#: src/gtkman.glade:158
 msgid "Manual page:"
 msgstr "Strona manuala:"
 
-#: src/gtkman.glade:145
+#: src/gtkman.glade:184 src/gtkman.glade:1158
 msgid "Section:"
 msgstr "Sekcja:"
 
-#: src/gtkman.glade:210 gtkman.desktop.in.h:1
+#: src/gtkman.glade:251 gtkman.desktop.in.h:1
 msgid "A simple GTK+2 manual page viewer"
 msgstr "Prosta GTK+2 przeglądarka manuali"
 
-#: src/gtkman.glade:888
+#: src/gtkman.glade:929
 msgid "translator-credits"
 msgstr "tłumacze"
 
-#: src/gtkman.glade:921
+#: src/gtkman.glade:962
 msgid "Find"
 msgstr "Znajdź"
 
-#: src/gtkman.glade:948
+#: src/gtkman.glade:989
 msgid "Find what:"
 msgstr "Znajdź:"
 
-#: src/gtkman.glade:972
+#: src/gtkman.glade:1013
 msgid "Match case"
 msgstr "Dopasowanie przypadku"
 
-#: src/gtkman:57
+#: src/gtkman.glade:1085
+msgid "Creating index"
+msgstr ""
+
+#: src/gtkman.glade:1104
+msgid "Creating manual page index..."
+msgstr ""
+
+#: src/gtkman.glade:1131
+#, fuzzy
+msgid "Manual page index"
+msgstr "Przeglądarka manuali"
+
+#: src/gtkman:116
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr "Brak manuala dla \" %(name)s \""
 
-#: src/gtkman:96
+#: src/gtkman:155
 msgid "USAGE:"
 msgstr "ZASTOSOWANIE:"
 
-#: src/gtkman:96
+#: src/gtkman:155
 msgid "[OPTIONS] [[section] manpage]"
 msgstr "[OPCJE] [[sekcja] manual]"
 
-#: src/gtkman:98
+#: src/gtkman:157
 msgid "OPTIONS:"
 msgstr "OPCJE:"
 
-#: src/gtkman:99
+#: src/gtkman:158
 msgid "this help message"
 msgstr "to komunikat pomocy"
 
-#: src/gtkman:266
+#: src/gtkman:388 src/gtkman:426
 msgid "Any"
 msgstr "Każdy"
 
-#: src/gtkman:267
+#: src/gtkman:389 src/gtkman:427
 msgid "User commands (1)"
 msgstr "Polecenia użytkownika (1)"
 
-#: src/gtkman:268
+#: src/gtkman:390 src/gtkman:428
 msgid "System calls (2)"
 msgstr "Wywołanie systemowe (2)"
 
-#: src/gtkman:269
+#: src/gtkman:391 src/gtkman:429
 msgid "C library functions (3)"
 msgstr "Funkcje z biblioteki C (3)"
 
-#: src/gtkman:270
+#: src/gtkman:392 src/gtkman:430
 msgid "Devices and special files (4)"
 msgstr "Urządzenia i pliki specjalne (4)"
 
-#: src/gtkman:271
+#: src/gtkman:393 src/gtkman:431
 msgid "File formats and conventions (5)"
 msgstr "Formaty plików i konwencje (5)"
 
-#: src/gtkman:272
+#: src/gtkman:394 src/gtkman:432
 msgid "Games et. al (6)"
 msgstr "Gry i in. al (6)"
 
-#: src/gtkman:273
+#: src/gtkman:395 src/gtkman:433
 msgid "Miscellanea (7)"
 msgstr "Różne (7)"
 
-#: src/gtkman:274
+#: src/gtkman:396 src/gtkman:434
 msgid "System administration tools and deamons (8)"
 msgstr "Narzędzia do administrowania systemem i demony (8)"
 
 #: gtkman.desktop.in.h:2
 msgid "GTKMan Manual Page Viewer"
 msgstr "GTKMan obsługi Page Viewer"
-
-
