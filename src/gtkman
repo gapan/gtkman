@@ -6,6 +6,10 @@ import sys
 import commands
 import pango
 import ConfigParser
+import threading
+
+#Initializing the gtk's thread engine
+gtk.gdk.threads_init()
 
 # Internationalization
 import locale
@@ -17,12 +21,67 @@ gettext.install("gtkman", "/usr/share/locale", unicode=1)
 gtk.glade.bindtextdomain("gtkman", "/usr/share/locale")
 gtk.glade.textdomain("gtkman")
 
+def threaded(f):
+	def wrapper(*args):
+		t = threading.Thread(target=f, args=args)
+		t.start()
+	return wrapper
+
 class GTKMan:
 	config = ConfigParser.RawConfigParser()
 	config_file = os.path.expanduser('~/.config/gtkman')
 	win_height = 0
 	win_width = 0
+	section_lists_ready = False
 
+	def manpagelists(self):
+		cmd = 'man -w'
+		status, output = commands.getstatusoutput(cmd)
+		section1 = []
+		section2 = []
+		section3 = []
+		section4 = []
+		section5 = []
+		section6 = []
+		section7 = []
+		section8 = []
+		if status == 0:
+			dirs = output.split(':')
+			for i in dirs:
+				for j in os.listdir(i):
+					self.progressbar_index.pulse()
+					path = i +'/'+j
+					if j.startswith('man') and os.path.isdir(path):
+						for directory, dirnames, filenames in os.walk(path):
+							for f in filenames:
+								if f.endswith('.gz') or f.endswith('.xz') or f.endswith('.bz2') or f.endswith('.z'):
+									name_section = f.rpartition('.')[0]
+								else:
+									name_section = f
+								name = name_section.rpartition('.')[0]
+								section = name_section.rpartition('.')[2]
+								# There are 8 valid sections
+								if section.startswith('1'):
+									section1.append(name)
+								elif section.startswith('2'):
+									section2.append(name)
+								elif section.startswith('3'):
+									section3.append(name)
+								elif section.startswith('4'):
+									section4.append(name)
+								elif section.startswith('5'):
+									section5.append(name)
+								elif section.startswith('6'):
+									section6.append(name)
+								elif section.startswith('7'):
+									section7.append(name)
+								elif section.startswith('8'):
+									section8.append(name)
+		else:
+			return False
+		return [sorted(set(section1)), sorted(set(section2)), sorted(set(section3)), sorted(set(section4)), sorted(set(section5)), \
+			sorted(set(section6)), sorted(set(section7)), sorted(set(section8))]
+	
 	def set_default_window_size(self):
 		try:
 			self.config.read(self.config_file)
@@ -217,6 +276,68 @@ class GTKMan:
 		self.aboutdialog.hide()
 		return True
 
+	def on_treeview_index_row_activated(self, widget, path, view_column):
+		self.dialog_index.hide()
+		selected = self.treeview_index.get_selection()
+		self.liststore_index, iter = selected.get_selected()
+		section = self.liststore_index.get_value(iter, 0)
+		manpage = self.liststore_index.get_value(iter, 1)
+		output = self.manpage(section, manpage)
+		self.textbuffer_manpage.set_text(output)
+
+	def on_button_index_open_clicked(self, widget):
+		self.dialog_index.hide()
+		selected = self.treeview_index.get_selection()
+		self.liststore_index, iter = selected.get_selected()
+		section = self.liststore_index.get_value(iter, 0)
+		manpage = self.liststore_index.get_value(iter, 1)
+		output = self.manpage(section, manpage)
+		self.textbuffer_manpage.set_text(output)
+	
+	def on_button_index_cancel_clicked(self, widget):
+		self.dialog_index.hide()
+
+	def on_dialog_index_delete_event(self, widget, event):
+		self.dialog_index.hide()
+		return True
+
+	def create_index(self):
+		self.liststore_index.clear()
+		req_section = self.combobox_index_section.get_active()
+		manpagelist = []
+		manpagenamelist = []
+		if req_section == 0:
+			for i in self.section_lists:
+				for j in i:
+					manpagenamelist.append(j)
+			manpagenamelist = sorted(set(manpagenamelist))
+			for i in manpagenamelist:
+				manpagelist.append([0, i])
+		else:
+			for i in self.section_lists[req_section-1]:
+				manpagelist.append([req_section, i])
+		for i in manpagelist:
+			self.liststore_index.append(i)
+
+	def on_combobox_index_section_changed(self, widget):
+		self.create_index()
+
+	@threaded
+	def on_button_index_clicked(self, widget):
+		if not self.section_lists_ready:
+			gtk.gdk.threads_enter()
+			self.window_create_index.show()	
+			gtk.gdk.threads_leave()
+			self.section_lists = self.manpagelists()
+			self.section_lists_ready = True
+			gtk.gdk.threads_enter()
+			self.window_create_index.hide()
+			gtk.gdk.threads_leave()
+		gtk.gdk.threads_enter()
+		self.create_index()
+		self.dialog_index.show()
+		gtk.gdk.threads_leave()
+
 	def parse_args(self, argv):
 		if len(argv) > 2:
 			self.display_help()
@@ -259,6 +380,7 @@ class GTKMan:
 		self.window = builder.get_object('gtkman')
 		self.textview_manpage = builder.get_object('textview_manpage')
 		self.textbuffer_manpage = builder.get_object('textbuffer_manpage')
+		self.button_index = builder.get_object('button_index')
 		self.entry_search = builder.get_object('entry_search')
 		self.combobox_section = builder.get_object('combobox_section')
 		self.liststore_section = builder.get_object('liststore_section')
@@ -292,9 +414,39 @@ class GTKMan:
 		#
 		self.aboutdialog = builder.get_object('aboutdialog')
 
+		#
+		# Creating index window
+		#
+		self.window_create_index = builder.get_object('window_create_index')
+		self.progressbar_index = builder.get_object('progressbar_index')
+		self.combobox_index_section = builder.get_object('combobox_index_section')
+		self.liststore_index_section = builder.get_object('liststore_index_section')
+
+		# Populate the man section combobox
+		self.liststore_index_section.append([0, _('Any')])
+		self.liststore_index_section.append([1, _('User commands (1)')])
+		self.liststore_index_section.append([2, _('System calls (2)')])
+		self.liststore_index_section.append([3, _('C library functions (3)')])
+		self.liststore_index_section.append([4, _('Devices and special files (4)')])
+		self.liststore_index_section.append([5, _('File formats and conventions (5)')])
+		self.liststore_index_section.append([6, _('Games et. al (6)')])
+		self.liststore_index_section.append([7, _('Miscellanea (7)')])
+		self.liststore_index_section.append([8, _('System administration tools and deamons (8)')])
+		self.combobox_index_section.set_active(0)
+
+		#
+		# Index dialog
+		#
+		self.dialog_index = builder.get_object('dialog_index')
+		self.button_index_open = builder.get_object('button_index_open')
+		self.button_index_cancel = builder.get_object('button_index_cancel')
+		self.button_index_open.set_flags(gtk.CAN_DEFAULT)
+		self.treeview_index = builder.get_object('treeview_index')
+		self.liststore_index = builder.get_object('liststore_index')
+
 		# Set default window size
 		self.set_default_window_size()
-		
+			
 		# Set the system monospace font as the default font
 		self.textview_manpage.modify_font(pango.FontDescription('monospace'))
 
