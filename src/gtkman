@@ -54,7 +54,10 @@ class GTKMan:
 					if j.startswith('man') and os.path.isdir(path):
 						for directory, dirnames, filenames in os.walk(path):
 							for f in filenames:
-								if f.endswith('.gz') or f.endswith('.xz') or f.endswith('.bz2') or f.endswith('.z'):
+								if f.endswith('.gz') or f.endswith('.xz') \
+										or f.endswith('.bz2') \
+										or f.endswith('.z') \
+										or f.endswith('.Z'):
 									name_section = f.rpartition('.')[0]
 								else:
 									name_section = f
@@ -107,14 +110,11 @@ class GTKMan:
 	def manpage(self, section, page):
 		if section == 0:
 			section = ""
-		cmd = 'man -P "col -b" '+str(section)+' '+page
+		cmd = 'man -P "col -b" '+str(section)+' '+page+' 2>/dev/null'
 		status, output = commands.getstatusoutput(cmd)
-		if status == 0:
-			# Fix some broken manpages (eg.: xterm, bash)
-			retval = output.replace('\ngzip: stdout: Broken pipe\n', '')
-		else:
-			retval = _('No manual page found for "%(name)s"') % {'name' : page}
-		return retval
+		if status != 0:
+			output = _('No manual page found for "%(name)s"') % {'name' : page}
+		return output
 
 	def manpage_stripchars(self, manpage):
 		return manpage.lstrip(' ').partition(' ')[0].partition(';')[0].partition('|')[0].partition('&')[0]
