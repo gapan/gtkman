@@ -54,10 +54,10 @@ class GTKMan:
 					if j.startswith('man') and os.path.isdir(path):
 						for directory, dirnames, filenames in os.walk(path):
 							for f in filenames:
-								if f.endswith('.gz') or f.endswith('.xz') \
-										or f.endswith('.bz2') \
-										or f.endswith('.z') \
-										or f.endswith('.Z'):
+								if f.lower().endswith('.gz') \
+										or f.lower().endswith('.xz') \
+										or f.lower().endswith('.bz2') \
+										or f.lower().endswith('.z'):
 									name_section = f.rpartition('.')[0]
 								else:
 									name_section = f
