@@ -2,20 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-12-27 22:52+0200\n"
+"POT-Creation-Date: 2011-12-30 14:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: src/gtkman.glade:6
 msgid "Manual page viewer"
@@ -84,7 +84,7 @@ msgstr "Ευρετήριο σελίδων εγχειριδίου"
 #: src/gtkman:116
 #, python-format
 msgid "No manual page found for \"%(name)s\""
-msgstr "Δεν βρέθηκε καμία σελίδα εγχειριδίου για το "%(name)s""
+msgstr "Δεν βρέθηκε καμία σελίδα εγχειριδίου για το \"%(name)s\""
 
 #: src/gtkman:155
 msgid "USAGE:"
@@ -141,4 +141,3 @@ msgstr "Εργαλεία διαχείρισης συστήματος και δα
 #: gtkman.desktop.in.h:2
 msgid "GTKMan Manual Page Viewer"
 msgstr "Εμφάνιση σελίδων εγχειριδίου"
-
