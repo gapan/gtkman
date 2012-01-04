@@ -24,11 +24,22 @@
                   <object class="GtkMenu" id="menu1">
                     <property name="visible">True</property>
                     <child>
+                      <object class="GtkImageMenuItem" id="imagemenuitem_new">
+                        <property name="label">gtk-new</property>
+                        <property name="visible">True</property>
+                        <property name="use_underline">True</property>
+                        <property name="use_stock">True</property>
+                        <accelerator key="n" signal="activate" modifiers="GDK_CONTROL_MASK"/>
+                        <signal name="activate" handler="on_imagemenuitem_new_activate"/>
+                      </object>
+                    </child>
+                    <child>
                       <object class="GtkImageMenuItem" id="imagemenuitem_index">
                         <property name="label">gtk-index</property>
                         <property name="visible">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <accelerator key="i" signal="activate" modifiers="GDK_CONTROL_MASK"/>
                         <signal name="activate" handler="on_button_index_clicked"/>
                       </object>
                     </child>
@@ -43,6 +54,7 @@
                         <property name="visible">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <accelerator key="q" signal="activate" modifiers="GDK_CONTROL_MASK"/>
                         <signal name="activate" handler="gtk_main_quit"/>
                       </object>
                     </child>
@@ -1125,6 +1137,22 @@ Public License instead of this License.  But first, please read
       </object>
     </child>
   </object>
+  <object class="GtkListStore" id="liststore_index_section">
+    <columns>
+      <!-- column-name SectionNumber -->
+      <column type="gint"/>
+      <!-- column-name SectionName -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="liststore_index">
+    <columns>
+      <!-- column-name SectionNumber -->
+      <column type="guint"/>
+      <!-- column-name Manpage -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
   <object class="GtkDialog" id="dialog_index">
     <property name="height_request">400</property>
     <property name="border_width">5</property>
@@ -1280,21 +1308,5 @@ Public License instead of this License.  But first, please read
       <action-widget response="1">button_index_cancel</action-widget>
       <action-widget response="0">button_index_open</action-widget>
     </action-widgets>
-  </object>
-  <object class="GtkListStore" id="liststore_index_section">
-    <columns>
-      <!-- column-name SectionNumber -->
-      <column type="gint"/>
-      <!-- column-name SectionName -->
-      <column type="gchararray"/>
-    </columns>
-  </object>
-  <object class="GtkListStore" id="liststore_index">
-    <columns>
-      <!-- column-name SectionNumber -->
-      <column type="guint"/>
-      <!-- column-name Manpage -->
-      <column type="gchararray"/>
-    </columns>
   </object>
 </interface>

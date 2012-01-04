@@ -7,6 +7,7 @@ import commands
 import pango
 import ConfigParser
 import threading
+import subprocess
 
 #Initializing the gtk's thread engine
 gtk.gdk.threads_init()
@@ -156,6 +157,10 @@ class GTKMan:
 		print
 		print _('OPTIONS:')
 		print '   -h, --help        ',_('this help message')
+
+	@threaded
+	def on_imagemenuitem_new_activate(self, wdiget):
+		subprocess.Popen(['gtkman'], shell=False)
 
 	def on_imagemenuitem_find_activate(self, widget):
 		self.entry_find.set_text('')
