@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-12-27 22:52+0200\n"
+"POT-Creation-Date: 2012-01-05 01:28+0200\n"
 "PO-Revision-Date: 2011-08-27 22:27+0000\n"
 "Last-Translator: eren <erenlinux@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,116 +26,116 @@ msgstr ""
 msgid "_File"
 msgstr "_Dosya"
 
-#: src/gtkman.glade:56
+#: src/gtkman.glade:68
 msgid "_Search"
 msgstr "_Arama"
 
-#: src/gtkman.glade:73
+#: src/gtkman.glade:85
 msgid "Find _Next"
 msgstr "_Öncekini Bul"
 
-#: src/gtkman.glade:85
+#: src/gtkman.glade:97
 msgid "Find _Previous"
 msgstr "_Sonrakini Bul"
 
-#: src/gtkman.glade:102
+#: src/gtkman.glade:114
 msgid "_Help"
 msgstr "_Yardım"
 
-#: src/gtkman.glade:158
+#: src/gtkman.glade:170
 msgid "Manual page:"
 msgstr ""
 
-#: src/gtkman.glade:184 src/gtkman.glade:1158
+#: src/gtkman.glade:196 src/gtkman.glade:1186
 msgid "Section:"
 msgstr "Bölüm:"
 
-#: src/gtkman.glade:251 gtkman.desktop.in.h:1
+#: src/gtkman.glade:263 gtkman.desktop.in.h:1
 msgid "A simple GTK+2 manual page viewer"
 msgstr ""
 
-#: src/gtkman.glade:929
+#: src/gtkman.glade:941
 msgid "translator-credits"
 msgstr ""
 
-#: src/gtkman.glade:962
+#: src/gtkman.glade:974
 msgid "Find"
 msgstr "Bul"
 
-#: src/gtkman.glade:989
+#: src/gtkman.glade:1001
 msgid "Find what:"
 msgstr ""
 
-#: src/gtkman.glade:1013
+#: src/gtkman.glade:1025
 msgid "Match case"
 msgstr ""
 
-#: src/gtkman.glade:1085
+#: src/gtkman.glade:1097
 msgid "Creating index"
 msgstr ""
 
-#: src/gtkman.glade:1104
+#: src/gtkman.glade:1116
 msgid "Creating manual page index..."
 msgstr ""
 
-#: src/gtkman.glade:1131
+#: src/gtkman.glade:1159
 msgid "Manual page index"
 msgstr ""
 
-#: src/gtkman:116
+#: src/gtkman:117
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr ""
 
-#: src/gtkman:155
+#: src/gtkman:156
 msgid "USAGE:"
 msgstr ""
 
-#: src/gtkman:155
+#: src/gtkman:156
 msgid "[OPTIONS] [[section] manpage]"
 msgstr ""
 
-#: src/gtkman:157
+#: src/gtkman:158
 msgid "OPTIONS:"
 msgstr "SEÇENEKLER:"
 
-#: src/gtkman:158
+#: src/gtkman:159
 msgid "this help message"
 msgstr ""
 
-#: src/gtkman:388 src/gtkman:426
+#: src/gtkman:393 src/gtkman:431
 msgid "Any"
 msgstr ""
 
-#: src/gtkman:389 src/gtkman:427
+#: src/gtkman:394 src/gtkman:432
 msgid "User commands (1)"
 msgstr ""
 
-#: src/gtkman:390 src/gtkman:428
+#: src/gtkman:395 src/gtkman:433
 msgid "System calls (2)"
 msgstr ""
 
-#: src/gtkman:391 src/gtkman:429
+#: src/gtkman:396 src/gtkman:434
 msgid "C library functions (3)"
 msgstr ""
 
-#: src/gtkman:392 src/gtkman:430
+#: src/gtkman:397 src/gtkman:435
 msgid "Devices and special files (4)"
 msgstr ""
 
-#: src/gtkman:393 src/gtkman:431
+#: src/gtkman:398 src/gtkman:436
 msgid "File formats and conventions (5)"
 msgstr ""
 
-#: src/gtkman:394 src/gtkman:432
+#: src/gtkman:399 src/gtkman:437
 msgid "Games et. al (6)"
 msgstr ""
 
-#: src/gtkman:395 src/gtkman:433
+#: src/gtkman:400 src/gtkman:438
 msgid "Miscellanea (7)"
 msgstr ""
 
-#: src/gtkman:396 src/gtkman:434
+#: src/gtkman:401 src/gtkman:439
 msgid "System administration tools and deamons (8)"
 msgstr ""
 

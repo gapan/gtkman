@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-12-27 22:52+0200\n"
+"POT-Creation-Date: 2012-01-05 01:28+0200\n"
 "PO-Revision-Date: 2011-06-10 02:01+0000\n"
 "Last-Translator: seacat <seacat.linux@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,117 +27,117 @@ msgstr "Visor de páginas del manual"
 msgid "_File"
 msgstr "_Archivo"
 
-#: src/gtkman.glade:56
+#: src/gtkman.glade:68
 msgid "_Search"
 msgstr "Bú_squeda"
 
-#: src/gtkman.glade:73
+#: src/gtkman.glade:85
 msgid "Find _Next"
 msgstr "Buscar Siguie_nte"
 
-#: src/gtkman.glade:85
+#: src/gtkman.glade:97
 msgid "Find _Previous"
 msgstr "Buscar An_terior"
 
-#: src/gtkman.glade:102
+#: src/gtkman.glade:114
 msgid "_Help"
 msgstr "A_yuda"
 
-#: src/gtkman.glade:158
+#: src/gtkman.glade:170
 msgid "Manual page:"
 msgstr "Página del manual:"
 
-#: src/gtkman.glade:184 src/gtkman.glade:1158
+#: src/gtkman.glade:196 src/gtkman.glade:1186
 msgid "Section:"
 msgstr "Sección:"
 
-#: src/gtkman.glade:251 gtkman.desktop.in.h:1
+#: src/gtkman.glade:263 gtkman.desktop.in.h:1
 msgid "A simple GTK+2 manual page viewer"
 msgstr "Un visor GTK+2 simple de páginas del manual"
 
-#: src/gtkman.glade:929
+#: src/gtkman.glade:941
 msgid "translator-credits"
 msgstr "Fernando Velo"
 
-#: src/gtkman.glade:962
+#: src/gtkman.glade:974
 msgid "Find"
 msgstr "Buscar"
 
-#: src/gtkman.glade:989
+#: src/gtkman.glade:1001
 msgid "Find what:"
 msgstr "Buscar:"
 
-#: src/gtkman.glade:1013
+#: src/gtkman.glade:1025
 msgid "Match case"
 msgstr "Coincidir mayúsculas y minúsculas"
 
-#: src/gtkman.glade:1085
+#: src/gtkman.glade:1097
 msgid "Creating index"
 msgstr ""
 
-#: src/gtkman.glade:1104
+#: src/gtkman.glade:1116
 msgid "Creating manual page index..."
 msgstr ""
 
-#: src/gtkman.glade:1131
+#: src/gtkman.glade:1159
 #, fuzzy
 msgid "Manual page index"
 msgstr "Visor de páginas del manual"
 
-#: src/gtkman:116
+#: src/gtkman:117
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr "No se encontraron páginas para \"%(name)s\""
 
-#: src/gtkman:155
+#: src/gtkman:156
 msgid "USAGE:"
 msgstr "USO:"
 
-#: src/gtkman:155
+#: src/gtkman:156
 msgid "[OPTIONS] [[section] manpage]"
 msgstr "[OPCIONES] [[sección] página del manual]"
 
-#: src/gtkman:157
+#: src/gtkman:158
 msgid "OPTIONS:"
 msgstr "OPCIONES:"
 
-#: src/gtkman:158
+#: src/gtkman:159
 msgid "this help message"
 msgstr "este mensaje de ayuda"
 
-#: src/gtkman:388 src/gtkman:426
+#: src/gtkman:393 src/gtkman:431
 msgid "Any"
 msgstr "Cualquiera"
 
-#: src/gtkman:389 src/gtkman:427
+#: src/gtkman:394 src/gtkman:432
 msgid "User commands (1)"
 msgstr "Comandos del usuario (1)"
 
-#: src/gtkman:390 src/gtkman:428
+#: src/gtkman:395 src/gtkman:433
 msgid "System calls (2)"
 msgstr "Llamadas del sistema (2)"
 
-#: src/gtkman:391 src/gtkman:429
+#: src/gtkman:396 src/gtkman:434
 msgid "C library functions (3)"
 msgstr "Funciones de biblioteca de C (3)"
 
-#: src/gtkman:392 src/gtkman:430
+#: src/gtkman:397 src/gtkman:435
 msgid "Devices and special files (4)"
 msgstr "Archivos especiales y dispositivos (4)"
 
-#: src/gtkman:393 src/gtkman:431
+#: src/gtkman:398 src/gtkman:436
 msgid "File formats and conventions (5)"
 msgstr "Convenciones y formatos de archivo (5)"
 
-#: src/gtkman:394 src/gtkman:432
+#: src/gtkman:399 src/gtkman:437
 msgid "Games et. al (6)"
 msgstr "Juegos y otros (6)"
 
-#: src/gtkman:395 src/gtkman:433
+#: src/gtkman:400 src/gtkman:438
 msgid "Miscellanea (7)"
 msgstr "Miscelánea (7)"
 
-#: src/gtkman:396 src/gtkman:434
+#: src/gtkman:401 src/gtkman:439
 msgid "System administration tools and deamons (8)"
 msgstr "Demonios y herramientas de administración del sistema (8)"
 
