@@ -13,3 +13,10 @@ as root. You can set DESTDIR to change the installation target:
 
 DESTDIR=/my/custom/installation/target ./install.sh
 
+NOTE
+----
+The installed gtkman executable is a python script. It expects
+python 2.x to be installed and the default python interpreter.
+If you have python 3.x as the default python interpreter, you
+can change the first line in the gtkman code to point to the
+python 2.x executable.
