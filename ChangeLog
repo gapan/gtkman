@@ -1,3 +1,8 @@
+* version 0.4 (2012-01-05)
+	- Added browse by index functionality
+	- Added a New menuitem in the File menu to spawn a
+	  new process
+
 * version 0.3.4 (2011-12-02)
 	- Added tr translation
 	- Updated hu, ja, pk translations
