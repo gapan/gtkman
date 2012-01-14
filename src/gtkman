@@ -385,7 +385,6 @@ class GTKMan:
 		self.window = builder.get_object('gtkman')
 		self.textview_manpage = builder.get_object('textview_manpage')
 		self.textbuffer_manpage = builder.get_object('textbuffer_manpage')
-		self.button_index = builder.get_object('button_index')
 		self.entry_search = builder.get_object('entry_search')
 		self.combobox_section = builder.get_object('combobox_section')
 		self.liststore_section = builder.get_object('liststore_section')
