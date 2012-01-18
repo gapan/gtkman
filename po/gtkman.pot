@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-05 01:29+0200\n"
+"POT-Creation-Date: 2012-01-18 23:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,63 +21,67 @@ msgstr ""
 msgid "Manual page viewer"
 msgstr ""
 
-#: src/gtkman.glade:21
+#: src/gtkman.glade:20
 msgid "_File"
 msgstr ""
 
-#: src/gtkman.glade:68
+#: src/gtkman.glade:67
 msgid "_Search"
 msgstr ""
 
-#: src/gtkman.glade:85
+#: src/gtkman.glade:84
 msgid "Find _Next"
 msgstr ""
 
-#: src/gtkman.glade:97
+#: src/gtkman.glade:96
 msgid "Find _Previous"
 msgstr ""
 
-#: src/gtkman.glade:114
+#: src/gtkman.glade:113
 msgid "_Help"
 msgstr ""
 
-#: src/gtkman.glade:170
+#: src/gtkman.glade:145
+msgid "Index"
+msgstr ""
+
+#: src/gtkman.glade:172
 msgid "Manual page:"
 msgstr ""
 
-#: src/gtkman.glade:196 src/gtkman.glade:1186
+#: src/gtkman.glade:196 src/gtkman.glade:1194
 msgid "Section:"
 msgstr ""
 
-#: src/gtkman.glade:263 gtkman.desktop.in.h:1
+#: src/gtkman.glade:271 gtkman.desktop.in.h:1
 msgid "A simple GTK+2 manual page viewer"
 msgstr ""
 
-#: src/gtkman.glade:941
+#: src/gtkman.glade:949
 msgid "translator-credits"
 msgstr ""
 
-#: src/gtkman.glade:974
+#: src/gtkman.glade:982
 msgid "Find"
 msgstr ""
 
-#: src/gtkman.glade:1001
+#: src/gtkman.glade:1009
 msgid "Find what:"
 msgstr ""
 
-#: src/gtkman.glade:1025
+#: src/gtkman.glade:1033
 msgid "Match case"
 msgstr ""
 
-#: src/gtkman.glade:1097
+#: src/gtkman.glade:1105
 msgid "Creating index"
 msgstr ""
 
-#: src/gtkman.glade:1116
+#: src/gtkman.glade:1124
 msgid "Creating manual page index..."
 msgstr ""
 
-#: src/gtkman.glade:1159
+#: src/gtkman.glade:1167
 msgid "Manual page index"
 msgstr ""
 
@@ -102,39 +106,39 @@ msgstr ""
 msgid "this help message"
 msgstr ""
 
-#: src/gtkman:393 src/gtkman:431
+#: src/gtkman:392 src/gtkman:430
 msgid "Any"
 msgstr ""
 
-#: src/gtkman:394 src/gtkman:432
+#: src/gtkman:393 src/gtkman:431
 msgid "User commands (1)"
 msgstr ""
 
-#: src/gtkman:395 src/gtkman:433
+#: src/gtkman:394 src/gtkman:432
 msgid "System calls (2)"
 msgstr ""
 
-#: src/gtkman:396 src/gtkman:434
+#: src/gtkman:395 src/gtkman:433
 msgid "C library functions (3)"
 msgstr ""
 
-#: src/gtkman:397 src/gtkman:435
+#: src/gtkman:396 src/gtkman:434
 msgid "Devices and special files (4)"
 msgstr ""
 
-#: src/gtkman:398 src/gtkman:436
+#: src/gtkman:397 src/gtkman:435
 msgid "File formats and conventions (5)"
 msgstr ""
 
-#: src/gtkman:399 src/gtkman:437
+#: src/gtkman:398 src/gtkman:436
 msgid "Games et. al (6)"
 msgstr ""
 
-#: src/gtkman:400 src/gtkman:438
+#: src/gtkman:399 src/gtkman:437
 msgid "Miscellanea (7)"
 msgstr ""
 
-#: src/gtkman:401 src/gtkman:439
+#: src/gtkman:400 src/gtkman:438
 msgid "System administration tools and deamons (8)"
 msgstr ""
 
