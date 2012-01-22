@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <hydrangea_and_snail@hotmail.com>, 2011.
+# tsuren <hydrangea_and_snail@hotmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: Salix\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-18 23:31+0200\n"
+"PO-Revision-Date: 2012-01-18 21:45+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+
+#: src/gtkman.glade:6
+msgid "Manual page viewer"
+msgstr "マニュアルページ·ビューアー"
+
+#: src/gtkman.glade:20
+msgid "_File"
+msgstr "_File"
+
+#: src/gtkman.glade:67
+msgid "_Search"
+msgstr "検索(S)"
+
+#: src/gtkman.glade:84
+msgid "Find _Next"
+msgstr "次の検索(N)"
+
+#: src/gtkman.glade:96
+msgid "Find _Previous"
+msgstr "前の検索(P）"
+
+#: src/gtkman.glade:113
+msgid "_Help"
+msgstr "_Help"
+
+#: src/gtkman.glade:145
+msgid "Index"
+msgstr ""
+
+#: src/gtkman.glade:172
+msgid "Manual page:"
+msgstr "マニュアルページ："
+
+#: src/gtkman.glade:196 src/gtkman.glade:1194
+msgid "Section:"
+msgstr "セクション："
+
+#: src/gtkman.glade:271 gtkman.desktop.in.h:1
+msgid "A simple GTK+2 manual page viewer"
+msgstr "シンプルなGTK +2のマニュアルページ·ビューアー"
+
+#: src/gtkman.glade:949
+msgid "translator-credits"
+msgstr "翻訳者のクレジット"
+
+#: src/gtkman.glade:982
+msgid "Find"
+msgstr "検索"
+
+#: src/gtkman.glade:1009
+msgid "Find what:"
+msgstr "何を検索します："
+
+#: src/gtkman.glade:1033
+msgid "Match case"
+msgstr "大文字と小文字を一致させる"
+
+#: src/gtkman.glade:1105
+msgid "Creating index"
+msgstr "インデックスの作成"
+
+#: src/gtkman.glade:1124
+msgid "Creating manual page index..."
+msgstr "マニュアルページの作成"
+
+#: src/gtkman.glade:1167
+msgid "Manual page index"
+msgstr "マニュアルページのインデックス"
+
+#: src/gtkman:117
+#, python-format
+msgid "No manual page found for \"%(name)s\""
+msgstr "\"%(name)s\"のマニュアルページが見つかりませんでした。"
+
+#: src/gtkman:156
+msgid "USAGE:"
+msgstr "使用法："
+
+#: src/gtkman:156
+msgid "[OPTIONS] [[section] manpage]"
+msgstr "[OPTIONS] [[section] manpage]"
+
+#: src/gtkman:158
+msgid "OPTIONS:"
+msgstr "オプション："
+
+#: src/gtkman:159
+msgid "this help message"
+msgstr "このヘルプメッセージ"
+
+#: src/gtkman:392 src/gtkman:430
+msgid "Any"
+msgstr "すべて"
+
+#: src/gtkman:393 src/gtkman:431
+msgid "User commands (1)"
+msgstr "ユーザコマンド（1）"
+
+#: src/gtkman:394 src/gtkman:432
+msgid "System calls (2)"
+msgstr "システムコール（2）"
+
+#: src/gtkman:395 src/gtkman:433
+msgid "C library functions (3)"
+msgstr "Cライブラリ関数（3）"
+
+#: src/gtkman:396 src/gtkman:434
+msgid "Devices and special files (4)"
+msgstr "デバイスと特殊ファイル（4）"
+
+#: src/gtkman:397 src/gtkman:435
+msgid "File formats and conventions (5)"
+msgstr "ファイル形式と規則（5）"
+
+#: src/gtkman:398 src/gtkman:436
+msgid "Games et. al (6)"
+msgstr "ゲームなど（6）"
+
+#: src/gtkman:399 src/gtkman:437
+msgid "Miscellanea (7)"
+msgstr "その他（7）"
+
+#: src/gtkman:400 src/gtkman:438
+msgid "System administration tools and deamons (8)"
+msgstr "システム管理ツールとdeamons（8）"
+
+#: gtkman.desktop.in.h:2
+msgid "GTKMan Manual Page Viewer"
+msgstr "GTKManマニュアルページ·ビューアー"
+
+
