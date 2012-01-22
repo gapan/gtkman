@@ -1,3 +1,6 @@
+* version 0.5 (2012-01-22)
+	- GUI changes: the toolbar is a standardized toolbar now
+
 * version 0.4 (2012-01-05)
 	- Added browse by index functionality
 	- Added a New menuitem in the File menu to spawn a
