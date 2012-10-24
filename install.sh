@@ -5,7 +5,7 @@ install -D -m 644 src/gtkman.glade $DESTDIR/usr/share/gtkman/gtkman.glade
 install -D -m 644 gtkman.desktop $DESTDIR/usr/share/applications/gtkman.desktop
 
 if [ -f man/gtkman.man ]; then
-	install -D -m 644 man/gtkman.man $DESTDIR/usr/man/man1/gtkman.1
+	install -D -m 644 man/gtkman.man $DESTDIR/usr/share/man/man1/gtkman.1
 fi
 
 for i in `ls po/*.po|sed "s/po\/\(.*\)\.po/\1/"`; do
