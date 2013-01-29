@@ -3,7 +3,6 @@
 import gtk
 import os
 import sys
-import commands
 import pango
 import ConfigParser
 import threading
@@ -36,8 +35,10 @@ class GTKMan:
 	section_lists_ready = False
 
 	def manpagelists(self):
-		cmd = 'man -w'
-		status, output = commands.getstatusoutput(cmd)
+		cmd = ['man', '-w']
+		process = subprocess.Popen(cmd, shell=False, close_fds=True, stdout=subprocess.PIPE)
+		output = process.communicate()[0]
+		status = process.returncode
 		section1 = []
 		section2 = []
 		section3 = []
@@ -47,7 +48,7 @@ class GTKMan:
 		section7 = []
 		section8 = []
 		if status == 0:
-			dirs = output.split(':')
+			dirs = output.rsplit('\n')[0].split(':')
 			for i in dirs:
 				for j in os.listdir(i):
 					self.progressbar_index.pulse()
@@ -109,12 +110,21 @@ class GTKMan:
 				self.window.set_default_size(640, 400)
 
 	def manpage(self, section, page):
+		DEVNULL = open('/dev/null', 'w')
 		if section == 0:
 			section = ""
-		cmd = 'man -P "col -b" '+str(section)+' '+page+' 2>/dev/null'
-		status, output = commands.getstatusoutput(cmd)
+		# Pipe the output of the man command through "col -b" to remove
+		# all formatting characters
+		cmd1 = ['man', str(section), page]
+		p1 = subprocess.Popen(cmd1, shell=False, close_fds=True, stdout=subprocess.PIPE, stderr=DEVNULL)
+		cmd2 = ['col', '-b']
+		p2 = subprocess.Popen(cmd2, stdin=p1.stdout, stdout=subprocess.PIPE, stderr=DEVNULL)
+		p1.stdout.close()
+		output = p2.communicate()[0]
+		status = p1.wait()
 		if status != 0:
 			output = _('No manual page found for "%(name)s"') % {'name' : page}
+		DEVNULL.close()
 		return output
 
 	def manpage_stripchars(self, manpage):
