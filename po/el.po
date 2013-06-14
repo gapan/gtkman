@@ -3,18 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Dimitris Tzemos <djemos@slackel.gr>, 2011.
-# gapan <vlahavas@gmail.com>, 2011.
-#  <vlahavas@gmail.com>, 2013.
-#   <vlahavas@gmail.com>, 2012.
+# Dimitris Tzemos <djemos@slackel.gr>, 2011
+# gapan <vlahavas@gmail.com>, 2011
+# gapan <vlahavas@gmail.com>, 2013
+# gapan <vlahavas@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/\n"
 "POT-Creation-Date: 2012-01-18 23:31+0200\n"
-"PO-Revision-Date: 2013-01-30 22:31+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-04-29 08:37+0000\n"
+"Last-Translator: Dimitris Glezos <glezos@transifex.com>\n"
+"Language-Team: Greek (http://www.transifex.com/projects/p/salix/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"

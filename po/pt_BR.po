@@ -3,16 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-#   <felipe_mdm@hotmail.com>, 2012.
-#   <mail2buy8@gmail.com>, 2012.
+# felipe_mdm <felipe_mdm@hotmail.com>, 2012
+# Bruno Bacelar <mail2buy8@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/\n"
 "POT-Creation-Date: 2012-01-18 23:31+0200\n"
-"PO-Revision-Date: 2012-04-20 04:05+0000\n"
-"Last-Translator: felipe_mdm <felipe_mdm@hotmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-04-29 08:37+0000\n"
+"Last-Translator: Dimitris Glezos <glezos@transifex.com>\n"
+"Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/salix/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"

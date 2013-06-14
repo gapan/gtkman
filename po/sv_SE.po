@@ -3,20 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Ingemar Karlsson <ingemar@ingk.se>, 2011.
+# Ingemar Karlsson <ingemar@ingk.se>, 2011, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/\n"
 "POT-Creation-Date: 2012-01-18 23:31+0200\n"
-"PO-Revision-Date: 2012-01-18 21:45+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2013-04-29 08:37+0000\n"
+"Last-Translator: Dimitris Glezos <glezos@transifex.com>\n"
+"Language-Team: Swedish (Sweden) (http://www.transifex.com/projects/p/salix/language/sv_SE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: sv_SE\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gtkman.glade:6
 msgid "Manual page viewer"
@@ -44,7 +44,7 @@ msgstr "_Hjälp"
 
 #: src/gtkman.glade:145
 msgid "Index"
-msgstr ""
+msgstr "Index"
 
 #: src/gtkman.glade:172
 msgid "Manual page:"
@@ -76,15 +76,15 @@ msgstr "Gör skillnad mellan versaler och gemener"
 
 #: src/gtkman.glade:1105
 msgid "Creating index"
-msgstr ""
+msgstr "Skapar index"
 
 #: src/gtkman.glade:1124
 msgid "Creating manual page index..."
-msgstr ""
+msgstr "Skapar manual sidindex"
 
 #: src/gtkman.glade:1167
 msgid "Manual page index"
-msgstr ""
+msgstr "Manual sidindex"
 
 #: src/gtkman:117
 #, python-format
@@ -146,5 +146,3 @@ msgstr "Verktyg för systemadministration och deamons (8)"
 #: gtkman.desktop.in.h:2
 msgid "GTKMan Manual Page Viewer"
 msgstr "GTKMan Manual visare"
-
-
