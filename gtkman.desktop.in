@@ -2,7 +2,7 @@
 _Name=GTKMan Manual Page Viewer
 _Comment=A simple GTK+2 manual page viewer
 Exec=gtkman
-Icon=gtk-help
+Icon=gtkman
 Terminal=false
 Type=Application
 Categories=Application;Utility;
