@@ -4,14 +4,14 @@
 # 
 # Translators:
 # lupinix <chrisdersch@googlemail.com>, 2011
-# Thorsten <thenktor@gmx.de>, 2011
+# Thorsten <thenktor@posteo.de>, 2011
 # gapan <vlahavas@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
-"Report-Msgid-Bugs-To: http://sourceforge.net/apps/trac/salix/\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-18 23:31+0200\n"
-"PO-Revision-Date: 2013-04-29 08:37+0000\n"
+"PO-Revision-Date: 2013-11-26 14:22+0000\n"
 "Last-Translator: Dimitris Glezos <glezos@transifex.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/salix/language/de/)\n"
 "MIME-Version: 1.0\n"
