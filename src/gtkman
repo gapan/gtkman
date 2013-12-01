@@ -112,10 +112,11 @@ class GTKMan:
 	def manpage(self, section, page):
 		DEVNULL = open('/dev/null', 'w')
 		if section == 0:
-			section = ""
+			cmd1 = ['man', page]
+		else:
+			cmd1 = ['man', str(section), page]
 		# Pipe the output of the man command through "col -b" to remove
 		# all formatting characters
-		cmd1 = ['man', str(section), page]
 		p1 = subprocess.Popen(cmd1, shell=False, close_fds=True, stdout=subprocess.PIPE, stderr=DEVNULL)
 		cmd2 = ['col', '-b']
 		p2 = subprocess.Popen(cmd2, stdin=p1.stdout, stdout=subprocess.PIPE, stderr=DEVNULL)
