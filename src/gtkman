@@ -305,10 +305,13 @@ class GTKMan:
 		self.dialog_index.hide()
 		selected = self.treeview_index.get_selection()
 		self.liststore_index, iter = selected.get_selected()
-		section = self.liststore_index.get_value(iter, 0)
-		manpage = self.liststore_index.get_value(iter, 1)
-		output = self.manpage(section, manpage)
-		self.textbuffer_manpage.set_text(output)
+		try:
+			section = self.liststore_index.get_value(iter, 0)
+			manpage = self.liststore_index.get_value(iter, 1)
+			output = self.manpage(section, manpage)
+			self.textbuffer_manpage.set_text(output)
+		except TypeError:
+			pass
 	
 	def on_button_index_cancel_clicked(self, widget):
 		self.dialog_index.hide()
