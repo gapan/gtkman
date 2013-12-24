@@ -307,6 +307,8 @@ class GTKMan:
 		manpage = self.liststore_index.get_value(iter, 1)
 		output = self.manpage(section, manpage)
 		self.textbuffer_manpage.set_text(output)
+		self.entry_search.set_text(manpage)
+		self.combobox_section.set_active(section)
 
 	def on_button_index_open_clicked(self, widget):
 		self.dialog_index.hide()
@@ -317,6 +319,8 @@ class GTKMan:
 			manpage = self.liststore_index.get_value(iter, 1)
 			output = self.manpage(section, manpage)
 			self.textbuffer_manpage.set_text(output)
+			self.entry_search.set_text(manpage)
+			self.combobox_section.set_active(section)
 		except TypeError:
 			pass
 	
