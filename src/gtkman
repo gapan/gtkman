@@ -147,6 +147,13 @@ class GTKMan:
 		output = self.manpage(section, manpage)
 		self.textbuffer_manpage.set_text(output)
 
+	def on_combobox_section_changed(self, widget, data=None):
+		searchstr = self.entry_search.get_text()
+		manpage = self.manpage_stripchars(searchstr)
+		section = self.combobox_section.get_active()
+		output = self.manpage(section, manpage)
+		self.textbuffer_manpage.set_text(output)
+
 	def on_gtkman_configure_event(self, widget, data=None):
 		self.win_width, self.win_height = self.window.get_size()
 
