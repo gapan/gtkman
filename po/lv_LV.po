@@ -3,146 +3,146 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# ink3 <sgasior1@gmail.com>, 2011, 2012
+# Gatis Kalniņš <>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-01-18 23:31+0200\n"
 "PO-Revision-Date: 2015-08-11 11:24+0000\n"
-"Last-Translator: Dimitris Glezos <glezos@transifex.com>\n"
-"Language-Team: Polish (http://www.transifex.com/glezos/salix/language/pl/)\n"
+"Last-Translator: Gatis Kalniņš <>\n"
+"Language-Team: Latvian (Latvia) (http://www.transifex.com/glezos/salix/language/lv_LV/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: lv_LV\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 
 #: src/gtkman.glade:6
 msgid "Manual page viewer"
-msgstr "Przeglądarka manuali"
+msgstr "Rokasgrāmatu pārlūks"
 
 #: src/gtkman.glade:20
 msgid "_File"
-msgstr "_Fplik"
+msgstr "_Fails"
 
 #: src/gtkman.glade:67
 msgid "_Search"
-msgstr "_Szukaj"
+msgstr "Meklēt"
 
 #: src/gtkman.glade:84
 msgid "Find _Next"
-msgstr "Znajdź _Następny"
+msgstr "Meklēt nākamo"
 
 #: src/gtkman.glade:96
 msgid "Find _Previous"
-msgstr "Znajdź _Poprzedni"
+msgstr "Meklēt iepriekšējo"
 
 #: src/gtkman.glade:113
 msgid "_Help"
-msgstr "_Help"
+msgstr "_Palīdzība"
 
 #: src/gtkman.glade:145
 msgid "Index"
-msgstr "Indeks"
+msgstr "Struktūra"
 
 #: src/gtkman.glade:172
 msgid "Manual page:"
-msgstr "Strona manuala:"
+msgstr "Rokasgrāmata:"
 
 #: src/gtkman.glade:196 src/gtkman.glade:1194
 msgid "Section:"
-msgstr "Sekcja:"
+msgstr "Sadaļa:"
 
 #: src/gtkman.glade:271 gtkman.desktop.in.h:1
 msgid "A simple GTK+2 manual page viewer"
-msgstr "Prosta GTK+2 przeglądarka manuali"
+msgstr "Vienkāršs rokasgrāmatu pārlūks uz GTK+2 bāzes"
 
 #: src/gtkman.glade:949
 msgid "translator-credits"
-msgstr "tłumacze"
+msgstr "tulks"
 
 #: src/gtkman.glade:982
 msgid "Find"
-msgstr "Znajdź"
+msgstr "Meklēt"
 
 #: src/gtkman.glade:1009
 msgid "Find what:"
-msgstr "Znajdź:"
+msgstr "Meklēt:"
 
 #: src/gtkman.glade:1033
 msgid "Match case"
-msgstr "Dopasowanie przypadku"
+msgstr "Reģistra sakritība"
 
 #: src/gtkman.glade:1105
 msgid "Creating index"
-msgstr "Tworzenie indeksu."
+msgstr "Veidot sarakstu"
 
 #: src/gtkman.glade:1124
 msgid "Creating manual page index..."
-msgstr "Tworzenie indeksu manuali stron..."
+msgstr "Veido rokasgrāmatu sarakstu..."
 
 #: src/gtkman.glade:1167
 msgid "Manual page index"
-msgstr "Indeks stron manuali."
+msgstr "Rokasgrāmatu saraksts"
 
 #: src/gtkman:117
 #, python-format
 msgid "No manual page found for \"%(name)s\""
-msgstr "Brak manuala dla \" %(name)s \""
+msgstr "Nav atrasta neviena rokasgrāmata ar atbilstību \"%(name)s\""
 
 #: src/gtkman:156
 msgid "USAGE:"
-msgstr "ZASTOSOWANIE:"
+msgstr "PIELIETOJUMS:"
 
 #: src/gtkman:156
 msgid "[OPTIONS] [[section] manpage]"
-msgstr "[OPCJE] [[sekcja] manual]"
+msgstr "[OPTIONS] [[section] manpage]"
 
 #: src/gtkman:158
 msgid "OPTIONS:"
-msgstr "OPCJE:"
+msgstr "OPCIJAS:"
 
 #: src/gtkman:159
 msgid "this help message"
-msgstr "to komunikat pomocy"
+msgstr "šis palīdzības paziņojums"
 
 #: src/gtkman:392 src/gtkman:430
 msgid "Any"
-msgstr "Każdy"
+msgstr "Jebkura"
 
 #: src/gtkman:393 src/gtkman:431
 msgid "User commands (1)"
-msgstr "Polecenia użytkownika (1)"
+msgstr "Lietotāja komandas (1)"
 
 #: src/gtkman:394 src/gtkman:432
 msgid "System calls (2)"
-msgstr "Wywołanie systemowe (2)"
+msgstr "Sistsēmas izsaukumi (2)"
 
 #: src/gtkman:395 src/gtkman:433
 msgid "C library functions (3)"
-msgstr "Funkcje z biblioteki C (3)"
+msgstr "C bibliotēkas funkcijas (3)"
 
 #: src/gtkman:396 src/gtkman:434
 msgid "Devices and special files (4)"
-msgstr "Urządzenia i pliki specjalne (4)"
+msgstr "Ierīces un speciālie faili (4)"
 
 #: src/gtkman:397 src/gtkman:435
 msgid "File formats and conventions (5)"
-msgstr "Formaty plików i konwencje (5)"
+msgstr "Failu formāti un konvencijas (5)"
 
 #: src/gtkman:398 src/gtkman:436
 msgid "Games et. al (6)"
-msgstr "Gry i in. al (6)"
+msgstr "Spēles un tml. (6)"
 
 #: src/gtkman:399 src/gtkman:437
 msgid "Miscellanea (7)"
-msgstr "Różne (7)"
+msgstr "Dažādi (7)"
 
 #: src/gtkman:400 src/gtkman:438
 msgid "System administration tools and deamons (8)"
-msgstr "Narzędzia do administrowania systemem i demony (8)"
+msgstr "Sistēmas administrēšanas rīki un demoni (8)"
 
 #: gtkman.desktop.in.h:2
 msgid "GTKMan Manual Page Viewer"
-msgstr "GTKMan obsługi Page Viewer"
+msgstr "Rokasgrāmatu pārlūks GTKMan"
