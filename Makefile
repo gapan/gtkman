@@ -33,6 +33,7 @@ pot:
 	rm gtkman.desktop.in.h
 
 clean:
+	rm -f gtkman.desktop
 	rm -f po/*.mo
 	rm -f po/*.po~
 	rm -f man/gtkman.man
