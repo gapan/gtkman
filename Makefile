@@ -57,4 +57,7 @@ install:
 		install -D -m 644 po/$$i.mo $(DESTDIR)/$(PACKAGE_LOCALE_DIR)/$$i/LC_MESSAGES/gtkman.mo; \
 	done
 
-.PHONY: all man mo updatepo pot clean install
+transifex:
+	tx pull -a
+
+.PHONY: all man mo updatepo pot clean install transifex
