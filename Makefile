@@ -1,7 +1,12 @@
 DESTDIR ?= /
+PREFIX ?= /usr
 PACKAGE_LOCALE_DIR ?= /usr/share/locale
 
-all: man mo
+all: dirs man mo
+
+dirs:
+	sed -i "s|^prefix = '_not_set_'|prefix = '$(PREFIX)'|" src/gtkman
+	sed -i "s|^package_locale_dir = '_not_set_'|package_locale_dir = '$(PACKAGE_LOCALE_DIR)'|" src/gtkman
 
 man:
 	@txt2tags -o man/gtkman.man man/gtkman.t2t || \

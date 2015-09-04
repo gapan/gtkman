@@ -12,12 +12,23 @@ import subprocess
 # Initializing the gtk's thread engine
 gtk.gdk.threads_init()
 
+# '_not_set_' is not an actual value.
+# These are edited when running make according to PREFIX and
+# PACKAGE_LOCALE_DIR variables. Fall back to defaults /usr and
+# /usr/share/locale respectively if they are not set.
+prefix = '_not_set_'
+if prefix == '_not_set_':
+    prefix = '/usr'
+package_locale_dir = '_not_set_'
+if package_locale_dir == '_not_set_':
+    package_locale_dir = '/usr/share/locale'
+
 # Internationalization
 import locale
 import gettext
 locale.setlocale(locale.LC_ALL, '')
-locale.bindtextdomain("gtkman", "/usr/share/locale")
-gettext.bindtextdomain("gtkman", "/usr/share/locale")
+locale.bindtextdomain("gtkman", package_locale_dir)
+gettext.bindtextdomain("gtkman", package_locale_dir)
 gettext.textdomain("gtkman")
 _ = gettext.gettext
 
@@ -426,8 +437,8 @@ class GTKMan:
         builder.set_translation_domain("gtkman")
         if os.path.exists('gtkman.glade'):
             builder.add_from_file('gtkman.glade')
-        elif os.path.exists('/usr/share/gtkman/gtkman.glade'):
-            builder.add_from_file('/usr/share/gtkman/gtkman.glade')
+        elif os.path.exists(prefix+'/share/gtkman/gtkman.glade'):
+            builder.add_from_file(prefix+'/share/gtkman/gtkman.glade')
         self.window = builder.get_object('gtkman')
 
         #
