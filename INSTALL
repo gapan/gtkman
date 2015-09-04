@@ -15,7 +15,10 @@ as root. You can set DESTDIR to change the installation target:
 
 You can also set PREFIX and PACKAGE_LOCALE_DIR environment variables in
 a similar manner when running "make install" to specify the general
-prefix and localization files locations respectively
+prefix and localization files locations respectively. Default values for
+these are:
+    PREFIX=/usr/local
+    PACKAGE_LOCALE_DIR=/usr/share/locale
 
 NOTE
 ====
