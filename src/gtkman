@@ -88,8 +88,10 @@ class GTKMan:
                                     section8.append(name)
         else:
             return []
-        return [sorted(set(section1)), sorted(set(section2)), sorted(set(section3)), sorted(set(section4)), sorted(set(section5)),
-                sorted(set(section6)), sorted(set(section7)), sorted(set(section8))]
+        return [sorted(set(section1)), sorted(set(section2)),
+                sorted(set(section3)), sorted(set(section4)),
+                sorted(set(section5)), sorted(set(section6)),
+                sorted(set(section7)), sorted(set(section8))]
 
     def set_default_window_size(self):
         try:
