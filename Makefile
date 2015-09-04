@@ -40,9 +40,9 @@ clean:
 	rm -f man/gtkman.man
 
 install:
-	sed -i "s|^prefix = '_not_set_'|prefix = '$(PREFIX)'|" src/gtkman
-	sed -i "s|^package_locale_dir = '_not_set_'|package_locale_dir = '$(PACKAGE_LOCALE_DIR)'|" src/gtkman
 	install -D -m 755 src/gtkman $(DESTDIR)/$(PREFIX)/bin/gtkman
+	sed -i "s|^prefix = '_not_set_'|prefix = '$(PREFIX)'|" $(DESTDIR)/$(PREFIX)/bin/gtkman
+	sed -i "s|^package_locale_dir = '_not_set_'|package_locale_dir = '$(PACKAGE_LOCALE_DIR)'|" $(DESTDIR)/$(PREFIX)/bin/gtkman
 	install -D -m 644 src/gtkman.glade $(DESTDIR)/$(PREFIX)/share/gtkman/gtkman.glade
 	install -D -m 644 gtkman.desktop $(DESTDIR)/$(PREFIX)/share/applications/gtkman.desktop
 	[ -f man/gtkman.man ] && \
