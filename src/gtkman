@@ -8,7 +8,7 @@ import ConfigParser
 import threading
 import subprocess
 
-#Initializing the gtk's thread engine
+# Initializing the gtk's thread engine
 gtk.gdk.threads_init()
 
 # Internationalization
@@ -21,468 +21,501 @@ gettext.install("gtkman", "/usr/share/locale", unicode=1)
 gtk.glade.bindtextdomain("gtkman", "/usr/share/locale")
 gtk.glade.textdomain("gtkman")
 
+
 def threaded(f):
-	def wrapper(*args):
-		t = threading.Thread(target=f, args=args)
-		t.start()
-	return wrapper
+    def wrapper(*args):
+        t = threading.Thread(target=f, args=args)
+        t.start()
+    return wrapper
+
 
 class GTKMan:
-	config = ConfigParser.RawConfigParser()
-	config_file = os.path.expanduser('~/.config/gtkman')
-	win_height = 0
-	win_width = 0
-	section_lists_ready = False
+    config = ConfigParser.RawConfigParser()
+    config_file = os.path.expanduser('~/.config/gtkman')
+    win_height = 0
+    win_width = 0
+    section_lists_ready = False
 
-	def manpagelists(self):
-		cmd = ['man', '-w']
-		process = subprocess.Popen(cmd, shell=False, close_fds=True, stdout=subprocess.PIPE)
-		output = process.communicate()[0]
-		status = process.returncode
-		section1 = []
-		section2 = []
-		section3 = []
-		section4 = []
-		section5 = []
-		section6 = []
-		section7 = []
-		section8 = []
-		if status == 0:
-			dirs = output.rsplit('\n')[0].split(':')
-			for i in dirs:
-				for j in os.listdir(i):
-					self.progressbar_index.pulse()
-					path = i +'/'+j
-					if j.startswith('man') and os.path.isdir(path):
-						for directory, dirnames, filenames in os.walk(path):
-							for f in filenames:
-								if f.lower().endswith('.gz') \
-										or f.lower().endswith('.xz') \
-										or f.lower().endswith('.bz2') \
-										or f.lower().endswith('.z'):
-									name_section = f.rpartition('.')[0]
-								else:
-									name_section = f
-								name = name_section.rpartition('.')[0]
-								section = name_section.rpartition('.')[2]
-								# There are 8 valid sections
-								if section.startswith('1'):
-									section1.append(name)
-								elif section.startswith('2'):
-									section2.append(name)
-								elif section.startswith('3'):
-									section3.append(name)
-								elif section.startswith('4'):
-									section4.append(name)
-								elif section.startswith('5'):
-									section5.append(name)
-								elif section.startswith('6'):
-									section6.append(name)
-								elif section.startswith('7'):
-									section7.append(name)
-								elif section.startswith('8'):
-									section8.append(name)
-		else:
-			return []
-		return [sorted(set(section1)), sorted(set(section2)), sorted(set(section3)), sorted(set(section4)), sorted(set(section5)), \
-			sorted(set(section6)), sorted(set(section7)), sorted(set(section8))]
-	
-	def set_default_window_size(self):
-		try:
-			self.config.read(self.config_file)
-			width = self.config.getint('Window', 'width')
-			height = self.config.getint('Window', 'height')
-			self.window.set_default_size(width, height)
-		except (ConfigParser.NoOptionError, ConfigParser.NoSectionError):
-			try:
-				w = gtk.gdk.get_default_root_window()
-				p = gtk.gdk.atom_intern('_NET_WORKAREA')
-				width, height = w.property_get(p)[2][2:4]
-				if width < 650:
-					req_width = width
-				else:
-					req_width = 670
-				req_height = height*0.8
-				if req_height < 400:
-					req_height = height
-				self.window.set_default_size(int(req_width), int(req_height))
-			except TypeError:
-				self.window.set_default_size(640, 400)
+    def manpagelists(self):
+        cmd = ['man', '-w']
+        process = subprocess.Popen(
+            cmd, shell=False, close_fds=True, stdout=subprocess.PIPE)
+        output = process.communicate()[0]
+        status = process.returncode
+        section1 = []
+        section2 = []
+        section3 = []
+        section4 = []
+        section5 = []
+        section6 = []
+        section7 = []
+        section8 = []
+        if status == 0:
+            dirs = output.rsplit('\n')[0].split(':')
+            for i in dirs:
+                for j in os.listdir(i):
+                    self.progressbar_index.pulse()
+                    path = i + '/' + j
+                    if j.startswith('man') and os.path.isdir(path):
+                        for directory, dirnames, filenames in os.walk(path):
+                            for f in filenames:
+                                if f.lower().endswith('.gz') \
+                                        or f.lower().endswith('.xz') \
+                                        or f.lower().endswith('.bz2') \
+                                        or f.lower().endswith('.z'):
+                                    name_section = f.rpartition('.')[0]
+                                else:
+                                    name_section = f
+                                name = name_section.rpartition('.')[0]
+                                section = name_section.rpartition('.')[2]
+                                # There are 8 valid sections
+                                if section.startswith('1'):
+                                    section1.append(name)
+                                elif section.startswith('2'):
+                                    section2.append(name)
+                                elif section.startswith('3'):
+                                    section3.append(name)
+                                elif section.startswith('4'):
+                                    section4.append(name)
+                                elif section.startswith('5'):
+                                    section5.append(name)
+                                elif section.startswith('6'):
+                                    section6.append(name)
+                                elif section.startswith('7'):
+                                    section7.append(name)
+                                elif section.startswith('8'):
+                                    section8.append(name)
+        else:
+            return []
+        return [sorted(set(section1)), sorted(set(section2)), sorted(set(section3)), sorted(set(section4)), sorted(set(section5)),
+                sorted(set(section6)), sorted(set(section7)), sorted(set(section8))]
 
-	def manpage(self, section, page):
-		DEVNULL = open('/dev/null', 'w')
-		if section == 0:
-			cmd1 = ['man', page]
-		else:
-			cmd1 = ['man', str(section), page]
-		# Pipe the output of the man command through "col -b" to remove
-		# all formatting characters
-		p1 = subprocess.Popen(cmd1, shell=False, close_fds=True, stdout=subprocess.PIPE, stderr=DEVNULL)
-		cmd2 = ['col', '-b']
-		p2 = subprocess.Popen(cmd2, stdin=p1.stdout, stdout=subprocess.PIPE, stderr=DEVNULL)
-		p1.stdout.close()
-		output = p2.communicate()[0]
-		status = p1.wait()
-		if status != 0:
-			output = _('No manual page found for "%(name)s"') % {'name' : page}
-		DEVNULL.close()
-		return output
+    def set_default_window_size(self):
+        try:
+            self.config.read(self.config_file)
+            width = self.config.getint('Window', 'width')
+            height = self.config.getint('Window', 'height')
+            self.window.set_default_size(width, height)
+        except (ConfigParser.NoOptionError, ConfigParser.NoSectionError):
+            try:
+                w = gtk.gdk.get_default_root_window()
+                p = gtk.gdk.atom_intern('_NET_WORKAREA')
+                width, height = w.property_get(p)[2][2:4]
+                if width < 650:
+                    req_width = width
+                else:
+                    req_width = 670
+                req_height = height * 0.8
+                if req_height < 400:
+                    req_height = height
+                self.window.set_default_size(int(req_width), int(req_height))
+            except TypeError:
+                self.window.set_default_size(640, 400)
 
-	def manpage_stripchars(self, manpage):
-		return manpage.lstrip(' ').partition(' ')[0].partition(';')[0].partition('|')[0].partition('&')[0]
+    def manpage(self, section, page):
+        DEVNULL = open('/dev/null', 'w')
+        if section == 0:
+            cmd1 = ['man', page]
+        else:
+            cmd1 = ['man', str(section), page]
+        # Pipe the output of the man command through "col -b" to remove
+        # all formatting characters
+        p1 = subprocess.Popen(cmd1, shell=False, close_fds=True,
+                              stdout=subprocess.PIPE, stderr=DEVNULL)
+        cmd2 = ['col', '-b']
+        p2 = subprocess.Popen(cmd2, stdin=p1.stdout,
+                              stdout=subprocess.PIPE, stderr=DEVNULL)
+        p1.stdout.close()
+        output = p2.communicate()[0]
+        status = p1.wait()
+        if status != 0:
+            output = _('No manual page found for "%(name)s"') % {'name': page}
+        DEVNULL.close()
+        return output
 
-	def on_entry_search_activate(self, widget):
-		self.imagemenuitem_findnext.set_sensitive(False)
-		self.imagemenuitem_findprev.set_sensitive(False)
-		searchstr = self.entry_search.get_text()
-		manpage = self.manpage_stripchars(searchstr)
-		section = self.combobox_section.get_active()
-		output = self.manpage(section, manpage)
-		self.textbuffer_manpage.set_text(output)
-		
-	def on_entry_search_icon_release(self, widget, icon, event):
-		searchstr = self.entry_search.get_text()
-		manpage = self.manpage_stripchars(searchstr)
-		section = self.combobox_section.get_active()
-		output = self.manpage(section, manpage)
-		self.textbuffer_manpage.set_text(output)
+    def manpage_stripchars(self, manpage):
+        return manpage.lstrip(' ').partition(' ')[0].partition(';')[0].partition('|')[0].partition('&')[0]
 
-	def on_combobox_section_changed(self, widget, data=None):
-		searchstr = self.entry_search.get_text()
-		manpage = self.manpage_stripchars(searchstr)
-		section = self.combobox_section.get_active()
-		output = self.manpage(section, manpage)
-		self.textbuffer_manpage.set_text(output)
+    def on_entry_search_activate(self, widget):
+        self.imagemenuitem_findnext.set_sensitive(False)
+        self.imagemenuitem_findprev.set_sensitive(False)
+        searchstr = self.entry_search.get_text()
+        manpage = self.manpage_stripchars(searchstr)
+        section = self.combobox_section.get_active()
+        output = self.manpage(section, manpage)
+        self.textbuffer_manpage.set_text(output)
 
-	def on_gtkman_configure_event(self, widget, data=None):
-		self.win_width, self.win_height = self.window.get_size()
+    def on_entry_search_icon_release(self, widget, icon, event):
+        searchstr = self.entry_search.get_text()
+        manpage = self.manpage_stripchars(searchstr)
+        section = self.combobox_section.get_active()
+        output = self.manpage(section, manpage)
+        self.textbuffer_manpage.set_text(output)
 
-	def gtk_main_quit(self, widget, data=None):
-		if not os.path.isdir(os.path.expanduser('~/.config')):
-			os.mkdir(os.path.expanduser('~/.config'))
-		try:
-			self.config.add_section('Window')
-		except ConfigParser.DuplicateSectionError:
-			pass
-		self.config.set('Window', 'width', self.win_width)
-		self.config.set('Window', 'height', self.win_height)
-		with open(self.config_file, 'wb') as configfile:
-			self.config.write(configfile)
-		gtk.main_quit()
+    def on_combobox_section_changed(self, widget, data=None):
+        searchstr = self.entry_search.get_text()
+        manpage = self.manpage_stripchars(searchstr)
+        section = self.combobox_section.get_active()
+        output = self.manpage(section, manpage)
+        self.textbuffer_manpage.set_text(output)
 
-	def display_help(self):
-		print _('USAGE:'),os.path.basename(sys.argv[0]),_('[OPTIONS] [[section] manpage]')
-		print
-		print _('OPTIONS:')
-		print '   -h, --help        ',_('this help message')
+    def on_gtkman_configure_event(self, widget, data=None):
+        self.win_width, self.win_height = self.window.get_size()
 
-	@threaded
-	def on_imagemenuitem_new_activate(self, wdiget):
-		subprocess.Popen(['gtkman'], shell=False)
+    def gtk_main_quit(self, widget, data=None):
+        if not os.path.isdir(os.path.expanduser('~/.config')):
+            os.mkdir(os.path.expanduser('~/.config'))
+        try:
+            self.config.add_section('Window')
+        except ConfigParser.DuplicateSectionError:
+            pass
+        self.config.set('Window', 'width', self.win_width)
+        self.config.set('Window', 'height', self.win_height)
+        with open(self.config_file, 'wb') as configfile:
+            self.config.write(configfile)
+        gtk.main_quit()
 
-	def on_imagemenuitem_find_activate(self, widget):
-		self.entry_find.set_text('')
-		self.dialog_find.show()
+    def display_help(self):
+        print _('USAGE:'), os.path.basename(sys.argv[0]), _('[OPTIONS] [[section] manpage]')
+        print
+        print _('OPTIONS:')
+        print '   -h, --help        ', _('this help message')
 
-	def on_imagemenuitem_findnext_activate(self, widget):
-		sel_start_iter = self.textbuffer_manpage.get_iter_at_mark(self.textbuffer_manpage.get_insert())
-		cur_pos = self.textbuffer_manpage.get_property("cursor-position")
-		sel_end_iter = self.textbuffer_manpage.get_iter_at_mark(self.textbuffer_manpage.get_insert())
-		sel_end_iter.forward_chars(len(self.entry_find.get_text()))
-		text = self.textbuffer_manpage.get_text(sel_start_iter, sel_end_iter, False)
-		sel_start_iter.forward_char()
-		sel_end_iter.forward_char()
-		count = cur_pos
-		found = False
-		match_case = self.checkbutton_matchcase.get_active()
-		length_all = self.textbuffer_manpage.get_char_count()
-		while not found:
-			if match_case == True:
-				text1 = self.textbuffer_manpage.get_text(sel_start_iter, sel_end_iter, False)
-				text2 = text
-			else:
-				text1 = self.textbuffer_manpage.get_text(sel_start_iter, sel_end_iter, False).lower()
-				text2 = text.lower()
-			if text1 == text2:
-				self.textbuffer_manpage.select_range(sel_start_iter, sel_end_iter)
-				self.textview_manpage.scroll_to_mark(self.textbuffer_manpage.get_insert(), 0)
-				found = True
-			else:
-				sel_start_iter.forward_char()
-				sel_end_iter.forward_char()
-				count+=1
-				if count == length_all:
-					return False
+    @threaded
+    def on_imagemenuitem_new_activate(self, wdiget):
+        subprocess.Popen(['gtkman'], shell=False)
 
-	def on_imagemenuitem_findprev_activate(self, widget):
-		sel_start_iter = self.textbuffer_manpage.get_iter_at_mark(self.textbuffer_manpage.get_insert())
-		cur_pos = self.textbuffer_manpage.get_property("cursor-position")
-		if cur_pos == 0:
-			return False
-		sel_end_iter = self.textbuffer_manpage.get_iter_at_mark(self.textbuffer_manpage.get_insert())
-		sel_end_iter.forward_chars(len(self.entry_find.get_text()))
-		text = self.textbuffer_manpage.get_text(sel_start_iter, sel_end_iter, False)
-		sel_start_iter.backward_char()
-		sel_end_iter.backward_char()
-		count = cur_pos
-		found = False
-		match_case = self.checkbutton_matchcase.get_active()
-		while not found:
-			if match_case == True:
-				text1 = self.textbuffer_manpage.get_text(sel_start_iter, sel_end_iter, False)
-				text2 = text
-			else:
-				text1 = self.textbuffer_manpage.get_text(sel_start_iter, sel_end_iter, False).lower()
-				text2 = text.lower()
-			if text1 == text2:
-				self.textbuffer_manpage.select_range(sel_start_iter, sel_end_iter)
-				self.textview_manpage.scroll_to_mark(self.textbuffer_manpage.get_insert(), 0)
-				found = True
-			else:
-				sel_start_iter.backward_char()
-				sel_end_iter.backward_char()
-				count-=1
-				if count == 0:
-					return False
+    def on_imagemenuitem_find_activate(self, widget):
+        self.entry_find.set_text('')
+        self.dialog_find.show()
 
-	def on_button_findcancel_clicked(self, widget):
-		self.dialog_find.hide()
+    def on_imagemenuitem_findnext_activate(self, widget):
+        sel_start_iter = self.textbuffer_manpage.get_iter_at_mark(
+            self.textbuffer_manpage.get_insert())
+        cur_pos = self.textbuffer_manpage.get_property("cursor-position")
+        sel_end_iter = self.textbuffer_manpage.get_iter_at_mark(
+            self.textbuffer_manpage.get_insert())
+        sel_end_iter.forward_chars(len(self.entry_find.get_text()))
+        text = self.textbuffer_manpage.get_text(
+            sel_start_iter, sel_end_iter, False)
+        sel_start_iter.forward_char()
+        sel_end_iter.forward_char()
+        count = cur_pos
+        found = False
+        match_case = self.checkbutton_matchcase.get_active()
+        length_all = self.textbuffer_manpage.get_char_count()
+        while not found:
+            if match_case == True:
+                text1 = self.textbuffer_manpage.get_text(
+                    sel_start_iter, sel_end_iter, False)
+                text2 = text
+            else:
+                text1 = self.textbuffer_manpage.get_text(
+                    sel_start_iter, sel_end_iter, False).lower()
+                text2 = text.lower()
+            if text1 == text2:
+                self.textbuffer_manpage.select_range(
+                    sel_start_iter, sel_end_iter)
+                self.textview_manpage.scroll_to_mark(
+                    self.textbuffer_manpage.get_insert(), 0)
+                found = True
+            else:
+                sel_start_iter.forward_char()
+                sel_end_iter.forward_char()
+                count += 1
+                if count == length_all:
+                    return False
 
-	def on_entry_find_activate(self, widget):
-		self.imagemenuitem_findnext.set_sensitive(False)
-		self.imagemenuitem_findprev.set_sensitive(False)
-		self.dialog_find.hide()
-		text = self.entry_find.get_text()
-		length  = len(text)
-		start_iter = self.textbuffer_manpage.get_start_iter()
-		end_iter = self.textbuffer_manpage.get_end_iter()
-		length_all = self.textbuffer_manpage.get_char_count()
-		if length_all == 0:
-			return False
-		found = False
-		match_case = self.checkbutton_matchcase.get_active()
-		sel_start_iter = self.textbuffer_manpage.get_start_iter()
-		sel_end_iter = self.textbuffer_manpage.get_start_iter()
-		sel_end_iter.forward_chars(length)
-		count = 0
-		while not found:
-			if match_case == True:
-				text1 = self.textbuffer_manpage.get_text(sel_start_iter, sel_end_iter, False)
-				text2 = text
-			else:
-				text1 = self.textbuffer_manpage.get_text(sel_start_iter, sel_end_iter, False).lower()
-				text2 = text.lower()
-			if text1 == text2:
-				self.textbuffer_manpage.select_range(sel_start_iter, sel_end_iter)
-				self.textview_manpage.scroll_to_mark(self.textbuffer_manpage.get_insert(), 0)
-				found = True
-				self.imagemenuitem_findnext.set_sensitive(True)
-				self.imagemenuitem_findprev.set_sensitive(True)
-			else:
-				sel_start_iter.forward_char()
-				sel_end_iter.forward_char()
-				count+=1
-				if count == length_all:
-					return False
+    def on_imagemenuitem_findprev_activate(self, widget):
+        sel_start_iter = self.textbuffer_manpage.get_iter_at_mark(
+            self.textbuffer_manpage.get_insert())
+        cur_pos = self.textbuffer_manpage.get_property("cursor-position")
+        if cur_pos == 0:
+            return False
+        sel_end_iter = self.textbuffer_manpage.get_iter_at_mark(
+            self.textbuffer_manpage.get_insert())
+        sel_end_iter.forward_chars(len(self.entry_find.get_text()))
+        text = self.textbuffer_manpage.get_text(
+            sel_start_iter, sel_end_iter, False)
+        sel_start_iter.backward_char()
+        sel_end_iter.backward_char()
+        count = cur_pos
+        found = False
+        match_case = self.checkbutton_matchcase.get_active()
+        while not found:
+            if match_case == True:
+                text1 = self.textbuffer_manpage.get_text(
+                    sel_start_iter, sel_end_iter, False)
+                text2 = text
+            else:
+                text1 = self.textbuffer_manpage.get_text(
+                    sel_start_iter, sel_end_iter, False).lower()
+                text2 = text.lower()
+            if text1 == text2:
+                self.textbuffer_manpage.select_range(
+                    sel_start_iter, sel_end_iter)
+                self.textview_manpage.scroll_to_mark(
+                    self.textbuffer_manpage.get_insert(), 0)
+                found = True
+            else:
+                sel_start_iter.backward_char()
+                sel_end_iter.backward_char()
+                count -= 1
+                if count == 0:
+                    return False
 
-	def on_imagemenuitem_about_activate(self, widget):
-		self.aboutdialog.show()
+    def on_button_findcancel_clicked(self, widget):
+        self.dialog_find.hide()
 
-	def on_dialog_find_delete_event(self, widget, event):
-		self.dialog_find.hide()
-		return True
+    def on_entry_find_activate(self, widget):
+        self.imagemenuitem_findnext.set_sensitive(False)
+        self.imagemenuitem_findprev.set_sensitive(False)
+        self.dialog_find.hide()
+        text = self.entry_find.get_text()
+        length = len(text)
+        start_iter = self.textbuffer_manpage.get_start_iter()
+        end_iter = self.textbuffer_manpage.get_end_iter()
+        length_all = self.textbuffer_manpage.get_char_count()
+        if length_all == 0:
+            return False
+        found = False
+        match_case = self.checkbutton_matchcase.get_active()
+        sel_start_iter = self.textbuffer_manpage.get_start_iter()
+        sel_end_iter = self.textbuffer_manpage.get_start_iter()
+        sel_end_iter.forward_chars(length)
+        count = 0
+        while not found:
+            if match_case == True:
+                text1 = self.textbuffer_manpage.get_text(
+                    sel_start_iter, sel_end_iter, False)
+                text2 = text
+            else:
+                text1 = self.textbuffer_manpage.get_text(
+                    sel_start_iter, sel_end_iter, False).lower()
+                text2 = text.lower()
+            if text1 == text2:
+                self.textbuffer_manpage.select_range(
+                    sel_start_iter, sel_end_iter)
+                self.textview_manpage.scroll_to_mark(
+                    self.textbuffer_manpage.get_insert(), 0)
+                found = True
+                self.imagemenuitem_findnext.set_sensitive(True)
+                self.imagemenuitem_findprev.set_sensitive(True)
+            else:
+                sel_start_iter.forward_char()
+                sel_end_iter.forward_char()
+                count += 1
+                if count == length_all:
+                    return False
 
-	def on_aboutdialog_response(self, widget, data=None):
-		self.aboutdialog.hide()
-	
-	def on_aboutdialog_delete_event(self, widget, event):
-		self.aboutdialog.hide()
-		return True
+    def on_imagemenuitem_about_activate(self, widget):
+        self.aboutdialog.show()
 
-	def on_treeview_index_row_activated(self, widget, path, view_column):
-		self.dialog_index.hide()
-		selected = self.treeview_index.get_selection()
-		self.liststore_index, iter = selected.get_selected()
-		section = self.liststore_index.get_value(iter, 0)
-		manpage = self.liststore_index.get_value(iter, 1)
-		output = self.manpage(section, manpage)
-		self.textbuffer_manpage.set_text(output)
-		self.entry_search.set_text(manpage)
-		self.combobox_section.set_active(section)
+    def on_dialog_find_delete_event(self, widget, event):
+        self.dialog_find.hide()
+        return True
 
-	def on_button_index_open_clicked(self, widget):
-		self.dialog_index.hide()
-		selected = self.treeview_index.get_selection()
-		self.liststore_index, iter = selected.get_selected()
-		try:
-			section = self.liststore_index.get_value(iter, 0)
-			manpage = self.liststore_index.get_value(iter, 1)
-			output = self.manpage(section, manpage)
-			self.textbuffer_manpage.set_text(output)
-			self.entry_search.set_text(manpage)
-			self.combobox_section.set_active(section)
-		except TypeError:
-			pass
-	
-	def on_button_index_cancel_clicked(self, widget):
-		self.dialog_index.hide()
+    def on_aboutdialog_response(self, widget, data=None):
+        self.aboutdialog.hide()
 
-	def on_dialog_index_delete_event(self, widget, event):
-		self.dialog_index.hide()
-		return True
+    def on_aboutdialog_delete_event(self, widget, event):
+        self.aboutdialog.hide()
+        return True
 
-	def create_index(self):
-		self.liststore_index.clear()
-		req_section = self.combobox_index_section.get_active()
-		manpagelist = []
-		manpagenamelist = []
-		if req_section == 0:
-			for i in self.section_lists:
-				for j in i:
-					manpagenamelist.append(j)
-			manpagenamelist = sorted(set(manpagenamelist))
-			for i in manpagenamelist:
-				manpagelist.append([0, i])
-		else:
-			for i in self.section_lists[req_section-1]:
-				manpagelist.append([req_section, i])
-		for i in manpagelist:
-			self.liststore_index.append(i)
+    def on_treeview_index_row_activated(self, widget, path, view_column):
+        self.dialog_index.hide()
+        selected = self.treeview_index.get_selection()
+        self.liststore_index, iter = selected.get_selected()
+        section = self.liststore_index.get_value(iter, 0)
+        manpage = self.liststore_index.get_value(iter, 1)
+        output = self.manpage(section, manpage)
+        self.textbuffer_manpage.set_text(output)
+        self.entry_search.set_text(manpage)
+        self.combobox_section.set_active(section)
 
-	def on_combobox_index_section_changed(self, widget):
-		self.create_index()
+    def on_button_index_open_clicked(self, widget):
+        self.dialog_index.hide()
+        selected = self.treeview_index.get_selection()
+        self.liststore_index, iter = selected.get_selected()
+        try:
+            section = self.liststore_index.get_value(iter, 0)
+            manpage = self.liststore_index.get_value(iter, 1)
+            output = self.manpage(section, manpage)
+            self.textbuffer_manpage.set_text(output)
+            self.entry_search.set_text(manpage)
+            self.combobox_section.set_active(section)
+        except TypeError:
+            pass
 
-	@threaded
-	def on_button_index_clicked(self, widget):
-		if not self.section_lists_ready:
-			gtk.gdk.threads_enter()
-			self.window_create_index.show()	
-			gtk.gdk.threads_leave()
-			self.section_lists = self.manpagelists()
-			self.section_lists_ready = True
-			gtk.gdk.threads_enter()
-			self.window_create_index.hide()
-			gtk.gdk.threads_leave()
-		gtk.gdk.threads_enter()
-		self.create_index()
-		self.dialog_index.show()
-		gtk.gdk.threads_leave()
+    def on_button_index_cancel_clicked(self, widget):
+        self.dialog_index.hide()
 
-	def parse_args(self, argv):
-		if len(argv) > 2:
-			self.display_help()
-			sys.exit(2)
-		elif len(argv) == 2:
-			try:
-				section = int(argv[0])
-				searchstr = argv[1]
-				manpage = self.manpage_stripchars(searchstr)
-				output = self.manpage(section, manpage)
-				self.combobox_section.set_active(section)
-				self.textbuffer_manpage.set_text(output)
-				self.entry_search.set_text(manpage)
-			except ValueError:
-				self.display_help()
-				sys.exit(2)
-		elif len(argv) == 1:
-			if argv[0] == '--help' or argv[0] == '-h':
-				self.display_help()
-				sys.exit(0)
-			else:
-				searchstr = argv[0]
-				manpage = self.manpage_stripchars(searchstr)
-				section = 0
-				output = self.manpage(section, manpage)
-				self.textbuffer_manpage.set_text(output)
-				self.entry_search.set_text(manpage)
+    def on_dialog_index_delete_event(self, widget, event):
+        self.dialog_index.hide()
+        return True
 
-	def __init__(self):
-		builder = gtk.Builder()
-		if os.path.exists('gtkman.glade'):
-			builder.add_from_file('gtkman.glade')
-		elif os.path.exists('/usr/share/gtkman/gtkman.glade'):
-			builder.add_from_file('/usr/share/gtkman/gtkman.glade')
-		self.window = builder.get_object('gtkman')
+    def create_index(self):
+        self.liststore_index.clear()
+        req_section = self.combobox_index_section.get_active()
+        manpagelist = []
+        manpagenamelist = []
+        if req_section == 0:
+            for i in self.section_lists:
+                for j in i:
+                    manpagenamelist.append(j)
+            manpagenamelist = sorted(set(manpagenamelist))
+            for i in manpagenamelist:
+                manpagelist.append([0, i])
+        else:
+            for i in self.section_lists[req_section - 1]:
+                manpagelist.append([req_section, i])
+        for i in manpagelist:
+            self.liststore_index.append(i)
 
-		#
-		# Main window
-		#
-		self.window = builder.get_object('gtkman')
-		self.textview_manpage = builder.get_object('textview_manpage')
-		self.textbuffer_manpage = builder.get_object('textbuffer_manpage')
-		self.entry_search = builder.get_object('entry_search')
-		self.combobox_section = builder.get_object('combobox_section')
-		self.liststore_section = builder.get_object('liststore_section')
-		# Populate the man section combobox
-		self.liststore_section.append([0, _('Any')])
-		self.liststore_section.append([1, _('User commands (1)')])
-		self.liststore_section.append([2, _('System calls (2)')])
-		self.liststore_section.append([3, _('C library functions (3)')])
-		self.liststore_section.append([4, _('Devices and special files (4)')])
-		self.liststore_section.append([5, _('File formats and conventions (5)')])
-		self.liststore_section.append([6, _('Games et. al (6)')])
-		self.liststore_section.append([7, _('Miscellanea (7)')])
-		self.liststore_section.append([8, _('System administration tools and deamons (8)')])
-		self.combobox_section.set_active(0)
-		# Menu items that need to be toggled
-		self.imagemenuitem_findnext = builder.get_object('imagemenuitem_findnext')
-		self.imagemenuitem_findprev = builder.get_object('imagemenuitem_findprev')
+    def on_combobox_index_section_changed(self, widget):
+        self.create_index()
 
-		#
-		# Find dialog
-		#
-		self.dialog_find = builder.get_object('dialog_find')
-		self.button_find = builder.get_object('button_find')
-		self.button_findcancel = builder.get_object('button_findcancel')
-		self.entry_find = builder.get_object('entry_find')
-		self.entry_find.set_text('')
-		self.checkbutton_matchcase = builder.get_object('checkbutton_matchcase')
-	
-		#
-		# About dialog
-		#
-		self.aboutdialog = builder.get_object('aboutdialog')
+    @threaded
+    def on_button_index_clicked(self, widget):
+        if not self.section_lists_ready:
+            gtk.gdk.threads_enter()
+            self.window_create_index.show()
+            gtk.gdk.threads_leave()
+            self.section_lists = self.manpagelists()
+            self.section_lists_ready = True
+            gtk.gdk.threads_enter()
+            self.window_create_index.hide()
+            gtk.gdk.threads_leave()
+        gtk.gdk.threads_enter()
+        self.create_index()
+        self.dialog_index.show()
+        gtk.gdk.threads_leave()
 
-		#
-		# Creating index window
-		#
-		self.window_create_index = builder.get_object('window_create_index')
-		self.progressbar_index = builder.get_object('progressbar_index')
-		self.combobox_index_section = builder.get_object('combobox_index_section')
-		self.liststore_index_section = builder.get_object('liststore_index_section')
+    def parse_args(self, argv):
+        if len(argv) > 2:
+            self.display_help()
+            sys.exit(2)
+        elif len(argv) == 2:
+            try:
+                section = int(argv[0])
+                searchstr = argv[1]
+                manpage = self.manpage_stripchars(searchstr)
+                output = self.manpage(section, manpage)
+                self.combobox_section.set_active(section)
+                self.textbuffer_manpage.set_text(output)
+                self.entry_search.set_text(manpage)
+            except ValueError:
+                self.display_help()
+                sys.exit(2)
+        elif len(argv) == 1:
+            if argv[0] == '--help' or argv[0] == '-h':
+                self.display_help()
+                sys.exit(0)
+            else:
+                searchstr = argv[0]
+                manpage = self.manpage_stripchars(searchstr)
+                section = 0
+                output = self.manpage(section, manpage)
+                self.textbuffer_manpage.set_text(output)
+                self.entry_search.set_text(manpage)
 
-		# Populate the man section combobox
-		self.liststore_index_section.append([0, _('Any')])
-		self.liststore_index_section.append([1, _('User commands (1)')])
-		self.liststore_index_section.append([2, _('System calls (2)')])
-		self.liststore_index_section.append([3, _('C library functions (3)')])
-		self.liststore_index_section.append([4, _('Devices and special files (4)')])
-		self.liststore_index_section.append([5, _('File formats and conventions (5)')])
-		self.liststore_index_section.append([6, _('Games et. al (6)')])
-		self.liststore_index_section.append([7, _('Miscellanea (7)')])
-		self.liststore_index_section.append([8, _('System administration tools and deamons (8)')])
-		self.combobox_index_section.set_active(0)
+    def __init__(self):
+        builder = gtk.Builder()
+        if os.path.exists('gtkman.glade'):
+            builder.add_from_file('gtkman.glade')
+        elif os.path.exists('/usr/share/gtkman/gtkman.glade'):
+            builder.add_from_file('/usr/share/gtkman/gtkman.glade')
+        self.window = builder.get_object('gtkman')
 
-		#
-		# Index dialog
-		#
-		self.dialog_index = builder.get_object('dialog_index')
-		self.button_index_open = builder.get_object('button_index_open')
-		self.button_index_cancel = builder.get_object('button_index_cancel')
-		self.button_index_open.set_flags(gtk.CAN_DEFAULT)
-		self.treeview_index = builder.get_object('treeview_index')
-		self.liststore_index = builder.get_object('liststore_index')
+        #
+        # Main window
+        #
+        self.window = builder.get_object('gtkman')
+        self.textview_manpage = builder.get_object('textview_manpage')
+        self.textbuffer_manpage = builder.get_object('textbuffer_manpage')
+        self.entry_search = builder.get_object('entry_search')
+        self.combobox_section = builder.get_object('combobox_section')
+        self.liststore_section = builder.get_object('liststore_section')
+        # Populate the man section combobox
+        self.liststore_section.append([0, _('Any')])
+        self.liststore_section.append([1, _('User commands (1)')])
+        self.liststore_section.append([2, _('System calls (2)')])
+        self.liststore_section.append([3, _('C library functions (3)')])
+        self.liststore_section.append([4, _('Devices and special files (4)')])
+        self.liststore_section.append(
+            [5, _('File formats and conventions (5)')])
+        self.liststore_section.append([6, _('Games et. al (6)')])
+        self.liststore_section.append([7, _('Miscellanea (7)')])
+        self.liststore_section.append(
+            [8, _('System administration tools and deamons (8)')])
+        self.combobox_section.set_active(0)
+        # Menu items that need to be toggled
+        self.imagemenuitem_findnext = builder.get_object(
+            'imagemenuitem_findnext')
+        self.imagemenuitem_findprev = builder.get_object(
+            'imagemenuitem_findprev')
 
-		# Set default window size
-		self.set_default_window_size()
-			
-		# Set the system monospace font as the default font
-		self.textview_manpage.modify_font(pango.FontDescription('monospace'))
+        #
+        # Find dialog
+        #
+        self.dialog_find = builder.get_object('dialog_find')
+        self.button_find = builder.get_object('button_find')
+        self.button_findcancel = builder.get_object('button_findcancel')
+        self.entry_find = builder.get_object('entry_find')
+        self.entry_find.set_text('')
+        self.checkbutton_matchcase = builder.get_object(
+            'checkbutton_matchcase')
 
-		builder.connect_signals(self)
+        #
+        # About dialog
+        #
+        self.aboutdialog = builder.get_object('aboutdialog')
+
+        #
+        # Creating index window
+        #
+        self.window_create_index = builder.get_object('window_create_index')
+        self.progressbar_index = builder.get_object('progressbar_index')
+        self.combobox_index_section = builder.get_object(
+            'combobox_index_section')
+        self.liststore_index_section = builder.get_object(
+            'liststore_index_section')
+
+        # Populate the man section combobox
+        self.liststore_index_section.append([0, _('Any')])
+        self.liststore_index_section.append([1, _('User commands (1)')])
+        self.liststore_index_section.append([2, _('System calls (2)')])
+        self.liststore_index_section.append([3, _('C library functions (3)')])
+        self.liststore_index_section.append(
+            [4, _('Devices and special files (4)')])
+        self.liststore_index_section.append(
+            [5, _('File formats and conventions (5)')])
+        self.liststore_index_section.append([6, _('Games et. al (6)')])
+        self.liststore_index_section.append([7, _('Miscellanea (7)')])
+        self.liststore_index_section.append(
+            [8, _('System administration tools and deamons (8)')])
+        self.combobox_index_section.set_active(0)
+
+        #
+        # Index dialog
+        #
+        self.dialog_index = builder.get_object('dialog_index')
+        self.button_index_open = builder.get_object('button_index_open')
+        self.button_index_cancel = builder.get_object('button_index_cancel')
+        self.button_index_open.set_flags(gtk.CAN_DEFAULT)
+        self.treeview_index = builder.get_object('treeview_index')
+        self.liststore_index = builder.get_object('liststore_index')
+
+        # Set default window size
+        self.set_default_window_size()
+
+        # Set the system monospace font as the default font
+        self.textview_manpage.modify_font(pango.FontDescription('monospace'))
+
+        builder.connect_signals(self)
 
 if __name__ == "__main__":
-	app = GTKMan()
-	app.parse_args(sys.argv[1:])
-	app.window.show()
-	gtk.main()
+    app = GTKMan()
+    app.parse_args(sys.argv[1:])
+    app.window.show()
+    gtk.main()
