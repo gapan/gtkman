@@ -13,6 +13,10 @@ as root. You can set DESTDIR to change the installation target:
 
     make install DESTDIR=/my/custom/installation/target
 
+You can also set PREFIX and PACKAGE_LOCALE_DIR environment variables in
+a similar manner when running "make install" to specify the general
+prefix and localization files locations respectively
+
 NOTE
 ====
 
