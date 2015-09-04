@@ -2,11 +2,7 @@ DESTDIR ?= /
 PREFIX ?= /usr
 PACKAGE_LOCALE_DIR ?= /usr/share/locale
 
-all: dirs man mo
-
-dirs:
-	sed -i "s|^prefix = '_not_set_'|prefix = '$(PREFIX)'|" src/gtkman
-	sed -i "s|^package_locale_dir = '_not_set_'|package_locale_dir = '$(PACKAGE_LOCALE_DIR)'|" src/gtkman
+all: man mo
 
 man:
 	@txt2tags -o man/gtkman.man man/gtkman.t2t || \
@@ -44,6 +40,8 @@ clean:
 	rm -f man/gtkman.man
 
 install:
+	sed -i "s|^prefix = '_not_set_'|prefix = '$(PREFIX)'|" src/gtkman
+	sed -i "s|^package_locale_dir = '_not_set_'|package_locale_dir = '$(PACKAGE_LOCALE_DIR)'|" src/gtkman
 	install -D -m 755 src/gtkman $(DESTDIR)/$(PREFIX)/bin/gtkman
 	install -D -m 644 src/gtkman.glade $(DESTDIR)/$(PREFIX)/share/gtkman/gtkman.glade
 	install -D -m 644 gtkman.desktop $(DESTDIR)/$(PREFIX)/share/applications/gtkman.desktop
