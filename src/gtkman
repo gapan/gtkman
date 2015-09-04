@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
 import gtk
 import os
