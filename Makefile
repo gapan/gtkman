@@ -1,5 +1,5 @@
 DESTDIR ?= /
-PREFIX ?= /usr
+PREFIX ?= /usr/local
 PACKAGE_LOCALE_DIR ?= /usr/share/locale
 
 all: man mo
