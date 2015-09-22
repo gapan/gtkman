@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
+from __future__ import print_function
+
 import gtk
 import os
 import sys
@@ -189,10 +191,10 @@ class GTKMan:
         gtk.main_quit()
 
     def display_help(self):
-        print _('USAGE:'), os.path.basename(sys.argv[0]), _('[OPTIONS] [[section] manpage]')
-        print
-        print _('OPTIONS:')
-        print '   -h, --help        ', _('this help message')
+        print(_('USAGE:'), os.path.basename(sys.argv[0]), _('[OPTIONS] [[section] manpage]'))
+        print()
+        print(_('OPTIONS:'))
+        print('   -h, --help        ', _('this help message'))
 
     @threaded
     def on_imagemenuitem_new_activate(self, wdiget):
