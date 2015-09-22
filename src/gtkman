@@ -191,7 +191,8 @@ class GTKMan:
         gtk.main_quit()
 
     def display_help(self):
-        print(_('USAGE:'), os.path.basename(sys.argv[0]), _('[OPTIONS] [[section] manpage]'))
+        print(_('USAGE:'), os.path.basename(sys.argv[0]),
+                _('[OPTIONS] [[section] manpage]'))
         print()
         print(_('OPTIONS:'))
         print('   -h, --help        ', _('this help message'))
