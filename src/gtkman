@@ -11,6 +11,9 @@ import ConfigParser
 import threading
 import subprocess
 
+# Restrict man page width to 80 characters
+os.environ['MANWIDTH'] = '80'
+
 # Initializing the gtk's thread engine
 gtk.gdk.threads_init()
 
