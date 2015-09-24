@@ -162,10 +162,11 @@ class GTKMan:
 
     def manpage_show(self):
         searchstr = self.entry_search.get_text()
-        manpage = self.manpage_stripchars(searchstr)
-        section = self.combobox_section.get_active()
-        output = self.manpage(section, manpage)
-        self.textbuffer_manpage.set_text(output)
+        if searchstr != '':
+            manpage = self.manpage_stripchars(searchstr)
+            section = self.combobox_section.get_active()
+            output = self.manpage(section, manpage)
+            self.textbuffer_manpage.set_text(output)
 
     def on_entry_search_activate(self, widget):
         self.imagemenuitem_findnext.set_sensitive(False)
