@@ -11,9 +11,6 @@ import ConfigParser
 import threading
 import subprocess
 
-# Restrict man page width to 80 characters
-os.environ['MANWIDTH'] = '80'
-
 # Initializing the gtk's thread engine
 gtk.gdk.threads_init()
 
@@ -130,6 +127,15 @@ class GTKMan:
             except TypeError:
                 self.window.set_default_size(640, 400)
 
+    def set_default_manpage_width(self):
+        try:
+            self.config.read(self.config_file)
+            self.man_width = str(self.config.getint('man', 'width'))
+            os.environ['MANWIDTH'] = self.man_width
+        except (ConfigParser.NoOptionError, ConfigParser.NoSectionError):
+            # Restrict man page width to 80 characters by default
+            os.environ['MANWIDTH'] = '80'
+
     def manpage(self, section, page):
         DEVNULL = open('/dev/null', 'w')
         if section == 0:
@@ -154,28 +160,23 @@ class GTKMan:
     def manpage_stripchars(self, manpage):
         return manpage.lstrip(' ').partition(' ')[0].partition(';')[0].partition('|')[0].partition('&')[0]
 
+    def manpage_show(self):
+        searchstr = self.entry_search.get_text()
+        manpage = self.manpage_stripchars(searchstr)
+        section = self.combobox_section.get_active()
+        output = self.manpage(section, manpage)
+        self.textbuffer_manpage.set_text(output)
+
     def on_entry_search_activate(self, widget):
         self.imagemenuitem_findnext.set_sensitive(False)
         self.imagemenuitem_findprev.set_sensitive(False)
-        searchstr = self.entry_search.get_text()
-        manpage = self.manpage_stripchars(searchstr)
-        section = self.combobox_section.get_active()
-        output = self.manpage(section, manpage)
-        self.textbuffer_manpage.set_text(output)
+        self.manpage_show()
 
     def on_entry_search_icon_release(self, widget, icon, event):
-        searchstr = self.entry_search.get_text()
-        manpage = self.manpage_stripchars(searchstr)
-        section = self.combobox_section.get_active()
-        output = self.manpage(section, manpage)
-        self.textbuffer_manpage.set_text(output)
+        self.manpage_show()
 
     def on_combobox_section_changed(self, widget, data=None):
-        searchstr = self.entry_search.get_text()
-        manpage = self.manpage_stripchars(searchstr)
-        section = self.combobox_section.get_active()
-        output = self.manpage(section, manpage)
-        self.textbuffer_manpage.set_text(output)
+        self.manpage_show()
 
     def on_gtkman_configure_event(self, widget, data=None):
         self.win_width, self.win_height = self.window.get_size()
@@ -203,6 +204,16 @@ class GTKMan:
     @threaded
     def on_imagemenuitem_new_activate(self, wdiget):
         subprocess.Popen(['gtkman'], shell=False)
+
+    def on_imagemenuitem_prefs_activate(self, widget):
+        try:
+            self.config.read(self.config_file)
+            man_width = self.config.getint('man', 'width')
+            self.spinbutton_width.set_value(man_width)
+        except (ConfigParser.NoOptionError, ConfigParser.NoSectionError):
+            # Restrict man page width to 80 characters by default
+            self.spinbutton_width.set_value(80)
+        self.dialog_prefs.show()
 
     def on_imagemenuitem_find_activate(self, widget):
         self.entry_find.set_text('')
@@ -410,6 +421,28 @@ class GTKMan:
         self.dialog_index.show()
         gtk.gdk.threads_leave()
 
+    def on_button_prefs_ok_clicked(self, widget):
+        man_width = int(self.spinbutton_width.get_value())
+        os.environ['MANWIDTH'] = str(man_width)
+        if not os.path.isdir(os.path.expanduser('~/.config')):
+            os.mkdir(os.path.expanduser('~/.config'))
+        try:
+            self.config.add_section('man')
+        except ConfigParser.DuplicateSectionError:
+            pass
+        self.config.set('man', 'width', man_width)
+        with open(self.config_file, 'wb') as configfile:
+            self.config.write(configfile)
+        self.dialog_prefs.hide()
+        self.manpage_show()
+
+    def on_button_prefs_cancel_clicked(self, widget):
+        self.dialog_prefs.hide()
+
+    def on_dialog_prefs_delete_event(self, widget, event):
+        self.dialog_prefs.hide()
+        return True
+
     def parse_args(self, argv):
         if len(argv) > 2:
             self.display_help()
@@ -526,8 +559,18 @@ class GTKMan:
         self.treeview_index = builder.get_object('treeview_index')
         self.liststore_index = builder.get_object('liststore_index')
 
+        #
+        # Preferences dialog
+        #
+        self.dialog_prefs = builder.get_object('dialog_prefs')
+        self.button_prefs_ok = builder.get_object('button_prefs_ok')
+        self.button_prefs_cancel = builder.get_object('button_prefs_cancel')
+        self.spinbutton_width = builder.get_object('spinbutton_width')
+
         # Set default window size
         self.set_default_window_size()
+        # Set default manpage width
+        self.set_default_manpage_width()
 
         # Set the system monospace font as the default font
         self.textview_manpage.modify_font(pango.FontDescription('monospace'))
