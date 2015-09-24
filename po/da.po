@@ -8,141 +8,153 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-18 23:31+0200\n"
-"PO-Revision-Date: 2015-08-11 11:24+0000\n"
-"Last-Translator: Dimitris Glezos <glezos@transifex.com>\n"
-"Language-Team: Danish (http://www.transifex.com/glezos/salix/language/da/)\n"
+"POT-Creation-Date: 2015-09-24 23:42+0300\n"
+"PO-Revision-Date: 2015-09-24 20:42+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Danish (http://www.transifex.com/gapan/salix/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/gtkman.glade:6
-msgid "Manual page viewer"
-msgstr "Viser til manualsider"
-
-#: src/gtkman.glade:20
-msgid "_File"
-msgstr "_Fil"
-
-#: src/gtkman.glade:67
-msgid "_Search"
-msgstr "_Søg"
-
-#: src/gtkman.glade:84
-msgid "Find _Next"
-msgstr "Find _næste"
-
-#: src/gtkman.glade:96
-msgid "Find _Previous"
-msgstr "Find _forrige"
-
-#: src/gtkman.glade:113
-msgid "_Help"
-msgstr "_Hjælp"
-
-#: src/gtkman.glade:145
-msgid "Index"
-msgstr "Index"
-
-#: src/gtkman.glade:172
-msgid "Manual page:"
-msgstr "Manualside:"
-
-#: src/gtkman.glade:196 src/gtkman.glade:1194
-msgid "Section:"
-msgstr "Sektion:"
-
-#: src/gtkman.glade:271 gtkman.desktop.in.h:1
+#: src/gtkman.glade:17 gtkman.desktop.in.h:2
 msgid "A simple GTK+2 manual page viewer"
 msgstr "En simpel GTK+2 viser til manualsider"
 
-#: src/gtkman.glade:949
+#: src/gtkman.glade:695
 msgid "translator-credits"
 msgstr "Kris Thomsen\n\nDansk-gruppen <dansk@dansk-gruppen.dk>\nMere info: http://www.dansk-gruppen.dk"
 
-#: src/gtkman.glade:982
+#: src/gtkman.glade:730
 msgid "Find"
 msgstr "Find"
 
-#: src/gtkman.glade:1009
+#: src/gtkman.glade:804
 msgid "Find what:"
 msgstr "Find hvad:"
 
-#: src/gtkman.glade:1033
+#: src/gtkman.glade:838
 msgid "Match case"
 msgstr ""
 
-#: src/gtkman.glade:1105
-msgid "Creating index"
-msgstr "Opretter index"
-
-#: src/gtkman.glade:1124
-msgid "Creating manual page index..."
-msgstr "Opretter index for manualsider..."
-
-#: src/gtkman.glade:1167
+#: src/gtkman.glade:868
 msgid "Manual page index"
 msgstr "Index for manualsider"
 
-#: src/gtkman:117
+#: src/gtkman.glade:946 src/gtkman.glade:1404
+msgid "Section:"
+msgstr "Sektion:"
+
+#: src/gtkman.glade:1034
+msgid "Preferences"
+msgstr "Indstillinger"
+
+#: src/gtkman.glade:1102
+msgid "Manpage width (in characters):"
+msgstr ""
+
+#: src/gtkman.glade:1156
+msgid "Manual page viewer"
+msgstr "Viser til manualsider"
+
+#: src/gtkman.glade:1172
+msgid "_File"
+msgstr "_Fil"
+
+#: src/gtkman.glade:1225
+msgid "_Edit"
+msgstr "_Redigér"
+
+#: src/gtkman.glade:1249
+msgid "_Search"
+msgstr "_Søg"
+
+#: src/gtkman.glade:1268
+msgid "Find _Next"
+msgstr "Find _næste"
+
+#: src/gtkman.glade:1281
+msgid "Find _Previous"
+msgstr "Find _forrige"
+
+#: src/gtkman.glade:1300
+msgid "_Help"
+msgstr "_Hjælp"
+
+#: src/gtkman.glade:1337
+msgid "Index"
+msgstr "Index"
+
+#: src/gtkman.glade:1368
+msgid "Manual page:"
+msgstr "Manualside:"
+
+#: src/gtkman.glade:1500
+msgid "Creating index"
+msgstr "Opretter index"
+
+#: src/gtkman.glade:1520
+msgid "Creating manual page index..."
+msgstr "Opretter index for manualsider..."
+
+#: src/gtkman:156
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr "Ingen manual fundet for \"%(name)s\""
 
-#: src/gtkman:156
+#: src/gtkman:198
 msgid "USAGE:"
 msgstr "BRUG:"
 
-#: src/gtkman:156
+#: src/gtkman:199
 msgid "[OPTIONS] [[section] manpage]"
 msgstr "[TILVALG] [[sektion] manside]"
 
-#: src/gtkman:158
+#: src/gtkman:201
 msgid "OPTIONS:"
 msgstr "TILVALG:"
 
-#: src/gtkman:159
+#: src/gtkman:202
 msgid "this help message"
 msgstr "denne hjælpebesked"
 
-#: src/gtkman:392 src/gtkman:430
+#: src/gtkman:493 src/gtkman:538
 msgid "Any"
 msgstr "Enhver"
 
-#: src/gtkman:393 src/gtkman:431
+#: src/gtkman:494 src/gtkman:539
 msgid "User commands (1)"
 msgstr "Brugerkommandoer (1)"
 
-#: src/gtkman:394 src/gtkman:432
+#: src/gtkman:495 src/gtkman:540
 msgid "System calls (2)"
 msgstr "Systemkald (2)"
 
-#: src/gtkman:395 src/gtkman:433
+#: src/gtkman:496 src/gtkman:541
 msgid "C library functions (3)"
 msgstr "C-bibliotekfunktioner (3)"
 
-#: src/gtkman:396 src/gtkman:434
+#: src/gtkman:497 src/gtkman:543
 msgid "Devices and special files (4)"
 msgstr "Enheder og specielle filer (4)"
 
-#: src/gtkman:397 src/gtkman:435
+#: src/gtkman:499 src/gtkman:545
 msgid "File formats and conventions (5)"
 msgstr "Filformater og -konventioner (5)"
 
-#: src/gtkman:398 src/gtkman:436
+#: src/gtkman:500 src/gtkman:546
 msgid "Games et. al (6)"
 msgstr "Spil osv. (6)"
 
-#: src/gtkman:399 src/gtkman:437
+#: src/gtkman:501 src/gtkman:547
 msgid "Miscellanea (7)"
 msgstr "Blandet (7)"
 
-#: src/gtkman:400 src/gtkman:438
+#: src/gtkman:503 src/gtkman:549
 msgid "System administration tools and deamons (8)"
 msgstr "Værktøj til systemadministration og dæmoner (8)"
 
-#: gtkman.desktop.in.h:2
+#: gtkman.desktop.in.h:1
 msgid "GTKMan Manual Page Viewer"
 msgstr "GTKMan manualsideviser"

@@ -7,141 +7,153 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-18 23:31+0200\n"
-"PO-Revision-Date: 2015-08-11 11:24+0000\n"
+"POT-Creation-Date: 2015-09-24 23:42+0300\n"
+"PO-Revision-Date: 2015-09-24 20:42+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Vietnamese (http://www.transifex.com/glezos/salix/language/vi/)\n"
+"Language-Team: Vietnamese (http://www.transifex.com/gapan/salix/language/vi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/gtkman.glade:6
-msgid "Manual page viewer"
-msgstr ""
-
-#: src/gtkman.glade:20
-msgid "_File"
-msgstr ""
-
-#: src/gtkman.glade:67
-msgid "_Search"
-msgstr ""
-
-#: src/gtkman.glade:84
-msgid "Find _Next"
-msgstr ""
-
-#: src/gtkman.glade:96
-msgid "Find _Previous"
-msgstr ""
-
-#: src/gtkman.glade:113
-msgid "_Help"
-msgstr ""
-
-#: src/gtkman.glade:145
-msgid "Index"
-msgstr ""
-
-#: src/gtkman.glade:172
-msgid "Manual page:"
-msgstr ""
-
-#: src/gtkman.glade:196 src/gtkman.glade:1194
-msgid "Section:"
-msgstr ""
-
-#: src/gtkman.glade:271 gtkman.desktop.in.h:1
+#: src/gtkman.glade:17 gtkman.desktop.in.h:2
 msgid "A simple GTK+2 manual page viewer"
 msgstr ""
 
-#: src/gtkman.glade:949
+#: src/gtkman.glade:695
 msgid "translator-credits"
 msgstr ""
 
-#: src/gtkman.glade:982
+#: src/gtkman.glade:730
 msgid "Find"
 msgstr ""
 
-#: src/gtkman.glade:1009
+#: src/gtkman.glade:804
 msgid "Find what:"
 msgstr ""
 
-#: src/gtkman.glade:1033
+#: src/gtkman.glade:838
 msgid "Match case"
 msgstr ""
 
-#: src/gtkman.glade:1105
-msgid "Creating index"
-msgstr ""
-
-#: src/gtkman.glade:1124
-msgid "Creating manual page index..."
-msgstr ""
-
-#: src/gtkman.glade:1167
+#: src/gtkman.glade:868
 msgid "Manual page index"
 msgstr ""
 
-#: src/gtkman:117
+#: src/gtkman.glade:946 src/gtkman.glade:1404
+msgid "Section:"
+msgstr ""
+
+#: src/gtkman.glade:1034
+msgid "Preferences"
+msgstr ""
+
+#: src/gtkman.glade:1102
+msgid "Manpage width (in characters):"
+msgstr ""
+
+#: src/gtkman.glade:1156
+msgid "Manual page viewer"
+msgstr ""
+
+#: src/gtkman.glade:1172
+msgid "_File"
+msgstr ""
+
+#: src/gtkman.glade:1225
+msgid "_Edit"
+msgstr ""
+
+#: src/gtkman.glade:1249
+msgid "_Search"
+msgstr ""
+
+#: src/gtkman.glade:1268
+msgid "Find _Next"
+msgstr ""
+
+#: src/gtkman.glade:1281
+msgid "Find _Previous"
+msgstr ""
+
+#: src/gtkman.glade:1300
+msgid "_Help"
+msgstr ""
+
+#: src/gtkman.glade:1337
+msgid "Index"
+msgstr ""
+
+#: src/gtkman.glade:1368
+msgid "Manual page:"
+msgstr ""
+
+#: src/gtkman.glade:1500
+msgid "Creating index"
+msgstr ""
+
+#: src/gtkman.glade:1520
+msgid "Creating manual page index..."
+msgstr ""
+
+#: src/gtkman:156
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr ""
 
-#: src/gtkman:156
+#: src/gtkman:198
 msgid "USAGE:"
 msgstr ""
 
-#: src/gtkman:156
+#: src/gtkman:199
 msgid "[OPTIONS] [[section] manpage]"
 msgstr ""
 
-#: src/gtkman:158
+#: src/gtkman:201
 msgid "OPTIONS:"
 msgstr ""
 
-#: src/gtkman:159
+#: src/gtkman:202
 msgid "this help message"
 msgstr ""
 
-#: src/gtkman:392 src/gtkman:430
+#: src/gtkman:493 src/gtkman:538
 msgid "Any"
 msgstr ""
 
-#: src/gtkman:393 src/gtkman:431
+#: src/gtkman:494 src/gtkman:539
 msgid "User commands (1)"
 msgstr ""
 
-#: src/gtkman:394 src/gtkman:432
+#: src/gtkman:495 src/gtkman:540
 msgid "System calls (2)"
 msgstr ""
 
-#: src/gtkman:395 src/gtkman:433
+#: src/gtkman:496 src/gtkman:541
 msgid "C library functions (3)"
 msgstr ""
 
-#: src/gtkman:396 src/gtkman:434
+#: src/gtkman:497 src/gtkman:543
 msgid "Devices and special files (4)"
 msgstr ""
 
-#: src/gtkman:397 src/gtkman:435
+#: src/gtkman:499 src/gtkman:545
 msgid "File formats and conventions (5)"
 msgstr ""
 
-#: src/gtkman:398 src/gtkman:436
+#: src/gtkman:500 src/gtkman:546
 msgid "Games et. al (6)"
 msgstr ""
 
-#: src/gtkman:399 src/gtkman:437
+#: src/gtkman:501 src/gtkman:547
 msgid "Miscellanea (7)"
 msgstr ""
 
-#: src/gtkman:400 src/gtkman:438
+#: src/gtkman:503 src/gtkman:549
 msgid "System administration tools and deamons (8)"
 msgstr ""
 
-#: gtkman.desktop.in.h:2
+#: gtkman.desktop.in.h:1
 msgid "GTKMan Manual Page Viewer"
 msgstr ""
