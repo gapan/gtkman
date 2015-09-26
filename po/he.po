@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# GenghisKhan <genghiskhan@gmx.ca>, 2013
+# GenghisKhan <genghiskhan@gmx.ca>, 2013,2015
 # GenghisKhan <genghiskhan@gmx.ca>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2015-09-24 20:42+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2015-09-26 04:31+0000\n"
+"Last-Translator: GenghisKhan <genghiskhan@gmx.ca>\n"
 "Language-Team: Hebrew (http://www.transifex.com/gapan/salix/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,7 +53,7 @@ msgstr "העדפות"
 
 #: src/gtkman.glade:1102
 msgid "Manpage width (in characters):"
-msgstr ""
+msgstr "רוחב דף הדרכה (בתווים):"
 
 #: src/gtkman.glade:1156
 msgid "Manual page viewer"
@@ -102,7 +102,7 @@ msgstr "מחולל כעת אינדקס מדריכים..."
 #: src/gtkman:156
 #, python-format
 msgid "No manual page found for \"%(name)s\""
-msgstr "לא נמצא עמוד מדריך עבור \"%(name)s\""
+msgstr "לא נמצא דף מדריך עבור \"%(name)s\""
 
 #: src/gtkman:198
 msgid "USAGE:"
