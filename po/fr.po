@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Alain Le Goff <xoubih-register@yahoo.fr>, 2015
 # Cyrille Pontvieux <jrd@enialis.net>, 2011
 # gapan <vlahavas@gmail.com>, 2012
 msgid ""
@@ -10,8 +11,8 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2015-09-24 20:42+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2015-12-21 10:55+0000\n"
+"Last-Translator: Alain Le Goff <xoubih-register@yahoo.fr>\n"
 "Language-Team: French (http://www.transifex.com/gapan/salix/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,7 +54,7 @@ msgstr "Préférences"
 
 #: src/gtkman.glade:1102
 msgid "Manpage width (in characters):"
-msgstr ""
+msgstr "Largeur de la page de Manuel (en caractères) :"
 
 #: src/gtkman.glade:1156
 msgid "Manual page viewer"

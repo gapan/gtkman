@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Alejandro Simón <alejandrosimon@gmx.com>, 2015
 # Marco Antonio Frias Butrón <inactive+smaug@transifex.com>, 2011
 # seacat <seacat.linux@gmail.com>, 2011, 2012
 # seacat <seacat.linux@gmail.com>, 2011
@@ -11,8 +12,8 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2015-09-24 20:42+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2015-09-28 21:38+0000\n"
+"Last-Translator: Alejandro Simón <alejandrosimon@gmx.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/gapan/salix/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -54,7 +55,7 @@ msgstr "Preferencias"
 
 #: src/gtkman.glade:1102
 msgid "Manpage width (in characters):"
-msgstr ""
+msgstr "Ancho de la página del manual (en caracteres):"
 
 #: src/gtkman.glade:1156
 msgid "Manual page viewer"

@@ -3,159 +3,157 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# goriy <wolfr2@gmail.com>, 2015
-# goriy <wolfr2@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2015-10-04 00:52+0000\n"
-"Last-Translator: goriy <wolfr2@gmail.com>\n"
-"Language-Team: Russian (http://www.transifex.com/gapan/salix/language/ru/)\n"
+"PO-Revision-Date: 2011-02-17 11:03+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Czech (Czech Republic) (http://www.transifex.com/gapan/salix/language/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Language: cs_CZ\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
 msgid "A simple GTK+2 manual page viewer"
-msgstr "Простая программа посмотра man-страниц на GTK+2"
+msgstr ""
 
 #: src/gtkman.glade:695
 msgid "translator-credits"
-msgstr "translator-credits"
+msgstr ""
 
 #: src/gtkman.glade:730
 msgid "Find"
-msgstr "Найти"
+msgstr ""
 
 #: src/gtkman.glade:804
 msgid "Find what:"
-msgstr "Что найти:"
+msgstr ""
 
 #: src/gtkman.glade:838
 msgid "Match case"
-msgstr "Учитывать регистр"
+msgstr ""
 
 #: src/gtkman.glade:868
 msgid "Manual page index"
-msgstr "Индекс страницы руководства"
+msgstr ""
 
 #: src/gtkman.glade:946 src/gtkman.glade:1404
 msgid "Section:"
-msgstr "Раздел:"
+msgstr ""
 
 #: src/gtkman.glade:1034
 msgid "Preferences"
-msgstr "Настройки"
+msgstr ""
 
 #: src/gtkman.glade:1102
 msgid "Manpage width (in characters):"
-msgstr "Ширина man-страниц (в символах):"
+msgstr ""
 
 #: src/gtkman.glade:1156
 msgid "Manual page viewer"
-msgstr "Программа просмотра руководств (man-страниц)"
+msgstr ""
 
 #: src/gtkman.glade:1172
 msgid "_File"
-msgstr "_Файл"
+msgstr ""
 
 #: src/gtkman.glade:1225
 msgid "_Edit"
-msgstr "Пра_вка"
+msgstr ""
 
 #: src/gtkman.glade:1249
 msgid "_Search"
-msgstr "_Поиск"
+msgstr ""
 
 #: src/gtkman.glade:1268
 msgid "Find _Next"
-msgstr "Найти _далее"
+msgstr ""
 
 #: src/gtkman.glade:1281
 msgid "Find _Previous"
-msgstr "Найти _ранее"
+msgstr ""
 
 #: src/gtkman.glade:1300
 msgid "_Help"
-msgstr "_Справка"
+msgstr ""
 
 #: src/gtkman.glade:1337
 msgid "Index"
-msgstr "Индекс"
+msgstr ""
 
 #: src/gtkman.glade:1368
 msgid "Manual page:"
-msgstr "Страница руководства:"
+msgstr ""
 
 #: src/gtkman.glade:1500
 msgid "Creating index"
-msgstr "Создание индекса"
+msgstr ""
 
 #: src/gtkman.glade:1520
 msgid "Creating manual page index..."
-msgstr "Создается индекс страницы руководства..."
+msgstr ""
 
 #: src/gtkman:156
 #, python-format
 msgid "No manual page found for \"%(name)s\""
-msgstr "Не найден индекс страницы руководства \"%(name)s\""
+msgstr ""
 
 #: src/gtkman:198
 msgid "USAGE:"
-msgstr "ИСПОЛЬЗОВАНИЕ:"
+msgstr ""
 
 #: src/gtkman:199
 msgid "[OPTIONS] [[section] manpage]"
-msgstr "[ОПЦИИ] [[раздел] man-страница]"
+msgstr ""
 
 #: src/gtkman:201
 msgid "OPTIONS:"
-msgstr "ОПЦИИ:"
+msgstr ""
 
 #: src/gtkman:202
 msgid "this help message"
-msgstr "это справочное сообщение"
+msgstr ""
 
 #: src/gtkman:493 src/gtkman:538
 msgid "Any"
-msgstr "Любой"
+msgstr ""
 
 #: src/gtkman:494 src/gtkman:539
 msgid "User commands (1)"
-msgstr "Пользовательские команды (1)"
+msgstr ""
 
 #: src/gtkman:495 src/gtkman:540
 msgid "System calls (2)"
-msgstr "Системные вызовы (2)"
+msgstr ""
 
 #: src/gtkman:496 src/gtkman:541
 msgid "C library functions (3)"
-msgstr "Функции С-библиотек (3)"
+msgstr ""
 
 #: src/gtkman:497 src/gtkman:543
 msgid "Devices and special files (4)"
-msgstr "Специальные файлы и устройства (4)"
+msgstr ""
 
 #: src/gtkman:499 src/gtkman:545
 msgid "File formats and conventions (5)"
-msgstr "Форматы файлов и соглашения (5)"
+msgstr ""
 
 #: src/gtkman:500 src/gtkman:546
 msgid "Games et. al (6)"
-msgstr "Игры и т. п. (6)"
+msgstr ""
 
 #: src/gtkman:501 src/gtkman:547
 msgid "Miscellanea (7)"
-msgstr "Прочее (7)"
+msgstr ""
 
 #: src/gtkman:503 src/gtkman:549
 msgid "System administration tools and deamons (8)"
-msgstr "Инструменты для системного администрирования, демоны/службы (8)"
+msgstr ""
 
 #: gtkman.desktop.in.h:1
 msgid "GTKMan Manual Page Viewer"
-msgstr "Программа просмотра руководств GTKMan"
+msgstr ""
