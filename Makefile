@@ -2,23 +2,28 @@ DESTDIR ?= /
 PREFIX ?= /usr/local
 PACKAGE_LOCALE_DIR ?= /usr/share/locale
 
+.PHONY: all
 all: man mo
 
+.PHONY: man
 man:
 	@txt2tags -o man/gtkman.man man/gtkman.t2t || \
 	echo "WARNING: txt2tags is not installed. The gtkman manpage will not be created."
 
+.PHONY: mo
 mo:
 	for i in `ls po/*.po`; do \
 		msgfmt $$i -o `echo $$i | sed "s/\.po//"`.mo; \
 	done
 	intltool-merge po/ -d -u gtkman.desktop.in gtkman.desktop
 
+.PHONY: updatepo
 updatepo:
 	for i in `ls po/*.po`; do \
 		msgmerge -UNs $$i po/gtkman.pot; \
 	done
 
+.PHONY: pot
 pot:
 	xgettext --from-code=utf-8 \
 		-L Glade \
@@ -33,12 +38,14 @@ pot:
 	xgettext --from-code=utf-8 -j -L C -kN_ -o po/gtkman.pot gtkman.desktop.in.h
 	rm gtkman.desktop.in.h
 
+.PHONY: clean
 clean:
 	rm -f gtkman.desktop
 	rm -f po/*.mo
 	rm -f po/*.po~
 	rm -f man/gtkman.man
 
+.PHONY: install
 install:
 	install -D -m 755 src/gtkman $(DESTDIR)/$(PREFIX)/bin/gtkman
 	sed -i "s|^prefix = '_not_set_'|prefix = '$(PREFIX)'|" $(DESTDIR)/$(PREFIX)/bin/gtkman
@@ -60,7 +67,7 @@ install:
 		install -D -m 644 po/$$i.mo $(DESTDIR)/$(PACKAGE_LOCALE_DIR)/$$i/LC_MESSAGES/gtkman.mo; \
 	done
 
+.PHONY: transifex
 transifex:
 	tx pull -a
 
-.PHONY: all man mo updatepo pot clean install transifex
