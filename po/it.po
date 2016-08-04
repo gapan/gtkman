@@ -3,6 +3,8 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Antonio Sardei <laplume@libero.it>, 2011,2016
+# gapan <vlahavas@gmail.com>, 2012
 # Kerd <kerd89@gmail.com>, 2011
 # Antonio Sardei <laplume@libero.it>, 2011
 # gapan <vlahavas@gmail.com>, 2012
@@ -11,8 +13,8 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2015-09-24 20:42+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2016-06-12 18:06+0000\n"
+"Last-Translator: Antonio Sardei <laplume@libero.it>\n"
 "Language-Team: Italian (http://www.transifex.com/gapan/salix/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -54,7 +56,7 @@ msgstr "Preferenze"
 
 #: src/gtkman.glade:1102
 msgid "Manpage width (in characters):"
-msgstr ""
+msgstr "Larghezza pagina Manuale (in caratteri):"
 
 #: src/gtkman.glade:1156
 msgid "Manual page viewer"
@@ -94,16 +96,16 @@ msgstr "Pagina di manuale:"
 
 #: src/gtkman.glade:1500
 msgid "Creating index"
-msgstr "Stò creando l'indice"
+msgstr "Sto creando l'indice"
 
 #: src/gtkman.glade:1520
 msgid "Creating manual page index..."
-msgstr "Stò creando l'indindice della pagina..."
+msgstr "St creando l'indice della pagina..."
 
 #: src/gtkman:156
 #, python-format
 msgid "No manual page found for \"%(name)s\""
-msgstr "Non è stata trovata la pagine di manuale per \"%(name)s\""
+msgstr "Non è stata trovata la pagina di manuale per \"%(name)s\""
 
 #: src/gtkman:198
 msgid "USAGE:"
