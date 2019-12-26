@@ -368,7 +368,7 @@
     <property name="skip_pager_hint">True</property>
     <property name="transient_for">gtkman</property>
     <property name="program_name">GTKMan</property>
-    <property name="copyright">Copyright © 2011-2015 George Vlahavas</property>
+    <property name="copyright">Copyright © 2011-2019 George Vlahavas</property>
     <property name="comments" translatable="yes">A simple GTK+3 manual page viewer</property>
     <property name="website">https://github.com/gapan/gtkman</property>
     <property name="license">                    GNU GENERAL PUBLIC LICENSE
