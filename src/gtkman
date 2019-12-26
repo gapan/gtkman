@@ -478,10 +478,10 @@ class GTKMan:
     def __init__(self):
         builder = Gtk.Builder()
         builder.set_translation_domain("gtkman")
-        if os.path.exists('gtkman.glade'):
-            builder.add_from_file('gtkman.glade')
-        elif os.path.exists(prefix+'/share/gtkman/gtkman.glade'):
-            builder.add_from_file(prefix+'/share/gtkman/gtkman.glade')
+        if os.path.exists('gtkman.ui'):
+            builder.add_from_file('gtkman.ui')
+        elif os.path.exists(prefix+'/share/gtkman/gtkman.ui'):
+            builder.add_from_file(prefix+'/share/gtkman/gtkman.ui')
         self.window = builder.get_object('gtkman')
 
         #
