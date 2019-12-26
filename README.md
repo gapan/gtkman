@@ -1,7 +1,7 @@
 gtkman
 ======
 
-GTKMan is a simple GTK+2 manual page viewer, written in Python. Manual pages are viewed by specifying their name and optionally the section they are in, just as with the original man command. The manual pages are displayed in simple text form using the default system monospace font.
+GTKMan is a simple GTK+3 manual page viewer, written in Python. Manual pages are viewed by specifying their name and optionally the section they are in, just as with the original man command. The manual pages are displayed in simple text form using the default system monospace font.
 
 Translation
 -----------

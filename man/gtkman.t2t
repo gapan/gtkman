@@ -7,7 +7,7 @@ George Vlahavas
 
 = NAME =
 
-gtkman - A simple GTK+2 manual page viewer
+gtkman - A simple GTK+3 manual page viewer
 
 = SYNOPSIS =
 
@@ -16,7 +16,7 @@ gtkman - A simple GTK+2 manual page viewer
 = DESCRIPTION =
 
 **GTKMan** is a simple manual page viewer written in Python and using
-the GTK+2 toolkit. It displays manual pages in simple text form using
+the GTK+3 toolkit. It displays manual pages in simple text form using
 the default system monospace font. A specific section to look in for a
 certain manual page can be specified. It can also be launched from the
 command line in place of the classic **man** command, specifying the
