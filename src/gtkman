@@ -192,7 +192,7 @@ class GTKMan:
             pass
         self.config.set('Window', 'width', self.win_width)
         self.config.set('Window', 'height', self.win_height)
-        with open(self.config_file, 'wb') as configfile:
+        with open(self.config_file, 'w') as configfile:
             self.config.write(configfile)
         Gtk.main_quit()
 
@@ -433,7 +433,7 @@ class GTKMan:
         except configparser.DuplicateSectionError:
             pass
         self.config.set('man', 'width', man_width)
-        with open(self.config_file, 'wb') as configfile:
+        with open(self.config_file, 'w') as configfile:
             self.config.write(configfile)
         self.dialog_prefs.hide()
         self.manpage_show()
