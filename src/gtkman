@@ -54,7 +54,7 @@ class GTKMan:
         cmd = ['man', '-w']
         process = subprocess.Popen(
             cmd, shell=False, close_fds=True, stdout=subprocess.PIPE)
-        output = process.communicate()[0]
+        output = process.communicate()[0].decode()
         status = process.returncode
         section1 = []
         section2 = []
