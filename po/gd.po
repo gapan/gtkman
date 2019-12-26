@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : (n > 2 && n < 20) ? 2 : 3;\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+2 manual page viewer"
+msgid "A simple GTK+3 manual page viewer"
 msgstr ""
 
 #: src/gtkman.glade:695

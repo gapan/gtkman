@@ -19,8 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+2 manual page viewer"
-msgstr "En simpel GTK+2 viser til manualsider"
+msgid "A simple GTK+3 manual page viewer"
+msgstr "En simpel GTK+3 viser til manualsider"
 
 #: src/gtkman.glade:695
 msgid "translator-credits"

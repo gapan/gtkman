@@ -20,8 +20,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+2 manual page viewer"
-msgstr "Прост GTK+2 визуализатор за ръководства"
+msgid "A simple GTK+3 manual page viewer"
+msgstr "Прост GTK+3 визуализатор за ръководства"
 
 #: src/gtkman.glade:695
 msgid "translator-credits"
