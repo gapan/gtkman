@@ -68,7 +68,9 @@ class GTKMan:
             dirs = output.rsplit('\n')[0].split(':')
             for i in dirs:
                 for j in os.listdir(i):
+                    Gdk.threads_enter()
                     self.progressbar_index.pulse()
+                    Gdk.threads_leave()
                     path = i + '/' + j
                     if j.startswith('man') and os.path.isdir(path):
                         for directory, dirnames, filenames in os.walk(path):
@@ -415,11 +417,9 @@ class GTKMan:
             Gdk.threads_leave()
             self.section_lists = self.manpagelists()
             self.section_lists_ready = True
-            Gdk.threads_enter()
-            self.window_create_index.hide()
-            Gdk.threads_leave()
         Gdk.threads_enter()
         self.create_index()
+        self.window_create_index.hide()
         self.dialog_index.show()
         Gdk.threads_leave()
 
