@@ -153,12 +153,12 @@ class GTKMan:
         p2 = subprocess.Popen(cmd2, stdin=p1.stdout,
                               stdout=subprocess.PIPE, stderr=DEVNULL)
         p1.stdout.close()
-        output = p2.communicate()[0]
+        output = p2.communicate()[0].decode()
         status = p1.wait()
         if status != 0:
             output = _('No manual page found for "%(name)s"') % {'name': page}
         DEVNULL.close()
-        return output.decode()
+        return output
 
     def manpage_stripchars(self, manpage):
         return manpage.lstrip(' ').partition(' ')[0].partition(';')[0].partition('|')[0].partition('&')[0]
