@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Panwar108 <caspian7pena@gmail.com>, 2020
+msgid ""
+msgstr ""
+"Project-Id-Version: Salix\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-24 23:42+0300\n"
+"PO-Revision-Date: 2020-06-28 05:25+0000\n"
+"Last-Translator: Panwar108 <caspian7pena@gmail.com>\n"
+"Language-Team: Hindi (India) (http://www.transifex.com/gapan/salix/language/hi_IN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hi_IN\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/gtkman.glade:17 gtkman.desktop.in.h:2
+msgid "A simple GTK+2 manual page viewer"
+msgstr "जीटीके+2 गाइड हेतु सरल पृष्ठ प्रदर्शक"
+
+#: src/gtkman.glade:695
+msgid "translator-credits"
+msgstr "अनुवादक आभार"
+
+#: src/gtkman.glade:730
+msgid "Find"
+msgstr "खोजें"
+
+#: src/gtkman.glade:804
+msgid "Find what:"
+msgstr "क्या खोजना है :"
+
+#: src/gtkman.glade:838
+msgid "Match case"
+msgstr "अक्षर मिलान"
+
+#: src/gtkman.glade:868
+msgid "Manual page index"
+msgstr "गाइड पृष्ठ अनुक्रम"
+
+#: src/gtkman.glade:946 src/gtkman.glade:1404
+msgid "Section:"
+msgstr "अनुभाग"
+
+#: src/gtkman.glade:1034
+msgid "Preferences"
+msgstr "सेटिंग्स"
+
+#: src/gtkman.glade:1102
+msgid "Manpage width (in characters):"
+msgstr "पृष्ठ चौड़ाई (अक्षर संख्या) :"
+
+#: src/gtkman.glade:1156
+msgid "Manual page viewer"
+msgstr "गाइड पृष्ठ प्रदर्शक"
+
+#: src/gtkman.glade:1172
+msgid "_File"
+msgstr "फ़ाइल (_F)"
+
+#: src/gtkman.glade:1225
+msgid "_Edit"
+msgstr "संपादित करें"
+
+#: src/gtkman.glade:1249
+msgid "_Search"
+msgstr "खोजें  (_S)"
+
+#: src/gtkman.glade:1268
+msgid "Find _Next"
+msgstr "अगली आवृत्ति खोजें (_N)"
+
+#: src/gtkman.glade:1281
+msgid "Find _Previous"
+msgstr "पिछली आवृत्ति खोजें (_P)"
+
+#: src/gtkman.glade:1300
+msgid "_Help"
+msgstr "सहायता (_H)"
+
+#: src/gtkman.glade:1337
+msgid "Index"
+msgstr "अनुक्रमणिका"
+
+#: src/gtkman.glade:1368
+msgid "Manual page:"
+msgstr "गाइड पृष्ठ :"
+
+#: src/gtkman.glade:1500
+msgid "Creating index"
+msgstr "अनुक्रम बनाया जा रहा है"
+
+#: src/gtkman.glade:1520
+msgid "Creating manual page index..."
+msgstr "गाइड पृष्ठ अनुक्रम बनाया जा रहा है ..."
+
+#: src/gtkman:156
+#, python-format
+msgid "No manual page found for \"%(name)s\""
+msgstr "\"%(name)s\" हेतु कोई गाइड पृष्ठ नहीं मिला"
+
+#: src/gtkman:198
+msgid "USAGE:"
+msgstr "उपयोग :"
+
+#: src/gtkman:199
+msgid "[OPTIONS] [[section] manpage]"
+msgstr "[विकल्प] [[अनुभाग] गाइड पृष्ठ]"
+
+#: src/gtkman:201
+msgid "OPTIONS:"
+msgstr "विकल्प :"
+
+#: src/gtkman:202
+msgid "this help message"
+msgstr "यह सहायता संदेश"
+
+#: src/gtkman:493 src/gtkman:538
+msgid "Any"
+msgstr "कोई भी"
+
+#: src/gtkman:494 src/gtkman:539
+msgid "User commands (1)"
+msgstr "उपयोक्ता कमांड (1)"
+
+#: src/gtkman:495 src/gtkman:540
+msgid "System calls (2)"
+msgstr "सिस्टम कॉल (2)"
+
+#: src/gtkman:496 src/gtkman:541
+msgid "C library functions (3)"
+msgstr "सी लाइब्रेरी कार्य (3)"
+
+#: src/gtkman:497 src/gtkman:543
+msgid "Devices and special files (4)"
+msgstr "उपकरण व विशिष्ट फ़ाइलें (4)"
+
+#: src/gtkman:499 src/gtkman:545
+msgid "File formats and conventions (5)"
+msgstr "फ़ाइल प्रारूप व रीतियाँ (5)"
+
+#: src/gtkman:500 src/gtkman:546
+msgid "Games et. al (6)"
+msgstr "खेल आदि (6)"
+
+#: src/gtkman:501 src/gtkman:547
+msgid "Miscellanea (7)"
+msgstr "विविध (7)"
+
+#: src/gtkman:503 src/gtkman:549
+msgid "System administration tools and deamons (8)"
+msgstr "सिस्टम प्रबंधन साधन व डेमॉन (8)"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "जीटीके-मैन गाइड पृष्ठ प्रदर्शक"

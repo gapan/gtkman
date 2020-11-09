@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
@@ -10,83 +10,25 @@ msgstr ""
 "POT-Creation-Date: 2015-09-24 23:42+0300\n"
 "PO-Revision-Date: 2017-09-19 20:03+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Gaelic, Scottish (http://www.transifex.com/gapan/salix/language/gd/)\n"
+"Language-Team: Gaelic, Scottish (http://www.transifex.com/gapan/salix/"
+"language/gd/)\n"
+"Language: gd\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: gd\n"
-"Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : (n > 2 && n < 20) ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
+"(n > 2 && n < 20) ? 2 : 3;\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
 msgid "A simple GTK+3 manual page viewer"
 msgstr ""
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "cliù an t-eadar-theangair"
-
-#: src/gtkman.glade:730
-msgid "Find"
+#: src/gtkman:493 src/gtkman:538
+msgid "Any"
 msgstr ""
 
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr ""
-
-#: src/gtkman.glade:838
-msgid "Match case"
-msgstr ""
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr ""
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr ""
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "Roghainnean"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr ""
-
-#: src/gtkman.glade:1156
-msgid "Manual page viewer"
-msgstr ""
-
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr ""
-
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr ""
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr ""
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr ""
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr ""
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr ""
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr ""
-
-#: src/gtkman.glade:1368
-msgid "Manual page:"
+#: src/gtkman:496 src/gtkman:541
+msgid "C library functions (3)"
 msgstr ""
 
 #: src/gtkman.glade:1500
@@ -97,43 +39,6 @@ msgstr ""
 msgid "Creating manual page index..."
 msgstr ""
 
-#: src/gtkman:156
-#, python-format
-msgid "No manual page found for \"%(name)s\""
-msgstr ""
-
-#: src/gtkman:198
-msgid "USAGE:"
-msgstr ""
-
-#: src/gtkman:199
-msgid "[OPTIONS] [[section] manpage]"
-msgstr ""
-
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr ""
-
-#: src/gtkman:202
-msgid "this help message"
-msgstr ""
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr ""
-
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr ""
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr ""
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr ""
-
 #: src/gtkman:497 src/gtkman:543
 msgid "Devices and special files (4)"
 msgstr ""
@@ -142,18 +47,115 @@ msgstr ""
 msgid "File formats and conventions (5)"
 msgstr ""
 
+#: src/gtkman.glade:730
+msgid "Find"
+msgstr ""
+
+#: src/gtkman.glade:1268
+msgid "Find _Next"
+msgstr ""
+
+#: src/gtkman.glade:1281
+msgid "Find _Previous"
+msgstr ""
+
+#: src/gtkman.glade:804
+msgid "Find what:"
+msgstr ""
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr ""
+
 #: src/gtkman:500 src/gtkman:546
 msgid "Games et. al (6)"
+msgstr ""
+
+#: src/gtkman.glade:1337
+msgid "Index"
+msgstr ""
+
+#: src/gtkman.glade:1102
+msgid "Manpage width (in characters):"
+msgstr ""
+
+#: src/gtkman.glade:868
+msgid "Manual page index"
+msgstr ""
+
+#: src/gtkman.glade:1156
+msgid "Manual page viewer"
+msgstr ""
+
+#: src/gtkman.glade:1368
+msgid "Manual page:"
+msgstr ""
+
+#: src/gtkman.glade:838
+msgid "Match case"
 msgstr ""
 
 #: src/gtkman:501 src/gtkman:547
 msgid "Miscellanea (7)"
 msgstr ""
 
+#: src/gtkman:156
+#, python-format
+msgid "No manual page found for \"%(name)s\""
+msgstr ""
+
+#: src/gtkman:201
+msgid "OPTIONS:"
+msgstr ""
+
+#: src/gtkman.glade:1034
+msgid "Preferences"
+msgstr "Roghainnean"
+
+#: src/gtkman.glade:946 src/gtkman.glade:1404
+msgid "Section:"
+msgstr ""
+
 #: src/gtkman:503 src/gtkman:549
 msgid "System administration tools and deamons (8)"
 msgstr ""
 
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
+#: src/gtkman:495 src/gtkman:540
+msgid "System calls (2)"
 msgstr ""
+
+#: src/gtkman:198
+msgid "USAGE:"
+msgstr ""
+
+#: src/gtkman:494 src/gtkman:539
+msgid "User commands (1)"
+msgstr ""
+
+#: src/gtkman:199
+msgid "[OPTIONS] [[section] manpage]"
+msgstr ""
+
+#: src/gtkman.glade:1225
+msgid "_Edit"
+msgstr ""
+
+#: src/gtkman.glade:1172
+msgid "_File"
+msgstr ""
+
+#: src/gtkman.glade:1300
+msgid "_Help"
+msgstr ""
+
+#: src/gtkman.glade:1249
+msgid "_Search"
+msgstr ""
+
+#: src/gtkman:202
+msgid "this help message"
+msgstr ""
+
+#: src/gtkman.glade:695
+msgid "translator-credits"
+msgstr "cliù an t-eadar-theangair"

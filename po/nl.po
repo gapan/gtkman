@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Gambit <gambit73@gmail.com>, 2011
 # Gambit <gambit73@gmail.com>, 2012
@@ -15,83 +15,23 @@ msgstr ""
 "PO-Revision-Date: 2017-09-19 09:41+0000\n"
 "Last-Translator: Gambit <gambit73@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/gapan/salix/language/nl/)\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
 msgid "A simple GTK+3 manual page viewer"
 msgstr "Een eenvoudige GTK+3 handleiding toner"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "vertaler-credits"
+#: src/gtkman:493 src/gtkman:538
+msgid "Any"
+msgstr "Willekeurig"
 
-#: src/gtkman.glade:730
-msgid "Find"
-msgstr "Zoek"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "Zoeken naar:"
-
-#: src/gtkman.glade:838
-msgid "Match case"
-msgstr "Hoofdlettergevoelig"
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "Handmatige pagina index"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "Sectie:"
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "Voorkeuren"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr "Manpage wijdte (in karakters):"
-
-#: src/gtkman.glade:1156
-msgid "Manual page viewer"
-msgstr "Toon handleiding"
-
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "_File"
-
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "_Aanpassen"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr "_Zoek"
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr "Zoek _Volgend"
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr "Zoek _Eerder"
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "_Help"
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr "Index"
-
-#: src/gtkman.glade:1368
-msgid "Manual page:"
-msgstr "Handleiding pagina:"
+#: src/gtkman:496 src/gtkman:541
+msgid "C library functions (3)"
+msgstr "C library functies (3)"
 
 #: src/gtkman.glade:1500
 msgid "Creating index"
@@ -101,43 +41,6 @@ msgstr "Index aan het maken"
 msgid "Creating manual page index..."
 msgstr "Handmatige Pagina indexering aan het maken..."
 
-#: src/gtkman:156
-#, python-format
-msgid "No manual page found for \"%(name)s\""
-msgstr "Geen handleiding gevonden voor \"%(name)s\""
-
-#: src/gtkman:198
-msgid "USAGE:"
-msgstr "GEBRUIK:"
-
-#: src/gtkman:199
-msgid "[OPTIONS] [[section] manpage]"
-msgstr "[OPTIONS] [[section] manpage]"
-
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr "OPTIES:"
-
-#: src/gtkman:202
-msgid "this help message"
-msgstr "Dit Help-bericht"
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "Willekeurig"
-
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "Gebruiker commando's (1)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "System calls (2)"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "C library functies (3)"
-
 #: src/gtkman:497 src/gtkman:543
 msgid "Devices and special files (4)"
 msgstr "Apparaten en speciale bestanden (4)"
@@ -146,18 +49,115 @@ msgstr "Apparaten en speciale bestanden (4)"
 msgid "File formats and conventions (5)"
 msgstr "Bestandsformaten en conventies (5)"
 
+#: src/gtkman.glade:730
+msgid "Find"
+msgstr "Zoek"
+
+#: src/gtkman.glade:1268
+msgid "Find _Next"
+msgstr "Zoek _Volgend"
+
+#: src/gtkman.glade:1281
+msgid "Find _Previous"
+msgstr "Zoek _Eerder"
+
+#: src/gtkman.glade:804
+msgid "Find what:"
+msgstr "Zoeken naar:"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "GTKMan Handleiding toner"
+
 #: src/gtkman:500 src/gtkman:546
 msgid "Games et. al (6)"
 msgstr "Spelletjes enz. (6)"
+
+#: src/gtkman.glade:1337
+msgid "Index"
+msgstr "Index"
+
+#: src/gtkman.glade:1102
+msgid "Manpage width (in characters):"
+msgstr "Manpage wijdte (in karakters):"
+
+#: src/gtkman.glade:868
+msgid "Manual page index"
+msgstr "Handmatige pagina index"
+
+#: src/gtkman.glade:1156
+msgid "Manual page viewer"
+msgstr "Toon handleiding"
+
+#: src/gtkman.glade:1368
+msgid "Manual page:"
+msgstr "Handleiding pagina:"
+
+#: src/gtkman.glade:838
+msgid "Match case"
+msgstr "Hoofdlettergevoelig"
 
 #: src/gtkman:501 src/gtkman:547
 msgid "Miscellanea (7)"
 msgstr "Diversen (7)"
 
+#: src/gtkman:156
+#, python-format
+msgid "No manual page found for \"%(name)s\""
+msgstr "Geen handleiding gevonden voor \"%(name)s\""
+
+#: src/gtkman:201
+msgid "OPTIONS:"
+msgstr "OPTIES:"
+
+#: src/gtkman.glade:1034
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#: src/gtkman.glade:946 src/gtkman.glade:1404
+msgid "Section:"
+msgstr "Sectie:"
+
 #: src/gtkman:503 src/gtkman:549
 msgid "System administration tools and deamons (8)"
 msgstr "Tools voor systeembeheer en daemons (8)"
 
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "GTKMan Handleiding toner"
+#: src/gtkman:495 src/gtkman:540
+msgid "System calls (2)"
+msgstr "System calls (2)"
+
+#: src/gtkman:198
+msgid "USAGE:"
+msgstr "GEBRUIK:"
+
+#: src/gtkman:494 src/gtkman:539
+msgid "User commands (1)"
+msgstr "Gebruiker commando's (1)"
+
+#: src/gtkman:199
+msgid "[OPTIONS] [[section] manpage]"
+msgstr "[OPTIONS] [[section] manpage]"
+
+#: src/gtkman.glade:1225
+msgid "_Edit"
+msgstr "_Aanpassen"
+
+#: src/gtkman.glade:1172
+msgid "_File"
+msgstr "_File"
+
+#: src/gtkman.glade:1300
+msgid "_Help"
+msgstr "_Help"
+
+#: src/gtkman.glade:1249
+msgid "_Search"
+msgstr "_Zoek"
+
+#: src/gtkman:202
+msgid "this help message"
+msgstr "Dit Help-bericht"
+
+#: src/gtkman.glade:695
+msgid "translator-credits"
+msgstr "vertaler-credits"

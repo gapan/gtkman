@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # GenghisKhan <genghiskhan@gmx.ca>, 2013,2015
 # GenghisKhan <genghiskhan@gmx.ca>, 2012
@@ -13,83 +13,24 @@ msgstr ""
 "PO-Revision-Date: 2017-09-19 13:04+0000\n"
 "Last-Translator: GenghisKhan <genghiskhan@gmx.ca>\n"
 "Language-Team: Hebrew (http://www.transifex.com/gapan/salix/language/he/)\n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: he\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % "
+"1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
 msgid "A simple GTK+3 manual page viewer"
 msgstr "מציג דפי הדרכה פשוט מבוסס GTK+3"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "Rahut Contributors:\n  Isratine Citizen <genghiskhan@gmx.ca>"
+#: src/gtkman:493 src/gtkman:538
+msgid "Any"
+msgstr "הכל"
 
-#: src/gtkman.glade:730
-msgid "Find"
-msgstr "חיפוש"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "מה למצוא:"
-
-#: src/gtkman.glade:838
-msgid "Match case"
-msgstr "התאם אותיות גדולות/קטנות"
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "אינדקס מדריכים"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "מחלקה:"
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "העדפות"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr "רוחב דף הדרכה (בתווים):"
-
-#: src/gtkman.glade:1156
-msgid "Manual page viewer"
-msgstr "מציג דפי הדרכה"
-
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "_קובץ"
-
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "ע_ריכה"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr "_חיפוש"
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr "מצא את ה_בא"
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr "מצא את ה_קודם"
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "_עזרה"
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr "אינדקס"
-
-#: src/gtkman.glade:1368
-msgid "Manual page:"
-msgstr "מדריך:"
+#: src/gtkman:496 src/gtkman:541
+msgid "C library functions (3)"
+msgstr "פונקציות ספרייה C ‏(3)"
 
 #: src/gtkman.glade:1500
 msgid "Creating index"
@@ -99,43 +40,6 @@ msgstr "מחולל אינדקס"
 msgid "Creating manual page index..."
 msgstr "מחולל כעת אינדקס מדריכים..."
 
-#: src/gtkman:156
-#, python-format
-msgid "No manual page found for \"%(name)s\""
-msgstr "לא נמצא דף מדריך עבור \"%(name)s\""
-
-#: src/gtkman:198
-msgid "USAGE:"
-msgstr "USAGE:"
-
-#: src/gtkman:199
-msgid "[OPTIONS] [[section] manpage]"
-msgstr "[OPTIONS] [[section] manpage]"
-
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr "OPTIONS:"
-
-#: src/gtkman:202
-msgid "this help message"
-msgstr "this help message"
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "הכל"
-
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "פקודות משתמש (1)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "קריאות מערכת (2)"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "פונקציות ספרייה C ‏(3)"
-
 #: src/gtkman:497 src/gtkman:543
 msgid "Devices and special files (4)"
 msgstr "התקנים וקבצים מיוחדים (4)"
@@ -144,18 +48,117 @@ msgstr "התקנים וקבצים מיוחדים (4)"
 msgid "File formats and conventions (5)"
 msgstr "תסדירי קובץ ונוהגים (5)"
 
+#: src/gtkman.glade:730
+msgid "Find"
+msgstr "חיפוש"
+
+#: src/gtkman.glade:1268
+msgid "Find _Next"
+msgstr "מצא את ה_בא"
+
+#: src/gtkman.glade:1281
+msgid "Find _Previous"
+msgstr "מצא את ה_קודם"
+
+#: src/gtkman.glade:804
+msgid "Find what:"
+msgstr "מה למצוא:"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "‏GTKMan מציג דפי הדרכה"
+
 #: src/gtkman:500 src/gtkman:546
 msgid "Games et. al (6)"
 msgstr "משחקים ואחרים (6)"
+
+#: src/gtkman.glade:1337
+msgid "Index"
+msgstr "אינדקס"
+
+#: src/gtkman.glade:1102
+msgid "Manpage width (in characters):"
+msgstr "רוחב דף הדרכה (בתווים):"
+
+#: src/gtkman.glade:868
+msgid "Manual page index"
+msgstr "אינדקס מדריכים"
+
+#: src/gtkman.glade:1156
+msgid "Manual page viewer"
+msgstr "מציג דפי הדרכה"
+
+#: src/gtkman.glade:1368
+msgid "Manual page:"
+msgstr "מדריך:"
+
+#: src/gtkman.glade:838
+msgid "Match case"
+msgstr "התאם אותיות גדולות/קטנות"
 
 #: src/gtkman:501 src/gtkman:547
 msgid "Miscellanea (7)"
 msgstr "שונות (7)"
 
+#: src/gtkman:156
+#, python-format
+msgid "No manual page found for \"%(name)s\""
+msgstr "לא נמצא דף מדריך עבור \"%(name)s\""
+
+#: src/gtkman:201
+msgid "OPTIONS:"
+msgstr "OPTIONS:"
+
+#: src/gtkman.glade:1034
+msgid "Preferences"
+msgstr "העדפות"
+
+#: src/gtkman.glade:946 src/gtkman.glade:1404
+msgid "Section:"
+msgstr "מחלקה:"
+
 #: src/gtkman:503 src/gtkman:549
 msgid "System administration tools and deamons (8)"
 msgstr "כלי ניהול מערכת ושדונים (8)"
 
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "‏GTKMan מציג דפי הדרכה"
+#: src/gtkman:495 src/gtkman:540
+msgid "System calls (2)"
+msgstr "קריאות מערכת (2)"
+
+#: src/gtkman:198
+msgid "USAGE:"
+msgstr "USAGE:"
+
+#: src/gtkman:494 src/gtkman:539
+msgid "User commands (1)"
+msgstr "פקודות משתמש (1)"
+
+#: src/gtkman:199
+msgid "[OPTIONS] [[section] manpage]"
+msgstr "[OPTIONS] [[section] manpage]"
+
+#: src/gtkman.glade:1225
+msgid "_Edit"
+msgstr "ע_ריכה"
+
+#: src/gtkman.glade:1172
+msgid "_File"
+msgstr "_קובץ"
+
+#: src/gtkman.glade:1300
+msgid "_Help"
+msgstr "_עזרה"
+
+#: src/gtkman.glade:1249
+msgid "_Search"
+msgstr "_חיפוש"
+
+#: src/gtkman:202
+msgid "this help message"
+msgstr "this help message"
+
+#: src/gtkman.glade:695
+msgid "translator-credits"
+msgstr ""
+"Rahut Contributors:\n"
+"  Isratine Citizen <genghiskhan@gmx.ca>"

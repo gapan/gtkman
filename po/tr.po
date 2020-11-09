@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Ege Öz <ege.oz@yandex.com.tr>, 2013
 # Emre FIRAT <emrefirat93@gmail.com>, 2013
@@ -15,83 +15,23 @@ msgstr ""
 "PO-Revision-Date: 2017-09-19 11:03+0000\n"
 "Last-Translator: Onur ÖZDEMİR\n"
 "Language-Team: Turkish (http://www.transifex.com/gapan/salix/language/tr/)\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
 msgid "A simple GTK+3 manual page viewer"
 msgstr "Basit bir GTK+3 elle sayfa gösterici"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "çevirmen-credits"
+#: src/gtkman:493 src/gtkman:538
+msgid "Any"
+msgstr "Herhangi"
 
-#: src/gtkman.glade:730
-msgid "Find"
-msgstr "Bul"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "Bul:"
-
-#: src/gtkman.glade:838
-msgid "Match case"
-msgstr "Büyük küçük harf duyarlı"
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "Manuel sayfa dizini"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "Bölüm:"
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "Tercihler"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr "Manpage genişliği (karakter olarak):"
-
-#: src/gtkman.glade:1156
-msgid "Manual page viewer"
-msgstr "Manuel sayfa görüntüleyicisi"
-
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "_Dosya"
-
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "_Düzenle"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr "_Arama"
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr "_Öncekini Bul"
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr "_Sonrakini Bul"
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "_Yardım"
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr "Dizin"
-
-#: src/gtkman.glade:1368
-msgid "Manual page:"
-msgstr "Kılavuz sayfası:"
+#: src/gtkman:496 src/gtkman:541
+msgid "C library functions (3)"
+msgstr "C kütüphanesi işlevleri (3)"
 
 #: src/gtkman.glade:1500
 msgid "Creating index"
@@ -101,43 +41,6 @@ msgstr "dizin oluşturuluyor"
 msgid "Creating manual page index..."
 msgstr "El ile sayfa dizini oluşturuluyor..."
 
-#: src/gtkman:156
-#, python-format
-msgid "No manual page found for \"%(name)s\""
-msgstr "\"%(name)s\" için kılavuz sayfası bulunamadı "
-
-#: src/gtkman:198
-msgid "USAGE:"
-msgstr "KULLANIM:"
-
-#: src/gtkman:199
-msgid "[OPTIONS] [[section] manpage]"
-msgstr "[SEÇENEKLER] [[bölüm] manpage]"
-
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr "SEÇENEKLER:"
-
-#: src/gtkman:202
-msgid "this help message"
-msgstr "bu bir yardım mesajı"
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "Herhangi"
-
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "Kullanıcı komutları (1)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "Sistem çağrıları (2)"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "C kütüphanesi işlevleri (3)"
-
 #: src/gtkman:497 src/gtkman:543
 msgid "Devices and special files (4)"
 msgstr "Aygıtlar ve özel dosyalar (4)"
@@ -146,18 +49,115 @@ msgstr "Aygıtlar ve özel dosyalar (4)"
 msgid "File formats and conventions (5)"
 msgstr "Dosya biçimleri ve kuralları (5)"
 
+#: src/gtkman.glade:730
+msgid "Find"
+msgstr "Bul"
+
+#: src/gtkman.glade:1268
+msgid "Find _Next"
+msgstr "_Öncekini Bul"
+
+#: src/gtkman.glade:1281
+msgid "Find _Previous"
+msgstr "_Sonrakini Bul"
+
+#: src/gtkman.glade:804
+msgid "Find what:"
+msgstr "Bul:"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "GTKMan Kılavuzu Sayfa Görüntüleyici"
+
 #: src/gtkman:500 src/gtkman:546
 msgid "Games et. al (6)"
 msgstr "Oyunlar et. al (6)"
+
+#: src/gtkman.glade:1337
+msgid "Index"
+msgstr "Dizin"
+
+#: src/gtkman.glade:1102
+msgid "Manpage width (in characters):"
+msgstr "Manpage genişliği (karakter olarak):"
+
+#: src/gtkman.glade:868
+msgid "Manual page index"
+msgstr "Manuel sayfa dizini"
+
+#: src/gtkman.glade:1156
+msgid "Manual page viewer"
+msgstr "Manuel sayfa görüntüleyicisi"
+
+#: src/gtkman.glade:1368
+msgid "Manual page:"
+msgstr "Kılavuz sayfası:"
+
+#: src/gtkman.glade:838
+msgid "Match case"
+msgstr "Büyük küçük harf duyarlı"
 
 #: src/gtkman:501 src/gtkman:547
 msgid "Miscellanea (7)"
 msgstr "Miscellanea (7)"
 
+#: src/gtkman:156
+#, python-format
+msgid "No manual page found for \"%(name)s\""
+msgstr "\"%(name)s\" için kılavuz sayfası bulunamadı "
+
+#: src/gtkman:201
+msgid "OPTIONS:"
+msgstr "SEÇENEKLER:"
+
+#: src/gtkman.glade:1034
+msgid "Preferences"
+msgstr "Tercihler"
+
+#: src/gtkman.glade:946 src/gtkman.glade:1404
+msgid "Section:"
+msgstr "Bölüm:"
+
 #: src/gtkman:503 src/gtkman:549
 msgid "System administration tools and deamons (8)"
 msgstr "Sistem yönetim araçları ve sihirbazları (8)"
 
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "GTKMan Kılavuzu Sayfa Görüntüleyici"
+#: src/gtkman:495 src/gtkman:540
+msgid "System calls (2)"
+msgstr "Sistem çağrıları (2)"
+
+#: src/gtkman:198
+msgid "USAGE:"
+msgstr "KULLANIM:"
+
+#: src/gtkman:494 src/gtkman:539
+msgid "User commands (1)"
+msgstr "Kullanıcı komutları (1)"
+
+#: src/gtkman:199
+msgid "[OPTIONS] [[section] manpage]"
+msgstr "[SEÇENEKLER] [[bölüm] manpage]"
+
+#: src/gtkman.glade:1225
+msgid "_Edit"
+msgstr "_Düzenle"
+
+#: src/gtkman.glade:1172
+msgid "_File"
+msgstr "_Dosya"
+
+#: src/gtkman.glade:1300
+msgid "_Help"
+msgstr "_Yardım"
+
+#: src/gtkman.glade:1249
+msgid "_Search"
+msgstr "_Arama"
+
+#: src/gtkman:202
+msgid "this help message"
+msgstr "bu bir yardım mesajı"
+
+#: src/gtkman.glade:695
+msgid "translator-credits"
+msgstr "çevirmen-credits"

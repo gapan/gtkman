@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Gatis Kalniņš <>, 2014
 msgid ""
@@ -11,63 +11,45 @@ msgstr ""
 "POT-Creation-Date: 2015-09-24 23:42+0300\n"
 "PO-Revision-Date: 2017-09-19 23:03+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Latvian (Latvia) (http://www.transifex.com/gapan/salix/language/lv_LV/)\n"
+"Language-Team: Latvian (Latvia) (http://www.transifex.com/gapan/salix/"
+"language/lv_LV/)\n"
+"Language: lv_LV\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lv_LV\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
 msgid "A simple GTK+3 manual page viewer"
 msgstr "Vienkāršs rokasgrāmatu pārlūks uz GTK+3 bāzes"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "tulks"
+#: src/gtkman:493 src/gtkman:538
+msgid "Any"
+msgstr "Jebkura"
+
+#: src/gtkman:496 src/gtkman:541
+msgid "C library functions (3)"
+msgstr "C bibliotēkas funkcijas (3)"
+
+#: src/gtkman.glade:1500
+msgid "Creating index"
+msgstr "Veidot sarakstu"
+
+#: src/gtkman.glade:1520
+msgid "Creating manual page index..."
+msgstr "Veido rokasgrāmatu sarakstu..."
+
+#: src/gtkman:497 src/gtkman:543
+msgid "Devices and special files (4)"
+msgstr "Ierīces un speciālie faili (4)"
+
+#: src/gtkman:499 src/gtkman:545
+msgid "File formats and conventions (5)"
+msgstr "Failu formāti un konvencijas (5)"
 
 #: src/gtkman.glade:730
 msgid "Find"
-msgstr "Meklēt"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "Meklēt:"
-
-#: src/gtkman.glade:838
-msgid "Match case"
-msgstr "Reģistra sakritība"
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "Rokasgrāmatu saraksts"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "Sadaļa:"
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "Iestatījumi"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr ""
-
-#: src/gtkman.glade:1156
-msgid "Manual page viewer"
-msgstr "Rokasgrāmatu pārlūks"
-
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "_Fails"
-
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "_Labot"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
 msgstr "Meklēt"
 
 #: src/gtkman.glade:1268
@@ -78,83 +60,103 @@ msgstr "Meklēt nākamo"
 msgid "Find _Previous"
 msgstr "Meklēt iepriekšējo"
 
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "_Palīdzība"
+#: src/gtkman.glade:804
+msgid "Find what:"
+msgstr "Meklēt:"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "Rokasgrāmatu pārlūks GTKMan"
+
+#: src/gtkman:500 src/gtkman:546
+msgid "Games et. al (6)"
+msgstr "Spēles un tml. (6)"
 
 #: src/gtkman.glade:1337
 msgid "Index"
 msgstr "Struktūra"
 
+#: src/gtkman.glade:1102
+msgid "Manpage width (in characters):"
+msgstr ""
+
+#: src/gtkman.glade:868
+msgid "Manual page index"
+msgstr "Rokasgrāmatu saraksts"
+
+#: src/gtkman.glade:1156
+msgid "Manual page viewer"
+msgstr "Rokasgrāmatu pārlūks"
+
 #: src/gtkman.glade:1368
 msgid "Manual page:"
 msgstr "Rokasgrāmata:"
 
-#: src/gtkman.glade:1500
-msgid "Creating index"
-msgstr "Veidot sarakstu"
+#: src/gtkman.glade:838
+msgid "Match case"
+msgstr "Reģistra sakritība"
 
-#: src/gtkman.glade:1520
-msgid "Creating manual page index..."
-msgstr "Veido rokasgrāmatu sarakstu..."
+#: src/gtkman:501 src/gtkman:547
+msgid "Miscellanea (7)"
+msgstr "Dažādi (7)"
 
 #: src/gtkman:156
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr "Nav atrasta neviena rokasgrāmata ar atbilstību \"%(name)s\""
 
-#: src/gtkman:198
-msgid "USAGE:"
-msgstr "PIELIETOJUMS:"
-
-#: src/gtkman:199
-msgid "[OPTIONS] [[section] manpage]"
-msgstr "[OPTIONS] [[section] manpage]"
-
 #: src/gtkman:201
 msgid "OPTIONS:"
 msgstr "OPCIJAS:"
 
-#: src/gtkman:202
-msgid "this help message"
-msgstr "šis palīdzības paziņojums"
+#: src/gtkman.glade:1034
+msgid "Preferences"
+msgstr "Iestatījumi"
 
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "Jebkura"
-
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "Lietotāja komandas (1)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "Sistsēmas izsaukumi (2)"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "C bibliotēkas funkcijas (3)"
-
-#: src/gtkman:497 src/gtkman:543
-msgid "Devices and special files (4)"
-msgstr "Ierīces un speciālie faili (4)"
-
-#: src/gtkman:499 src/gtkman:545
-msgid "File formats and conventions (5)"
-msgstr "Failu formāti un konvencijas (5)"
-
-#: src/gtkman:500 src/gtkman:546
-msgid "Games et. al (6)"
-msgstr "Spēles un tml. (6)"
-
-#: src/gtkman:501 src/gtkman:547
-msgid "Miscellanea (7)"
-msgstr "Dažādi (7)"
+#: src/gtkman.glade:946 src/gtkman.glade:1404
+msgid "Section:"
+msgstr "Sadaļa:"
 
 #: src/gtkman:503 src/gtkman:549
 msgid "System administration tools and deamons (8)"
 msgstr "Sistēmas administrēšanas rīki un demoni (8)"
 
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "Rokasgrāmatu pārlūks GTKMan"
+#: src/gtkman:495 src/gtkman:540
+msgid "System calls (2)"
+msgstr "Sistsēmas izsaukumi (2)"
+
+#: src/gtkman:198
+msgid "USAGE:"
+msgstr "PIELIETOJUMS:"
+
+#: src/gtkman:494 src/gtkman:539
+msgid "User commands (1)"
+msgstr "Lietotāja komandas (1)"
+
+#: src/gtkman:199
+msgid "[OPTIONS] [[section] manpage]"
+msgstr "[OPTIONS] [[section] manpage]"
+
+#: src/gtkman.glade:1225
+msgid "_Edit"
+msgstr "_Labot"
+
+#: src/gtkman.glade:1172
+msgid "_File"
+msgstr "_Fails"
+
+#: src/gtkman.glade:1300
+msgid "_Help"
+msgstr "_Palīdzība"
+
+#: src/gtkman.glade:1249
+msgid "_Search"
+msgstr "Meklēt"
+
+#: src/gtkman:202
+msgid "this help message"
+msgstr "šis palīdzības paziņojums"
+
+#: src/gtkman.glade:695
+msgid "translator-credits"
+msgstr "tulks"

@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen., 2016
 # ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen., 2016
@@ -16,83 +16,23 @@ msgstr ""
 "PO-Revision-Date: 2017-09-19 11:03+0000\n"
 "Last-Translator: ふうせん Fu-sen. | BALLOON a.k.a. Fu-sen.\n"
 "Language-Team: Japanese (http://www.transifex.com/gapan/salix/language/ja/)\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
 msgid "A simple GTK+3 manual page viewer"
 msgstr "シンプル GTK+3 マニュアルページビューアー"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) <balloonakafusen+salix@gmail.com>\nその他"
+#: src/gtkman:493 src/gtkman:538
+msgid "Any"
+msgstr "すべて"
 
-#: src/gtkman.glade:730
-msgid "Find"
-msgstr "検索"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "何を検索しますか："
-
-#: src/gtkman.glade:838
-msgid "Match case"
-msgstr "大文字と小文字を区別しない"
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "マニュアルページのインデックス"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "セクション："
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "環境設定"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr "Manpage 横幅 (文字数):"
-
-#: src/gtkman.glade:1156
-msgid "Manual page viewer"
-msgstr "マニュアルページビューアー"
-
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "ファイル(_F)"
-
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "編集(_E)"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr "検索(_S)"
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr "次の検索(_N)"
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr "前の検索(_P)"
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "ヘルプ(_H)"
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr "インデックス"
-
-#: src/gtkman.glade:1368
-msgid "Manual page:"
-msgstr "マニュアルページ:"
+#: src/gtkman:496 src/gtkman:541
+msgid "C library functions (3)"
+msgstr "C ライブラリ関数 (3)"
 
 #: src/gtkman.glade:1500
 msgid "Creating index"
@@ -102,43 +42,6 @@ msgstr "インデックスを作成中"
 msgid "Creating manual page index..."
 msgstr "マニュアルページインデックスの作成中..."
 
-#: src/gtkman:156
-#, python-format
-msgid "No manual page found for \"%(name)s\""
-msgstr "\"%(name)s\" マニュアルページが見つかりませんでした"
-
-#: src/gtkman:198
-msgid "USAGE:"
-msgstr "使用方法:"
-
-#: src/gtkman:199
-msgid "[OPTIONS] [[section] manpage]"
-msgstr "[オプション] [[セクション] マニュアルページ]"
-
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr "オプション："
-
-#: src/gtkman:202
-msgid "this help message"
-msgstr "このヘルプメッセージ"
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "すべて"
-
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "ユーザコマンド (1)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "システムコール (2)"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "C ライブラリ関数 (3)"
-
 #: src/gtkman:497 src/gtkman:543
 msgid "Devices and special files (4)"
 msgstr "デバイス・特殊ファイル (4)"
@@ -147,18 +50,117 @@ msgstr "デバイス・特殊ファイル (4)"
 msgid "File formats and conventions (5)"
 msgstr "ファイル形式・規則 (5)"
 
+#: src/gtkman.glade:730
+msgid "Find"
+msgstr "検索"
+
+#: src/gtkman.glade:1268
+msgid "Find _Next"
+msgstr "次の検索(_N)"
+
+#: src/gtkman.glade:1281
+msgid "Find _Previous"
+msgstr "前の検索(_P)"
+
+#: src/gtkman.glade:804
+msgid "Find what:"
+msgstr "何を検索しますか："
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "GTKMan マニュアルページビューアー"
+
 #: src/gtkman:500 src/gtkman:546
 msgid "Games et. al (6)"
 msgstr "ゲームなど (6)"
+
+#: src/gtkman.glade:1337
+msgid "Index"
+msgstr "インデックス"
+
+#: src/gtkman.glade:1102
+msgid "Manpage width (in characters):"
+msgstr "Manpage 横幅 (文字数):"
+
+#: src/gtkman.glade:868
+msgid "Manual page index"
+msgstr "マニュアルページのインデックス"
+
+#: src/gtkman.glade:1156
+msgid "Manual page viewer"
+msgstr "マニュアルページビューアー"
+
+#: src/gtkman.glade:1368
+msgid "Manual page:"
+msgstr "マニュアルページ:"
+
+#: src/gtkman.glade:838
+msgid "Match case"
+msgstr "大文字と小文字を区別しない"
 
 #: src/gtkman:501 src/gtkman:547
 msgid "Miscellanea (7)"
 msgstr "その他 (7)"
 
+#: src/gtkman:156
+#, python-format
+msgid "No manual page found for \"%(name)s\""
+msgstr "\"%(name)s\" マニュアルページが見つかりませんでした"
+
+#: src/gtkman:201
+msgid "OPTIONS:"
+msgstr "オプション："
+
+#: src/gtkman.glade:1034
+msgid "Preferences"
+msgstr "環境設定"
+
+#: src/gtkman.glade:946 src/gtkman.glade:1404
+msgid "Section:"
+msgstr "セクション："
+
 #: src/gtkman:503 src/gtkman:549
 msgid "System administration tools and deamons (8)"
 msgstr "システム管理ツール・デーモン (8)"
 
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "GTKMan マニュアルページビューアー"
+#: src/gtkman:495 src/gtkman:540
+msgid "System calls (2)"
+msgstr "システムコール (2)"
+
+#: src/gtkman:198
+msgid "USAGE:"
+msgstr "使用方法:"
+
+#: src/gtkman:494 src/gtkman:539
+msgid "User commands (1)"
+msgstr "ユーザコマンド (1)"
+
+#: src/gtkman:199
+msgid "[OPTIONS] [[section] manpage]"
+msgstr "[オプション] [[セクション] マニュアルページ]"
+
+#: src/gtkman.glade:1225
+msgid "_Edit"
+msgstr "編集(_E)"
+
+#: src/gtkman.glade:1172
+msgid "_File"
+msgstr "ファイル(_F)"
+
+#: src/gtkman.glade:1300
+msgid "_Help"
+msgstr "ヘルプ(_H)"
+
+#: src/gtkman.glade:1249
+msgid "_Search"
+msgstr "検索(_S)"
+
+#: src/gtkman:202
+msgid "this help message"
+msgstr "このヘルプメッセージ"
+
+#: src/gtkman.glade:695
+msgid "translator-credits"
+msgstr ""
+"BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) <balloonakafusen+salix@gmail.com>\n"
+"その他"

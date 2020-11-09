@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Laszlo Dvornik <leveleim@yandex.com>, 2011
 # Péter Polonkai <polesz@nedudu.hu>, 2011
@@ -14,84 +14,25 @@ msgstr ""
 "POT-Creation-Date: 2015-09-24 23:42+0300\n"
 "PO-Revision-Date: 2017-09-19 11:03+0000\n"
 "Last-Translator: Zoltán Siposs <zoltan.siposs@gmail.com>\n"
-"Language-Team: Hungarian (http://www.transifex.com/gapan/salix/language/hu/)\n"
+"Language-Team: Hungarian (http://www.transifex.com/gapan/salix/language/"
+"hu/)\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
 msgid "A simple GTK+3 manual page viewer"
 msgstr "Egyszerű GTK+3 kézikönyvoldal megjelenítő"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "Dvornik László <rezuri@zoho.com>\nPolonkai Péter <polesz@nedudu.hu>"
+#: src/gtkman:493 src/gtkman:538
+msgid "Any"
+msgstr "Bármelyik"
 
-#: src/gtkman.glade:730
-msgid "Find"
-msgstr "Keresés"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "Keresés:"
-
-#: src/gtkman.glade:838
-msgid "Match case"
-msgstr "Kis- és nagybetűk megkülönböztetése"
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "Kézikönyvoldal index"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "Szakasz:"
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "Beállítások"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr "Oldal szélessége (karakterben):"
-
-#: src/gtkman.glade:1156
-msgid "Manual page viewer"
-msgstr "Kézikönyvoldal megjelenítő"
-
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "_Fájl"
-
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "S_zerkesztés"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr "_Keresés"
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr "Kö_vetkező találat"
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr "_Előző találat"
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "_Súgó"
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr "Index"
-
-#: src/gtkman.glade:1368
-msgid "Manual page:"
-msgstr "Kézikönyvoldal:"
+#: src/gtkman:496 src/gtkman:541
+msgid "C library functions (3)"
+msgstr "C programkönyvtár függvények (3)"
 
 #: src/gtkman.glade:1500
 msgid "Creating index"
@@ -101,43 +42,6 @@ msgstr "Index létrehozása"
 msgid "Creating manual page index..."
 msgstr "Index létrehozása a kézikönyvoldalhoz..."
 
-#: src/gtkman:156
-#, python-format
-msgid "No manual page found for \"%(name)s\""
-msgstr "Nem található kézikönyvoldal ehhez: \"%(name)s\""
-
-#: src/gtkman:198
-msgid "USAGE:"
-msgstr "HASZNÁLAT:"
-
-#: src/gtkman:199
-msgid "[OPTIONS] [[section] manpage]"
-msgstr "[KAPCSOLÓK] [[szakasz] kézikönyvoldal]"
-
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr "KAPCSOLÓK:"
-
-#: src/gtkman:202
-msgid "this help message"
-msgstr "ezen súgóüzenet"
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "Bármelyik"
-
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "Felhasználói parancsok (1)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "Rendszerhívások (2)"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "C programkönyvtár függvények (3)"
-
 #: src/gtkman:497 src/gtkman:543
 msgid "Devices and special files (4)"
 msgstr "Eszközök és speciális fájlok (4)"
@@ -146,18 +50,117 @@ msgstr "Eszközök és speciális fájlok (4)"
 msgid "File formats and conventions (5)"
 msgstr "Fájlformátumok és konvenciók (5)"
 
+#: src/gtkman.glade:730
+msgid "Find"
+msgstr "Keresés"
+
+#: src/gtkman.glade:1268
+msgid "Find _Next"
+msgstr "Kö_vetkező találat"
+
+#: src/gtkman.glade:1281
+msgid "Find _Previous"
+msgstr "_Előző találat"
+
+#: src/gtkman.glade:804
+msgid "Find what:"
+msgstr "Keresés:"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "GTKMan kézikönyvoldal megjelenítő"
+
 #: src/gtkman:500 src/gtkman:546
 msgid "Games et. al (6)"
 msgstr "Játékok (6)"
+
+#: src/gtkman.glade:1337
+msgid "Index"
+msgstr "Index"
+
+#: src/gtkman.glade:1102
+msgid "Manpage width (in characters):"
+msgstr "Oldal szélessége (karakterben):"
+
+#: src/gtkman.glade:868
+msgid "Manual page index"
+msgstr "Kézikönyvoldal index"
+
+#: src/gtkman.glade:1156
+msgid "Manual page viewer"
+msgstr "Kézikönyvoldal megjelenítő"
+
+#: src/gtkman.glade:1368
+msgid "Manual page:"
+msgstr "Kézikönyvoldal:"
+
+#: src/gtkman.glade:838
+msgid "Match case"
+msgstr "Kis- és nagybetűk megkülönböztetése"
 
 #: src/gtkman:501 src/gtkman:547
 msgid "Miscellanea (7)"
 msgstr "Egyebek (7)"
 
+#: src/gtkman:156
+#, python-format
+msgid "No manual page found for \"%(name)s\""
+msgstr "Nem található kézikönyvoldal ehhez: \"%(name)s\""
+
+#: src/gtkman:201
+msgid "OPTIONS:"
+msgstr "KAPCSOLÓK:"
+
+#: src/gtkman.glade:1034
+msgid "Preferences"
+msgstr "Beállítások"
+
+#: src/gtkman.glade:946 src/gtkman.glade:1404
+msgid "Section:"
+msgstr "Szakasz:"
+
 #: src/gtkman:503 src/gtkman:549
 msgid "System administration tools and deamons (8)"
 msgstr "Rendszeradminisztrációs eszközök és démonok (8)"
 
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "GTKMan kézikönyvoldal megjelenítő"
+#: src/gtkman:495 src/gtkman:540
+msgid "System calls (2)"
+msgstr "Rendszerhívások (2)"
+
+#: src/gtkman:198
+msgid "USAGE:"
+msgstr "HASZNÁLAT:"
+
+#: src/gtkman:494 src/gtkman:539
+msgid "User commands (1)"
+msgstr "Felhasználói parancsok (1)"
+
+#: src/gtkman:199
+msgid "[OPTIONS] [[section] manpage]"
+msgstr "[KAPCSOLÓK] [[szakasz] kézikönyvoldal]"
+
+#: src/gtkman.glade:1225
+msgid "_Edit"
+msgstr "S_zerkesztés"
+
+#: src/gtkman.glade:1172
+msgid "_File"
+msgstr "_Fájl"
+
+#: src/gtkman.glade:1300
+msgid "_Help"
+msgstr "_Súgó"
+
+#: src/gtkman.glade:1249
+msgid "_Search"
+msgstr "_Keresés"
+
+#: src/gtkman:202
+msgid "this help message"
+msgstr "ezen súgóüzenet"
+
+#: src/gtkman.glade:695
+msgid "translator-credits"
+msgstr ""
+"Dvornik László <rezuri@zoho.com>\n"
+"Polonkai Péter <polesz@nedudu.hu>"

@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Antonio Sardei <laplume@libero.it>, 2011,2016
 # gapan <vlahavas@gmail.com>, 2012
@@ -16,83 +16,23 @@ msgstr ""
 "PO-Revision-Date: 2017-09-19 11:03+0000\n"
 "Last-Translator: Antonio Sardei <laplume@libero.it>\n"
 "Language-Team: Italian (http://www.transifex.com/gapan/salix/language/it/)\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
 msgid "A simple GTK+3 manual page viewer"
 msgstr "Un semplice visualizzatore di manuale in GTK+3"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "traduzione-crediti"
+#: src/gtkman:493 src/gtkman:538
+msgid "Any"
+msgstr "Qualsiasi"
 
-#: src/gtkman.glade:730
-msgid "Find"
-msgstr "Trova"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "Trova l'argomento:"
-
-#: src/gtkman.glade:838
-msgid "Match case"
-msgstr "Corrisponde"
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "Indice della pagina"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "Sezione:"
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "Preferenze"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr "Larghezza pagina Manuale (in caratteri):"
-
-#: src/gtkman.glade:1156
-msgid "Manual page viewer"
-msgstr "Visualizzatore del Manuale"
-
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "_File"
-
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "_Modifica"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr "_Cerca "
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr "Trova _Prossimo"
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr "Trova _Precedente "
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "_Aiuto "
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr "Indice"
-
-#: src/gtkman.glade:1368
-msgid "Manual page:"
-msgstr "Pagina di manuale:"
+#: src/gtkman:496 src/gtkman:541
+msgid "C library functions (3)"
+msgstr "Funzioni libreria C (3)"
 
 #: src/gtkman.glade:1500
 msgid "Creating index"
@@ -102,43 +42,6 @@ msgstr "Sto creando l'indice"
 msgid "Creating manual page index..."
 msgstr "St creando l'indice della pagina..."
 
-#: src/gtkman:156
-#, python-format
-msgid "No manual page found for \"%(name)s\""
-msgstr "Non è stata trovata la pagina di manuale per \"%(name)s\""
-
-#: src/gtkman:198
-msgid "USAGE:"
-msgstr "UTILIZZO:"
-
-#: src/gtkman:199
-msgid "[OPTIONS] [[section] manpage]"
-msgstr "[OPTIONS] [[section] manpage"
-
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr "OPZIONI:"
-
-#: src/gtkman:202
-msgid "this help message"
-msgstr "questo messaggio di aiuto"
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "Qualsiasi"
-
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "Comandi utenti (1)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "Le chiamate di sistema (2)"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "Funzioni libreria C (3)"
-
 #: src/gtkman:497 src/gtkman:543
 msgid "Devices and special files (4)"
 msgstr "Dispositivi e file speciali (4)"
@@ -147,18 +50,115 @@ msgstr "Dispositivi e file speciali (4)"
 msgid "File formats and conventions (5)"
 msgstr "I formati di file e convenzioni (5)"
 
+#: src/gtkman.glade:730
+msgid "Find"
+msgstr "Trova"
+
+#: src/gtkman.glade:1268
+msgid "Find _Next"
+msgstr "Trova _Prossimo"
+
+#: src/gtkman.glade:1281
+msgid "Find _Previous"
+msgstr "Trova _Precedente "
+
+#: src/gtkman.glade:804
+msgid "Find what:"
+msgstr "Trova l'argomento:"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "GTKMan  Visualizzatore di Pagina Manuale"
+
 #: src/gtkman:500 src/gtkman:546
 msgid "Games et. al (6)"
 msgstr "Giochi ed altro (6)"
+
+#: src/gtkman.glade:1337
+msgid "Index"
+msgstr "Indice"
+
+#: src/gtkman.glade:1102
+msgid "Manpage width (in characters):"
+msgstr "Larghezza pagina Manuale (in caratteri):"
+
+#: src/gtkman.glade:868
+msgid "Manual page index"
+msgstr "Indice della pagina"
+
+#: src/gtkman.glade:1156
+msgid "Manual page viewer"
+msgstr "Visualizzatore del Manuale"
+
+#: src/gtkman.glade:1368
+msgid "Manual page:"
+msgstr "Pagina di manuale:"
+
+#: src/gtkman.glade:838
+msgid "Match case"
+msgstr "Corrisponde"
 
 #: src/gtkman:501 src/gtkman:547
 msgid "Miscellanea (7)"
 msgstr "Miscellanea (7)"
 
+#: src/gtkman:156
+#, python-format
+msgid "No manual page found for \"%(name)s\""
+msgstr "Non è stata trovata la pagina di manuale per \"%(name)s\""
+
+#: src/gtkman:201
+msgid "OPTIONS:"
+msgstr "OPZIONI:"
+
+#: src/gtkman.glade:1034
+msgid "Preferences"
+msgstr "Preferenze"
+
+#: src/gtkman.glade:946 src/gtkman.glade:1404
+msgid "Section:"
+msgstr "Sezione:"
+
 #: src/gtkman:503 src/gtkman:549
 msgid "System administration tools and deamons (8)"
 msgstr "Strumenti di amministrazione di sistema  e demoni (8)"
 
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "GTKMan  Visualizzatore di Pagina Manuale"
+#: src/gtkman:495 src/gtkman:540
+msgid "System calls (2)"
+msgstr "Le chiamate di sistema (2)"
+
+#: src/gtkman:198
+msgid "USAGE:"
+msgstr "UTILIZZO:"
+
+#: src/gtkman:494 src/gtkman:539
+msgid "User commands (1)"
+msgstr "Comandi utenti (1)"
+
+#: src/gtkman:199
+msgid "[OPTIONS] [[section] manpage]"
+msgstr "[OPTIONS] [[section] manpage"
+
+#: src/gtkman.glade:1225
+msgid "_Edit"
+msgstr "_Modifica"
+
+#: src/gtkman.glade:1172
+msgid "_File"
+msgstr "_File"
+
+#: src/gtkman.glade:1300
+msgid "_Help"
+msgstr "_Aiuto "
+
+#: src/gtkman.glade:1249
+msgid "_Search"
+msgstr "_Cerca "
+
+#: src/gtkman:202
+msgid "this help message"
+msgstr "questo messaggio di aiuto"
+
+#: src/gtkman.glade:695
+msgid "translator-credits"
+msgstr "traduzione-crediti"

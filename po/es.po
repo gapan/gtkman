@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Alejandro Simón <alejandrosimon@gmx.com>, 2015
 # Marco Antonio Frias Butrón <inactive+smaug@transifex.com>, 2011
@@ -15,83 +15,23 @@ msgstr ""
 "PO-Revision-Date: 2017-09-19 11:03+0000\n"
 "Last-Translator: Alejandro Simón <alejandrosimon@gmx.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/gapan/salix/language/es/)\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
 msgid "A simple GTK+3 manual page viewer"
 msgstr "Un visor GTK+3 simple de páginas del manual"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "Fernando Velo"
+#: src/gtkman:493 src/gtkman:538
+msgid "Any"
+msgstr "Cualquiera"
 
-#: src/gtkman.glade:730
-msgid "Find"
-msgstr "Buscar"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "Buscar:"
-
-#: src/gtkman.glade:838
-msgid "Match case"
-msgstr "Coincidir mayúsculas y minúsculas"
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "Indice de páginas del manual"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "Sección:"
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "Preferencias"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr "Ancho de la página del manual (en caracteres):"
-
-#: src/gtkman.glade:1156
-msgid "Manual page viewer"
-msgstr "Visor de páginas del manual"
-
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "_Archivo"
-
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "_Editar"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr "Bú_squeda"
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr "Buscar Siguie_nte"
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr "Buscar An_terior"
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "A_yuda"
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr "Indice"
-
-#: src/gtkman.glade:1368
-msgid "Manual page:"
-msgstr "Página del manual:"
+#: src/gtkman:496 src/gtkman:541
+msgid "C library functions (3)"
+msgstr "Funciones de biblioteca de C (3)"
 
 #: src/gtkman.glade:1500
 msgid "Creating index"
@@ -101,43 +41,6 @@ msgstr "Crear índice"
 msgid "Creating manual page index..."
 msgstr "Creando índice de páginas del manual..."
 
-#: src/gtkman:156
-#, python-format
-msgid "No manual page found for \"%(name)s\""
-msgstr "No se encontraron páginas para \"%(name)s\""
-
-#: src/gtkman:198
-msgid "USAGE:"
-msgstr "USO:"
-
-#: src/gtkman:199
-msgid "[OPTIONS] [[section] manpage]"
-msgstr "[OPCIONES] [[sección] página del manual]"
-
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr "OPCIONES:"
-
-#: src/gtkman:202
-msgid "this help message"
-msgstr "este mensaje de ayuda"
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "Cualquiera"
-
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "Comandos del usuario (1)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "Llamadas del sistema (2)"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "Funciones de biblioteca de C (3)"
-
 #: src/gtkman:497 src/gtkman:543
 msgid "Devices and special files (4)"
 msgstr "Archivos especiales y dispositivos (4)"
@@ -146,18 +49,115 @@ msgstr "Archivos especiales y dispositivos (4)"
 msgid "File formats and conventions (5)"
 msgstr "Convenciones y formatos de archivo (5)"
 
+#: src/gtkman.glade:730
+msgid "Find"
+msgstr "Buscar"
+
+#: src/gtkman.glade:1268
+msgid "Find _Next"
+msgstr "Buscar Siguie_nte"
+
+#: src/gtkman.glade:1281
+msgid "Find _Previous"
+msgstr "Buscar An_terior"
+
+#: src/gtkman.glade:804
+msgid "Find what:"
+msgstr "Buscar:"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "Visor de Páginas del Manual GTKMan"
+
 #: src/gtkman:500 src/gtkman:546
 msgid "Games et. al (6)"
 msgstr "Juegos y otros (6)"
+
+#: src/gtkman.glade:1337
+msgid "Index"
+msgstr "Indice"
+
+#: src/gtkman.glade:1102
+msgid "Manpage width (in characters):"
+msgstr "Ancho de la página del manual (en caracteres):"
+
+#: src/gtkman.glade:868
+msgid "Manual page index"
+msgstr "Indice de páginas del manual"
+
+#: src/gtkman.glade:1156
+msgid "Manual page viewer"
+msgstr "Visor de páginas del manual"
+
+#: src/gtkman.glade:1368
+msgid "Manual page:"
+msgstr "Página del manual:"
+
+#: src/gtkman.glade:838
+msgid "Match case"
+msgstr "Coincidir mayúsculas y minúsculas"
 
 #: src/gtkman:501 src/gtkman:547
 msgid "Miscellanea (7)"
 msgstr "Miscelánea (7)"
 
+#: src/gtkman:156
+#, python-format
+msgid "No manual page found for \"%(name)s\""
+msgstr "No se encontraron páginas para \"%(name)s\""
+
+#: src/gtkman:201
+msgid "OPTIONS:"
+msgstr "OPCIONES:"
+
+#: src/gtkman.glade:1034
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: src/gtkman.glade:946 src/gtkman.glade:1404
+msgid "Section:"
+msgstr "Sección:"
+
 #: src/gtkman:503 src/gtkman:549
 msgid "System administration tools and deamons (8)"
 msgstr "Demonios y herramientas de administración del sistema (8)"
 
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "Visor de Páginas del Manual GTKMan"
+#: src/gtkman:495 src/gtkman:540
+msgid "System calls (2)"
+msgstr "Llamadas del sistema (2)"
+
+#: src/gtkman:198
+msgid "USAGE:"
+msgstr "USO:"
+
+#: src/gtkman:494 src/gtkman:539
+msgid "User commands (1)"
+msgstr "Comandos del usuario (1)"
+
+#: src/gtkman:199
+msgid "[OPTIONS] [[section] manpage]"
+msgstr "[OPCIONES] [[sección] página del manual]"
+
+#: src/gtkman.glade:1225
+msgid "_Edit"
+msgstr "_Editar"
+
+#: src/gtkman.glade:1172
+msgid "_File"
+msgstr "_Archivo"
+
+#: src/gtkman.glade:1300
+msgid "_Help"
+msgstr "A_yuda"
+
+#: src/gtkman.glade:1249
+msgid "_Search"
+msgstr "Bú_squeda"
+
+#: src/gtkman:202
+msgid "this help message"
+msgstr "este mensaje de ayuda"
+
+#: src/gtkman.glade:695
+msgid "translator-credits"
+msgstr "Fernando Velo"

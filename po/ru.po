@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Gregory <wolfr2@gmail.com>, 2012,2015
 # Gregory <wolfr2@gmail.com>, 2012
@@ -13,83 +13,25 @@ msgstr ""
 "PO-Revision-Date: 2017-09-19 12:11+0000\n"
 "Last-Translator: Gregory <wolfr2@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/gapan/salix/language/ru/)\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
 msgid "A simple GTK+3 manual page viewer"
 msgstr "Простая программа посмотра man-страниц на GTK+3"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "translator-credits"
+#: src/gtkman:493 src/gtkman:538
+msgid "Any"
+msgstr "Любой"
 
-#: src/gtkman.glade:730
-msgid "Find"
-msgstr "Найти"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "Что найти:"
-
-#: src/gtkman.glade:838
-msgid "Match case"
-msgstr "Учитывать регистр"
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "Индекс страницы руководства"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "Раздел:"
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "Настройки"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr "Ширина man-страниц (в символах):"
-
-#: src/gtkman.glade:1156
-msgid "Manual page viewer"
-msgstr "Программа просмотра руководств (man-страниц)"
-
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "_Файл"
-
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "Пра_вка"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr "_Поиск"
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr "Найти _далее"
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr "Найти _ранее"
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "_Справка"
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr "Индекс"
-
-#: src/gtkman.glade:1368
-msgid "Manual page:"
-msgstr "Страница руководства:"
+#: src/gtkman:496 src/gtkman:541
+msgid "C library functions (3)"
+msgstr "Функции С-библиотек (3)"
 
 #: src/gtkman.glade:1500
 msgid "Creating index"
@@ -99,43 +41,6 @@ msgstr "Создание индекса"
 msgid "Creating manual page index..."
 msgstr "Создается индекс страницы руководства..."
 
-#: src/gtkman:156
-#, python-format
-msgid "No manual page found for \"%(name)s\""
-msgstr "Не найден индекс страницы руководства \"%(name)s\""
-
-#: src/gtkman:198
-msgid "USAGE:"
-msgstr "ИСПОЛЬЗОВАНИЕ:"
-
-#: src/gtkman:199
-msgid "[OPTIONS] [[section] manpage]"
-msgstr "[ОПЦИИ] [[раздел] man-страница]"
-
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr "ОПЦИИ:"
-
-#: src/gtkman:202
-msgid "this help message"
-msgstr "это справочное сообщение"
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "Любой"
-
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "Пользовательские команды (1)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "Системные вызовы (2)"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "Функции С-библиотек (3)"
-
 #: src/gtkman:497 src/gtkman:543
 msgid "Devices and special files (4)"
 msgstr "Специальные файлы и устройства (4)"
@@ -144,18 +49,115 @@ msgstr "Специальные файлы и устройства (4)"
 msgid "File formats and conventions (5)"
 msgstr "Форматы файлов и соглашения (5)"
 
+#: src/gtkman.glade:730
+msgid "Find"
+msgstr "Найти"
+
+#: src/gtkman.glade:1268
+msgid "Find _Next"
+msgstr "Найти _далее"
+
+#: src/gtkman.glade:1281
+msgid "Find _Previous"
+msgstr "Найти _ранее"
+
+#: src/gtkman.glade:804
+msgid "Find what:"
+msgstr "Что найти:"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "Программа просмотра руководств GTKMan"
+
 #: src/gtkman:500 src/gtkman:546
 msgid "Games et. al (6)"
 msgstr "Игры и т. п. (6)"
+
+#: src/gtkman.glade:1337
+msgid "Index"
+msgstr "Индекс"
+
+#: src/gtkman.glade:1102
+msgid "Manpage width (in characters):"
+msgstr "Ширина man-страниц (в символах):"
+
+#: src/gtkman.glade:868
+msgid "Manual page index"
+msgstr "Индекс страницы руководства"
+
+#: src/gtkman.glade:1156
+msgid "Manual page viewer"
+msgstr "Программа просмотра руководств (man-страниц)"
+
+#: src/gtkman.glade:1368
+msgid "Manual page:"
+msgstr "Страница руководства:"
+
+#: src/gtkman.glade:838
+msgid "Match case"
+msgstr "Учитывать регистр"
 
 #: src/gtkman:501 src/gtkman:547
 msgid "Miscellanea (7)"
 msgstr "Прочее (7)"
 
+#: src/gtkman:156
+#, python-format
+msgid "No manual page found for \"%(name)s\""
+msgstr "Не найден индекс страницы руководства \"%(name)s\""
+
+#: src/gtkman:201
+msgid "OPTIONS:"
+msgstr "ОПЦИИ:"
+
+#: src/gtkman.glade:1034
+msgid "Preferences"
+msgstr "Настройки"
+
+#: src/gtkman.glade:946 src/gtkman.glade:1404
+msgid "Section:"
+msgstr "Раздел:"
+
 #: src/gtkman:503 src/gtkman:549
 msgid "System administration tools and deamons (8)"
 msgstr "Инструменты для системного администрирования, демоны/службы (8)"
 
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "Программа просмотра руководств GTKMan"
+#: src/gtkman:495 src/gtkman:540
+msgid "System calls (2)"
+msgstr "Системные вызовы (2)"
+
+#: src/gtkman:198
+msgid "USAGE:"
+msgstr "ИСПОЛЬЗОВАНИЕ:"
+
+#: src/gtkman:494 src/gtkman:539
+msgid "User commands (1)"
+msgstr "Пользовательские команды (1)"
+
+#: src/gtkman:199
+msgid "[OPTIONS] [[section] manpage]"
+msgstr "[ОПЦИИ] [[раздел] man-страница]"
+
+#: src/gtkman.glade:1225
+msgid "_Edit"
+msgstr "Пра_вка"
+
+#: src/gtkman.glade:1172
+msgid "_File"
+msgstr "_Файл"
+
+#: src/gtkman.glade:1300
+msgid "_Help"
+msgstr "_Справка"
+
+#: src/gtkman.glade:1249
+msgid "_Search"
+msgstr "_Поиск"
+
+#: src/gtkman:202
+msgid "this help message"
+msgstr "это справочное сообщение"
+
+#: src/gtkman.glade:695
+msgid "translator-credits"
+msgstr "translator-credits"

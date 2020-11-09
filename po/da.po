@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Kris Thomsen <lakristho@gmail.com>, 2011-2012
 # scootergrisen, 2017
@@ -13,83 +13,23 @@ msgstr ""
 "PO-Revision-Date: 2017-09-21 22:38+0000\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish (http://www.transifex.com/gapan/salix/language/da/)\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
 msgid "A simple GTK+3 manual page viewer"
 msgstr "En simpel GTK+3 viser til manualsider"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "Kris Thomsen\n\nDansk-gruppen <dansk@dansk-gruppen.dk>\nMere info: http://www.dansk-gruppen.dk"
+#: src/gtkman:493 src/gtkman:538
+msgid "Any"
+msgstr "Enhver"
 
-#: src/gtkman.glade:730
-msgid "Find"
-msgstr "Find"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "Find hvad:"
-
-#: src/gtkman.glade:838
-msgid "Match case"
-msgstr "Match store og små bogstaver"
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "Index for manualsider"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "Sektion:"
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "Indstillinger"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr "Manpage-bredde (i tegn):"
-
-#: src/gtkman.glade:1156
-msgid "Manual page viewer"
-msgstr "Viser til manualsider"
-
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "_Fil"
-
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "_Redigér"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr "_Søg"
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr "Find _næste"
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr "Find _forrige"
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "_Hjælp"
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr "Index"
-
-#: src/gtkman.glade:1368
-msgid "Manual page:"
-msgstr "Manualside:"
+#: src/gtkman:496 src/gtkman:541
+msgid "C library functions (3)"
+msgstr "C-bibliotekfunktioner (3)"
 
 #: src/gtkman.glade:1500
 msgid "Creating index"
@@ -99,43 +39,6 @@ msgstr "Opretter index"
 msgid "Creating manual page index..."
 msgstr "Opretter index for manualsider..."
 
-#: src/gtkman:156
-#, python-format
-msgid "No manual page found for \"%(name)s\""
-msgstr "Ingen manual fundet for \"%(name)s\""
-
-#: src/gtkman:198
-msgid "USAGE:"
-msgstr "BRUG:"
-
-#: src/gtkman:199
-msgid "[OPTIONS] [[section] manpage]"
-msgstr "[TILVALG] [[sektion] manside]"
-
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr "TILVALG:"
-
-#: src/gtkman:202
-msgid "this help message"
-msgstr "denne hjælpebesked"
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "Enhver"
-
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "Brugerkommandoer (1)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "Systemkald (2)"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "C-bibliotekfunktioner (3)"
-
 #: src/gtkman:497 src/gtkman:543
 msgid "Devices and special files (4)"
 msgstr "Enheder og specielle filer (4)"
@@ -144,18 +47,119 @@ msgstr "Enheder og specielle filer (4)"
 msgid "File formats and conventions (5)"
 msgstr "Filformater og -konventioner (5)"
 
+#: src/gtkman.glade:730
+msgid "Find"
+msgstr "Find"
+
+#: src/gtkman.glade:1268
+msgid "Find _Next"
+msgstr "Find _næste"
+
+#: src/gtkman.glade:1281
+msgid "Find _Previous"
+msgstr "Find _forrige"
+
+#: src/gtkman.glade:804
+msgid "Find what:"
+msgstr "Find hvad:"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "GTKMan manualsideviser"
+
 #: src/gtkman:500 src/gtkman:546
 msgid "Games et. al (6)"
 msgstr "Spil osv. (6)"
+
+#: src/gtkman.glade:1337
+msgid "Index"
+msgstr "Index"
+
+#: src/gtkman.glade:1102
+msgid "Manpage width (in characters):"
+msgstr "Manpage-bredde (i tegn):"
+
+#: src/gtkman.glade:868
+msgid "Manual page index"
+msgstr "Index for manualsider"
+
+#: src/gtkman.glade:1156
+msgid "Manual page viewer"
+msgstr "Viser til manualsider"
+
+#: src/gtkman.glade:1368
+msgid "Manual page:"
+msgstr "Manualside:"
+
+#: src/gtkman.glade:838
+msgid "Match case"
+msgstr "Match store og små bogstaver"
 
 #: src/gtkman:501 src/gtkman:547
 msgid "Miscellanea (7)"
 msgstr "Blandet (7)"
 
+#: src/gtkman:156
+#, python-format
+msgid "No manual page found for \"%(name)s\""
+msgstr "Ingen manual fundet for \"%(name)s\""
+
+#: src/gtkman:201
+msgid "OPTIONS:"
+msgstr "TILVALG:"
+
+#: src/gtkman.glade:1034
+msgid "Preferences"
+msgstr "Indstillinger"
+
+#: src/gtkman.glade:946 src/gtkman.glade:1404
+msgid "Section:"
+msgstr "Sektion:"
+
 #: src/gtkman:503 src/gtkman:549
 msgid "System administration tools and deamons (8)"
 msgstr "Værktøj til systemadministration og dæmoner (8)"
 
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "GTKMan manualsideviser"
+#: src/gtkman:495 src/gtkman:540
+msgid "System calls (2)"
+msgstr "Systemkald (2)"
+
+#: src/gtkman:198
+msgid "USAGE:"
+msgstr "BRUG:"
+
+#: src/gtkman:494 src/gtkman:539
+msgid "User commands (1)"
+msgstr "Brugerkommandoer (1)"
+
+#: src/gtkman:199
+msgid "[OPTIONS] [[section] manpage]"
+msgstr "[TILVALG] [[sektion] manside]"
+
+#: src/gtkman.glade:1225
+msgid "_Edit"
+msgstr "_Redigér"
+
+#: src/gtkman.glade:1172
+msgid "_File"
+msgstr "_Fil"
+
+#: src/gtkman.glade:1300
+msgid "_Help"
+msgstr "_Hjælp"
+
+#: src/gtkman.glade:1249
+msgid "_Search"
+msgstr "_Søg"
+
+#: src/gtkman:202
+msgid "this help message"
+msgstr "denne hjælpebesked"
+
+#: src/gtkman.glade:695
+msgid "translator-credits"
+msgstr ""
+"Kris Thomsen\n"
+"\n"
+"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"Mere info: http://www.dansk-gruppen.dk"
