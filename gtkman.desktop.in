@@ -1,6 +1,6 @@
 [Desktop Entry]
 _Name=GTKMan Manual Page Viewer
-_Comment=A simple GTK+2 manual page viewer
+_Comment=A simple GTK+3 manual page viewer
 Exec=gtkman
 Icon=gtkman
 Terminal=false

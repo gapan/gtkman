@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2015-09-24 20:42+0000\n"
+"PO-Revision-Date: 2017-09-19 23:03+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Latvian (Latvia) (http://www.transifex.com/gapan/salix/language/lv_LV/)\n"
 "MIME-Version: 1.0\n"
@@ -19,8 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+2 manual page viewer"
-msgstr "Vienkāršs rokasgrāmatu pārlūks uz GTK+2 bāzes"
+msgid "A simple GTK+3 manual page viewer"
+msgstr "Vienkāršs rokasgrāmatu pārlūks uz GTK+3 bāzes"
 
 #: src/gtkman.glade:695
 msgid "translator-credits"

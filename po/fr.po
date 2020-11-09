@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2016-07-25 18:23+0000\n"
+"PO-Revision-Date: 2017-09-19 09:41+0000\n"
 "Last-Translator: Nicolas Cuffia <cuffia.cuceglio@vivaldi.net>\n"
 "Language-Team: French (http://www.transifex.com/gapan/salix/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -22,8 +22,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+2 manual page viewer"
-msgstr "Une simple visionneuse de pages de manuel en GTK+2"
+msgid "A simple GTK+3 manual page viewer"
+msgstr "Une simple visionneuse de pages de manuel en GTK+3"
 
 #: src/gtkman.glade:695
 msgid "translator-credits"

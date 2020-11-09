@@ -28,7 +28,7 @@ pot:
 	xgettext --from-code=utf-8 \
 		-L Glade \
 		-o po/gtkman.pot \
-		src/gtkman.glade
+		src/gtkman.ui
 	xgettext --from-code=utf-8 \
 		-j \
 		-L Python \
@@ -50,7 +50,7 @@ install:
 	install -D -m 755 src/gtkman $(DESTDIR)/$(PREFIX)/bin/gtkman
 	sed -i "s|^prefix = '_not_set_'|prefix = '$(PREFIX)'|" $(DESTDIR)/$(PREFIX)/bin/gtkman
 	sed -i "s|^package_locale_dir = '_not_set_'|package_locale_dir = '$(PACKAGE_LOCALE_DIR)'|" $(DESTDIR)/$(PREFIX)/bin/gtkman
-	install -D -m 644 src/gtkman.glade $(DESTDIR)/$(PREFIX)/share/gtkman/gtkman.glade
+	install -D -m 644 src/gtkman.ui $(DESTDIR)/$(PREFIX)/share/gtkman/gtkman.ui
 	install -D -m 644 gtkman.desktop $(DESTDIR)/$(PREFIX)/share/applications/gtkman.desktop
 	[ -f man/gtkman.man ] && \
 		install -D -m 644 man/gtkman.man $(DESTDIR)/$(PREFIX)/share/man/man1/gtkman.1

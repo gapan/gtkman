@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2015-09-25 16:19+0000\n"
+"PO-Revision-Date: 2017-09-19 11:03+0000\n"
 "Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/gapan/salix/language/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -20,8 +20,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+2 manual page viewer"
-msgstr "En enkel GTK+2 läsare för manualsidor"
+msgid "A simple GTK+3 manual page viewer"
+msgstr "En enkel GTK+3 läsare för manualsidor"
 
 #: src/gtkman.glade:695
 msgid "translator-credits"

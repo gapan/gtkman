@@ -6,13 +6,14 @@
 # Ege Öz <ege.oz@yandex.com.tr>, 2013
 # Emre FIRAT <emrefirat93@gmail.com>, 2013
 # eren <erenlinux@gmail.com>, 2011
+# Onur ÖZDEMİR, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2015-09-24 20:42+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2017-09-19 11:03+0000\n"
+"Last-Translator: Onur ÖZDEMİR\n"
 "Language-Team: Turkish (http://www.transifex.com/gapan/salix/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,8 +22,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+2 manual page viewer"
-msgstr "Basit bir GTK+2 elle sayfa gösterici"
+msgid "A simple GTK+3 manual page viewer"
+msgstr "Basit bir GTK+3 elle sayfa gösterici"
 
 #: src/gtkman.glade:695
 msgid "translator-credits"
@@ -54,7 +55,7 @@ msgstr "Tercihler"
 
 #: src/gtkman.glade:1102
 msgid "Manpage width (in characters):"
-msgstr ""
+msgstr "Manpage genişliği (karakter olarak):"
 
 #: src/gtkman.glade:1156
 msgid "Manual page viewer"
@@ -131,7 +132,7 @@ msgstr "Kullanıcı komutları (1)"
 
 #: src/gtkman:495 src/gtkman:540
 msgid "System calls (2)"
-msgstr "Kullanıcı komutları (2)"
+msgstr "Sistem çağrıları (2)"
 
 #: src/gtkman:496 src/gtkman:541
 msgid "C library functions (3)"

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2015-09-24 20:42+0000\n"
+"PO-Revision-Date: 2017-09-19 12:49+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Arabic (http://www.transifex.com/gapan/salix/language/ar/)\n"
 "MIME-Version: 1.0\n"
@@ -19,8 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+2 manual page viewer"
-msgstr "عارض صفحة تعليمات GTK+2 البسيطة"
+msgid "A simple GTK+3 manual page viewer"
+msgstr "عارض صفحة تعليمات GTK+3 البسيطة"
 
 #: src/gtkman.glade:695
 msgid "translator-credits"

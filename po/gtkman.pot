@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+2 manual page viewer"
+msgid "A simple GTK+3 manual page viewer"
 msgstr ""
 
 #: src/gtkman.glade:695

@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Hugo Carvalho <hugokarvalho@hotmail.com>, 2012,2016
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2012,2016,2019
 # gapan <vlahavas@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2016-04-03 20:27+0000\n"
+"PO-Revision-Date: 2019-01-29 23:02+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese (Portugal) (http://www.transifex.com/gapan/salix/language/pt_PT/)\n"
 "MIME-Version: 1.0\n"
@@ -20,12 +20,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+2 manual page viewer"
+msgid "A simple GTK+3 manual page viewer"
 msgstr "Um simples visualizador página de manual GTK +2"
 
 #: src/gtkman.glade:695
 msgid "translator-credits"
-msgstr "créditos-de-tradutor"
+msgstr "Hugo Carvalho <hugokarvalho@gmail.com>"
 
 #: src/gtkman.glade:730
 msgid "Find"
@@ -126,7 +126,7 @@ msgstr "qualquer"
 
 #: src/gtkman:494 src/gtkman:539
 msgid "User commands (1)"
-msgstr "comandos do utilizador (1)"
+msgstr "Comandos do utilizador (1)"
 
 #: src/gtkman:495 src/gtkman:540
 msgid "System calls (2)"

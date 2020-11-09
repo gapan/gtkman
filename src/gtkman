@@ -1,18 +1,19 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # vim:et:sta:sts=4:sw=4:ts=8:tw=79:
 
-from __future__ import print_function
-
-import gtk
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+from gi.repository import Gdk
+from gi.repository import Pango
 import os
 import sys
-import pango
-import ConfigParser
+import configparser
 import threading
 import subprocess
 
 # Initializing the gtk's thread engine
-gtk.gdk.threads_init()
+Gdk.threads_init()
 
 # '_not_set_' is not an actual value.
 # These are edited when running make according to PREFIX and
@@ -43,7 +44,7 @@ def threaded(f):
 
 
 class GTKMan:
-    config = ConfigParser.RawConfigParser()
+    config = configparser.RawConfigParser()
     config_file = os.path.expanduser('~/.config/gtkman')
     win_height = 0
     win_width = 0
@@ -53,7 +54,7 @@ class GTKMan:
         cmd = ['man', '-w']
         process = subprocess.Popen(
             cmd, shell=False, close_fds=True, stdout=subprocess.PIPE)
-        output = process.communicate()[0]
+        output = process.communicate()[0].decode()
         status = process.returncode
         section1 = []
         section2 = []
@@ -67,7 +68,9 @@ class GTKMan:
             dirs = output.rsplit('\n')[0].split(':')
             for i in dirs:
                 for j in os.listdir(i):
+                    Gdk.threads_enter()
                     self.progressbar_index.pulse()
+                    Gdk.threads_leave()
                     path = i + '/' + j
                     if j.startswith('man') and os.path.isdir(path):
                         for directory, dirnames, filenames in os.walk(path):
@@ -111,10 +114,10 @@ class GTKMan:
             width = self.config.getint('Window', 'width')
             height = self.config.getint('Window', 'height')
             self.window.set_default_size(width, height)
-        except (ConfigParser.NoOptionError, ConfigParser.NoSectionError):
+        except (configparser.NoOptionError, configparser.NoSectionError):
             try:
-                w = gtk.gdk.get_default_root_window()
-                p = gtk.gdk.atom_intern('_NET_WORKAREA')
+                w = Gdk.get_default_root_window()
+                p = Gdk.atom_intern('_NET_WORKAREA')
                 width, height = w.property_get(p)[2][2:4]
                 if width < 650:
                     req_width = width
@@ -132,7 +135,7 @@ class GTKMan:
             self.config.read(self.config_file)
             self.man_width = str(self.config.getint('man', 'width'))
             os.environ['MANWIDTH'] = self.man_width
-        except (ConfigParser.NoOptionError, ConfigParser.NoSectionError):
+        except (configparser.NoOptionError, configparser.NoSectionError):
             # Restrict man page width to 80 characters by default
             os.environ['MANWIDTH'] = '80'
 
@@ -150,7 +153,7 @@ class GTKMan:
         p2 = subprocess.Popen(cmd2, stdin=p1.stdout,
                               stdout=subprocess.PIPE, stderr=DEVNULL)
         p1.stdout.close()
-        output = p2.communicate()[0]
+        output = p2.communicate()[0].decode()
         status = p1.wait()
         if status != 0:
             output = _('No manual page found for "%(name)s"') % {'name': page}
@@ -187,13 +190,13 @@ class GTKMan:
             os.mkdir(os.path.expanduser('~/.config'))
         try:
             self.config.add_section('Window')
-        except ConfigParser.DuplicateSectionError:
+        except configparser.DuplicateSectionError:
             pass
         self.config.set('Window', 'width', self.win_width)
         self.config.set('Window', 'height', self.win_height)
-        with open(self.config_file, 'wb') as configfile:
+        with open(self.config_file, 'w') as configfile:
             self.config.write(configfile)
-        gtk.main_quit()
+        Gtk.main_quit()
 
     def display_help(self):
         print(_('USAGE:'), os.path.basename(sys.argv[0]),
@@ -211,7 +214,7 @@ class GTKMan:
             self.config.read(self.config_file)
             man_width = self.config.getint('man', 'width')
             self.spinbutton_width.set_value(man_width)
-        except (ConfigParser.NoOptionError, ConfigParser.NoSectionError):
+        except (configparser.NoOptionError, configparser.NoSectionError):
             # Restrict man page width to 80 characters by default
             self.spinbutton_width.set_value(80)
         self.dialog_prefs.show()
@@ -248,7 +251,7 @@ class GTKMan:
                 self.textbuffer_manpage.select_range(
                     sel_start_iter, sel_end_iter)
                 self.textview_manpage.scroll_to_mark(
-                    self.textbuffer_manpage.get_insert(), 0)
+                    self.textbuffer_manpage.get_insert(), 0, 0, 0, 0)
                 found = True
             else:
                 sel_start_iter.forward_char()
@@ -286,7 +289,7 @@ class GTKMan:
                 self.textbuffer_manpage.select_range(
                     sel_start_iter, sel_end_iter)
                 self.textview_manpage.scroll_to_mark(
-                    self.textbuffer_manpage.get_insert(), 0)
+                    self.textbuffer_manpage.get_insert(), 0, 0, 0, 0)
                 found = True
             else:
                 sel_start_iter.backward_char()
@@ -328,7 +331,7 @@ class GTKMan:
                 self.textbuffer_manpage.select_range(
                     sel_start_iter, sel_end_iter)
                 self.textview_manpage.scroll_to_mark(
-                    self.textbuffer_manpage.get_insert(), 0)
+                    self.textbuffer_manpage.get_insert(), 0, 0, 0, 0)
                 found = True
                 self.imagemenuitem_findnext.set_sensitive(True)
                 self.imagemenuitem_findprev.set_sensitive(True)
@@ -409,18 +412,16 @@ class GTKMan:
     @threaded
     def on_button_index_clicked(self, widget):
         if not self.section_lists_ready:
-            gtk.gdk.threads_enter()
+            Gdk.threads_enter()
             self.window_create_index.show()
-            gtk.gdk.threads_leave()
+            Gdk.threads_leave()
             self.section_lists = self.manpagelists()
             self.section_lists_ready = True
-            gtk.gdk.threads_enter()
-            self.window_create_index.hide()
-            gtk.gdk.threads_leave()
-        gtk.gdk.threads_enter()
+        Gdk.threads_enter()
         self.create_index()
+        self.window_create_index.hide()
         self.dialog_index.show()
-        gtk.gdk.threads_leave()
+        Gdk.threads_leave()
 
     def on_button_prefs_ok_clicked(self, widget):
         man_width = int(self.spinbutton_width.get_value())
@@ -429,10 +430,10 @@ class GTKMan:
             os.mkdir(os.path.expanduser('~/.config'))
         try:
             self.config.add_section('man')
-        except ConfigParser.DuplicateSectionError:
+        except configparser.DuplicateSectionError:
             pass
         self.config.set('man', 'width', man_width)
-        with open(self.config_file, 'wb') as configfile:
+        with open(self.config_file, 'w') as configfile:
             self.config.write(configfile)
         self.dialog_prefs.hide()
         self.manpage_show()
@@ -473,12 +474,12 @@ class GTKMan:
                 self.entry_search.set_text(manpage)
 
     def __init__(self):
-        builder = gtk.Builder()
+        builder = Gtk.Builder()
         builder.set_translation_domain("gtkman")
-        if os.path.exists('gtkman.glade'):
-            builder.add_from_file('gtkman.glade')
-        elif os.path.exists(prefix+'/share/gtkman/gtkman.glade'):
-            builder.add_from_file(prefix+'/share/gtkman/gtkman.glade')
+        if os.path.exists('gtkman.ui'):
+            builder.add_from_file('gtkman.ui')
+        elif os.path.exists(prefix+'/share/gtkman/gtkman.ui'):
+            builder.add_from_file(prefix+'/share/gtkman/gtkman.ui')
         self.window = builder.get_object('gtkman')
 
         #
@@ -556,7 +557,6 @@ class GTKMan:
         self.dialog_index = builder.get_object('dialog_index')
         self.button_index_open = builder.get_object('button_index_open')
         self.button_index_cancel = builder.get_object('button_index_cancel')
-        self.button_index_open.set_flags(gtk.CAN_DEFAULT)
         self.treeview_index = builder.get_object('treeview_index')
         self.liststore_index = builder.get_object('liststore_index')
 
@@ -574,7 +574,7 @@ class GTKMan:
         self.set_default_manpage_width()
 
         # Set the system monospace font as the default font
-        self.textview_manpage.modify_font(pango.FontDescription('monospace'))
+        self.textview_manpage.modify_font(Pango.FontDescription('monospace'))
 
         builder.connect_signals(self)
 
@@ -582,4 +582,4 @@ if __name__ == "__main__":
     app = GTKMan()
     app.parse_args(sys.argv[1:])
     app.window.show()
-    gtk.main()
+    Gtk.main()
