@@ -1,164 +1,164 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Yarema aka Knedlyk <yupadmin@gmail.com>, 2011-2012,2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2017-09-19 11:03+0000\n"
-"Last-Translator: Yarema aka Knedlyk <yupadmin@gmail.com>\n"
-"Language-Team: Ukrainian (http://www.transifex.com/gapan/salix/language/"
-"uk/)\n"
-"Language: uk\n"
+"POT-Creation-Date: 2021-01-07 22:15+0200\n"
+"PO-Revision-Date: 2021-01-07 20:15+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Ukrainian (http://www.transifex.com/gapan/salix/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
-"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
-"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
-"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-#: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+3 manual page viewer"
-msgstr "Простий GTK+3 переглядач сторінок допомоги"
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "Будь-яке"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "Бібліотеки функцій С (3)"
-
-#: src/gtkman.glade:1500
-msgid "Creating index"
-msgstr "Створення списку"
-
-#: src/gtkman.glade:1520
-msgid "Creating manual page index..."
-msgstr "Створення списку сторінок допомоги..."
-
-#: src/gtkman:497 src/gtkman:543
-msgid "Devices and special files (4)"
-msgstr "Пристрої і спеціальні файли (4)"
-
-#: src/gtkman:499 src/gtkman:545
-msgid "File formats and conventions (5)"
-msgstr "Формати файлів і конвенцій (5)"
-
-#: src/gtkman.glade:730
-msgid "Find"
-msgstr "Знайти"
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr "Знайти _наступне"
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr "Знайти _попереднє"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "Знайти що:"
-
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "Переглядач сторінок допомоги GTKMan"
-
-#: src/gtkman:500 src/gtkman:546
-msgid "Games et. al (6)"
-msgstr "Ігри та інше (6)"
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr "Список"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr "Ширина сторінки допомоги (в символах):"
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "Список сторінок допомоги"
-
-#: src/gtkman.glade:1156
+#: src/gtkman.ui:47
 msgid "Manual page viewer"
 msgstr "Переглядач сторінок допомоги"
 
-#: src/gtkman.glade:1368
+#: src/gtkman.ui:63
+msgid "_File"
+msgstr "_Файл"
+
+#: src/gtkman.ui:117
+msgid "_Edit"
+msgstr "_Редагувати"
+
+#: src/gtkman.ui:141
+msgid "_Search"
+msgstr "_Пошук"
+
+#: src/gtkman.ui:160
+msgid "Find _Next"
+msgstr "Знайти _наступне"
+
+#: src/gtkman.ui:173
+msgid "Find _Previous"
+msgstr "Знайти _попереднє"
+
+#: src/gtkman.ui:192
+msgid "_Help"
+msgstr "Допомога"
+
+#: src/gtkman.ui:228
+msgid "Index"
+msgstr "Список"
+
+#: src/gtkman.ui:261
 msgid "Manual page:"
 msgstr "Сторінка допомоги:"
 
-#: src/gtkman.glade:838
+#: src/gtkman.ui:294 src/gtkman.ui:1319
+msgid "Section:"
+msgstr "Параграф:"
+
+#: src/gtkman.ui:368
+msgid "Creating manual page index..."
+msgstr "Створення списку сторінок допомоги..."
+
+#: src/gtkman.ui:398 gtkman.desktop.in.h:2
+msgid "A simple GTK+3 manual page viewer"
+msgstr ""
+
+#: src/gtkman.ui:1076
+msgid "translator-credits"
+msgstr "Yarema aka Knedlyk <yupadmin@gmail.com>"
+
+#: src/gtkman.ui:1104
+msgid "Find"
+msgstr "Знайти"
+
+#: src/gtkman.ui:1178
+msgid "Find what:"
+msgstr "Знайти що:"
+
+#: src/gtkman.ui:1210
 msgid "Match case"
 msgstr "З урахуванням регістру"
 
-#: src/gtkman:501 src/gtkman:547
-msgid "Miscellanea (7)"
-msgstr "Різне (7)"
+#: src/gtkman.ui:1241
+msgid "Manual page index"
+msgstr "Список сторінок допомоги"
 
-#: src/gtkman:156
+#: src/gtkman.ui:1408
+msgid "Preferences"
+msgstr "Уподобання"
+
+#: src/gtkman.ui:1476
+msgid "Manpage width (in characters):"
+msgstr "Ширина сторінки допомоги (в символах):"
+
+#: src/gtkman:103
+msgid "ERROR: Couldn't build index."
+msgstr ""
+
+#: src/gtkman:115
+msgid "ERROR: man command not found."
+msgstr ""
+
+#: src/gtkman:166
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr "Ні сторінці довідника знайдено \"%(name)s\""
 
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr "ОПЦІЇ:"
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "Уподобання"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "Параграф:"
-
-#: src/gtkman:503 src/gtkman:549
-msgid "System administration tools and deamons (8)"
-msgstr "Засоби системного адміністрування і демони (8)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "Системні виклики (2)"
-
-#: src/gtkman:198
+#: src/gtkman:209
 msgid "USAGE:"
 msgstr "ВИКОРИСТАННЯ:"
 
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "Команди користувача (1)"
-
-#: src/gtkman:199
+#: src/gtkman:210
 msgid "[OPTIONS] [[section] manpage]"
 msgstr "[ОПЦІЇ][[параграф] сторінка допомоги]"
 
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "_Редагувати"
+#: src/gtkman:212
+msgid "OPTIONS:"
+msgstr "ОПЦІЇ:"
 
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "_Файл"
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "Допомога"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr "_Пошук"
-
-#: src/gtkman:202
+#: src/gtkman:213
 msgid "this help message"
 msgstr "це повідомлення допомоги"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "Yarema aka Knedlyk <yupadmin@gmail.com>"
+#: src/gtkman:494 src/gtkman:539
+msgid "Any"
+msgstr "Будь-яке"
+
+#: src/gtkman:495 src/gtkman:540
+msgid "User commands (1)"
+msgstr "Команди користувача (1)"
+
+#: src/gtkman:496 src/gtkman:541
+msgid "System calls (2)"
+msgstr "Системні виклики (2)"
+
+#: src/gtkman:497 src/gtkman:542
+msgid "C library functions (3)"
+msgstr "Бібліотеки функцій С (3)"
+
+#: src/gtkman:498 src/gtkman:544
+msgid "Devices and special files (4)"
+msgstr "Пристрої і спеціальні файли (4)"
+
+#: src/gtkman:500 src/gtkman:546
+msgid "File formats and conventions (5)"
+msgstr "Формати файлів і конвенцій (5)"
+
+#: src/gtkman:501 src/gtkman:547
+msgid "Games et. al (6)"
+msgstr "Ігри та інше (6)"
+
+#: src/gtkman:502 src/gtkman:548
+msgid "Miscellanea (7)"
+msgstr "Різне (7)"
+
+#: src/gtkman:504 src/gtkman:550
+msgid "System administration tools and deamons (8)"
+msgstr "Засоби системного адміністрування і демони (8)"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "Переглядач сторінок допомоги GTKMan"

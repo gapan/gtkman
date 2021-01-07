@@ -1,162 +1,164 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Arian - Cazare Muncitori <arianserv@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2017-09-23 19:41+0000\n"
+"POT-Creation-Date: 2021-01-07 22:15+0200\n"
+"PO-Revision-Date: 2021-01-07 20:15+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Romanian (Romania) (http://www.transifex.com/gapan/salix/"
-"language/ro_RO/)\n"
-"Language: ro_RO\n"
+"Language-Team: Romanian (Romania) (http://www.transifex.com/gapan/salix/language/ro_RO/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
-"2:1));\n"
+"Language: ro_RO\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
-#: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+3 manual page viewer"
-msgstr "Un simplu vizualizator pagină manual GTK+3"
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "Oricare"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "Funcţii bibliotecă C (3)"
-
-#: src/gtkman.glade:1500
-msgid "Creating index"
-msgstr "Creare index"
-
-#: src/gtkman.glade:1520
-msgid "Creating manual page index..."
-msgstr "Se creează index pagină de manual..."
-
-#: src/gtkman:497 src/gtkman:543
-msgid "Devices and special files (4)"
-msgstr "Dispozitive şi fişiere speciale (4)"
-
-#: src/gtkman:499 src/gtkman:545
-msgid "File formats and conventions (5)"
-msgstr "Format fişiere şi convenţii (5)"
-
-#: src/gtkman.glade:730
-msgid "Find"
-msgstr "Căutare"
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr "Căutare _Următor"
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr "Căutare _Anterior"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "Ce căutaţi:"
-
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "Vizualizator Pagini Manual GTKMan"
-
-#: src/gtkman:500 src/gtkman:546
-msgid "Games et. al (6)"
-msgstr "Jocuri şi altele (6)"
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr "Index"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr ""
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "Index pagină de manual"
-
-#: src/gtkman.glade:1156
+#: src/gtkman.ui:47
 msgid "Manual page viewer"
 msgstr "Vizualizator pagină manual"
 
-#: src/gtkman.glade:1368
+#: src/gtkman.ui:63
+msgid "_File"
+msgstr "_Fişier"
+
+#: src/gtkman.ui:117
+msgid "_Edit"
+msgstr "_Editare"
+
+#: src/gtkman.ui:141
+msgid "_Search"
+msgstr "_Căutare"
+
+#: src/gtkman.ui:160
+msgid "Find _Next"
+msgstr "Căutare _Următor"
+
+#: src/gtkman.ui:173
+msgid "Find _Previous"
+msgstr "Căutare _Anterior"
+
+#: src/gtkman.ui:192
+msgid "_Help"
+msgstr "_Ajutor"
+
+#: src/gtkman.ui:228
+msgid "Index"
+msgstr "Index"
+
+#: src/gtkman.ui:261
 msgid "Manual page:"
 msgstr "Pagină manual:"
 
-#: src/gtkman.glade:838
+#: src/gtkman.ui:294 src/gtkman.ui:1319
+msgid "Section:"
+msgstr "Secţiune:"
+
+#: src/gtkman.ui:368
+msgid "Creating manual page index..."
+msgstr "Se creează index pagină de manual..."
+
+#: src/gtkman.ui:398 gtkman.desktop.in.h:2
+msgid "A simple GTK+3 manual page viewer"
+msgstr ""
+
+#: src/gtkman.ui:1076
+msgid "translator-credits"
+msgstr "creditare-translatori"
+
+#: src/gtkman.ui:1104
+msgid "Find"
+msgstr "Căutare"
+
+#: src/gtkman.ui:1178
+msgid "Find what:"
+msgstr "Ce căutaţi:"
+
+#: src/gtkman.ui:1210
 msgid "Match case"
 msgstr "Potrivire caractere"
 
-#: src/gtkman:501 src/gtkman:547
-msgid "Miscellanea (7)"
-msgstr "Diverse (7)"
+#: src/gtkman.ui:1241
+msgid "Manual page index"
+msgstr "Index pagină de manual"
 
-#: src/gtkman:156
+#: src/gtkman.ui:1408
+msgid "Preferences"
+msgstr "Preferinţe"
+
+#: src/gtkman.ui:1476
+msgid "Manpage width (in characters):"
+msgstr ""
+
+#: src/gtkman:103
+msgid "ERROR: Couldn't build index."
+msgstr ""
+
+#: src/gtkman:115
+msgid "ERROR: man command not found."
+msgstr ""
+
+#: src/gtkman:166
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr "Nu s-a găsit nici-o pagină de manual pentru \"%(name)s\""
 
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr "OPŢIUNI:"
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "Preferinţe"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "Secţiune:"
-
-#: src/gtkman:503 src/gtkman:549
-msgid "System administration tools and deamons (8)"
-msgstr "Instrumente de administrare sistem şi deamons (8)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "Apeluri sistem (2)"
-
-#: src/gtkman:198
+#: src/gtkman:209
 msgid "USAGE:"
 msgstr "UTILIZARE:"
 
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "Comenzi utilizator (1)"
-
-#: src/gtkman:199
+#: src/gtkman:210
 msgid "[OPTIONS] [[section] manpage]"
 msgstr "[OPŢIUNI] [[sectiune] paginămanual]"
 
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "_Editare"
+#: src/gtkman:212
+msgid "OPTIONS:"
+msgstr "OPŢIUNI:"
 
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "_Fişier"
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "_Ajutor"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr "_Căutare"
-
-#: src/gtkman:202
+#: src/gtkman:213
 msgid "this help message"
 msgstr "acest mesaj de ajutor"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "creditare-translatori"
+#: src/gtkman:494 src/gtkman:539
+msgid "Any"
+msgstr "Oricare"
+
+#: src/gtkman:495 src/gtkman:540
+msgid "User commands (1)"
+msgstr "Comenzi utilizator (1)"
+
+#: src/gtkman:496 src/gtkman:541
+msgid "System calls (2)"
+msgstr "Apeluri sistem (2)"
+
+#: src/gtkman:497 src/gtkman:542
+msgid "C library functions (3)"
+msgstr "Funcţii bibliotecă C (3)"
+
+#: src/gtkman:498 src/gtkman:544
+msgid "Devices and special files (4)"
+msgstr "Dispozitive şi fişiere speciale (4)"
+
+#: src/gtkman:500 src/gtkman:546
+msgid "File formats and conventions (5)"
+msgstr "Format fişiere şi convenţii (5)"
+
+#: src/gtkman:501 src/gtkman:547
+msgid "Games et. al (6)"
+msgstr "Jocuri şi altele (6)"
+
+#: src/gtkman:502 src/gtkman:548
+msgid "Miscellanea (7)"
+msgstr "Diverse (7)"
+
+#: src/gtkman:504 src/gtkman:550
+msgid "System administration tools and deamons (8)"
+msgstr "Instrumente de administrare sistem şi deamons (8)"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "Vizualizator Pagini Manual GTKMan"

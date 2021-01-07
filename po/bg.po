@@ -1,162 +1,165 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
-# Georgi Georgiev <georgiev_1994@abv.bg>, 2015
+# Georgi Georgiev (Жоро) <g.georgiev.shumen@gmail.com>, 2015
 # Tony Ivanov <duskull88@fastmail.fm>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2017-09-22 00:19+0000\n"
-"Last-Translator: Georgi Georgiev <georgiev_1994@abv.bg>\n"
-"Language-Team: Bulgarian (http://www.transifex.com/gapan/salix/language/"
-"bg/)\n"
-"Language: bg\n"
+"POT-Creation-Date: 2021-01-07 22:15+0200\n"
+"PO-Revision-Date: 2021-01-07 20:15+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"Language-Team: Bulgarian (http://www.transifex.com/gapan/salix/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: bg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+3 manual page viewer"
-msgstr "Прост GTK+3 визуализатор за ръководства"
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "Всеки"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "C библиотека фунции (3)"
-
-#: src/gtkman.glade:1500
-msgid "Creating index"
-msgstr "Създаване индекс"
-
-#: src/gtkman.glade:1520
-msgid "Creating manual page index..."
-msgstr "Създаване индекс на ръководство..."
-
-#: src/gtkman:497 src/gtkman:543
-msgid "Devices and special files (4)"
-msgstr "Устройства и специални файлове (4)"
-
-#: src/gtkman:499 src/gtkman:545
-msgid "File formats and conventions (5)"
-msgstr "Файлови формати и конвенции (5)"
-
-#: src/gtkman.glade:730
-msgid "Find"
-msgstr "Намери"
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr "Намери_Следващо"
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr "Намери_Предишно"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "Намери какво:"
-
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "GTKMan Визуализатор Ръководства"
-
-#: src/gtkman:500 src/gtkman:546
-msgid "Games et. al (6)"
-msgstr "Игри (6)"
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr "Индекс"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr "Ширина на ръководство (в символи):"
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "Индекс ръководство"
-
-#: src/gtkman.glade:1156
+#: src/gtkman.ui:47
 msgid "Manual page viewer"
 msgstr "Визуализатор на ръководства"
 
-#: src/gtkman.glade:1368
+#: src/gtkman.ui:63
+msgid "_File"
+msgstr "_Файл"
+
+#: src/gtkman.ui:117
+msgid "_Edit"
+msgstr "_Редактиране"
+
+#: src/gtkman.ui:141
+msgid "_Search"
+msgstr "_Търсене"
+
+#: src/gtkman.ui:160
+msgid "Find _Next"
+msgstr "Намери_Следващо"
+
+#: src/gtkman.ui:173
+msgid "Find _Previous"
+msgstr "Намери_Предишно"
+
+#: src/gtkman.ui:192
+msgid "_Help"
+msgstr "_Помощ"
+
+#: src/gtkman.ui:228
+msgid "Index"
+msgstr "Индекс"
+
+#: src/gtkman.ui:261
 msgid "Manual page:"
 msgstr "Страница ръководство:"
 
-#: src/gtkman.glade:838
+#: src/gtkman.ui:294 src/gtkman.ui:1319
+msgid "Section:"
+msgstr "Секция:"
+
+#: src/gtkman.ui:368
+msgid "Creating manual page index..."
+msgstr "Създаване индекс на ръководство..."
+
+#: src/gtkman.ui:398 gtkman.desktop.in.h:2
+msgid "A simple GTK+3 manual page viewer"
+msgstr ""
+
+#: src/gtkman.ui:1076
+msgid "translator-credits"
+msgstr "преводач-благодарности"
+
+#: src/gtkman.ui:1104
+msgid "Find"
+msgstr "Намери"
+
+#: src/gtkman.ui:1178
+msgid "Find what:"
+msgstr "Намери какво:"
+
+#: src/gtkman.ui:1210
 msgid "Match case"
 msgstr "Чувствителна големина букви"
 
-#: src/gtkman:501 src/gtkman:547
-msgid "Miscellanea (7)"
-msgstr "Разни (7)"
+#: src/gtkman.ui:1241
+msgid "Manual page index"
+msgstr "Индекс ръководство"
 
-#: src/gtkman:156
+#: src/gtkman.ui:1408
+msgid "Preferences"
+msgstr "Настройки"
+
+#: src/gtkman.ui:1476
+msgid "Manpage width (in characters):"
+msgstr "Ширина на ръководство (в символи):"
+
+#: src/gtkman:103
+msgid "ERROR: Couldn't build index."
+msgstr ""
+
+#: src/gtkman:115
+msgid "ERROR: man command not found."
+msgstr ""
+
+#: src/gtkman:166
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr "Не е намерено ръководство за \"%(name)s\""
 
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr "ОПЦИИ:"
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "Настройки"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "Секция:"
-
-#: src/gtkman:503 src/gtkman:549
-msgid "System administration tools and deamons (8)"
-msgstr "Инструменти за системна администрация и деамони (8)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "Системни повиквания (2)"
-
-#: src/gtkman:198
+#: src/gtkman:209
 msgid "USAGE:"
 msgstr "УПОТРЕБА:"
 
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "Потребителски цоманди (1)"
-
-#: src/gtkman:199
+#: src/gtkman:210
 msgid "[OPTIONS] [[section] manpage]"
 msgstr "[ОПЦИИ] [[секция] упътване]"
 
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "_Редактиране"
+#: src/gtkman:212
+msgid "OPTIONS:"
+msgstr "ОПЦИИ:"
 
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "_Файл"
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "_Помощ"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr "_Търсене"
-
-#: src/gtkman:202
+#: src/gtkman:213
 msgid "this help message"
 msgstr "това помощно съобщение"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "преводач-благодарности"
+#: src/gtkman:494 src/gtkman:539
+msgid "Any"
+msgstr "Всеки"
+
+#: src/gtkman:495 src/gtkman:540
+msgid "User commands (1)"
+msgstr "Потребителски цоманди (1)"
+
+#: src/gtkman:496 src/gtkman:541
+msgid "System calls (2)"
+msgstr "Системни повиквания (2)"
+
+#: src/gtkman:497 src/gtkman:542
+msgid "C library functions (3)"
+msgstr "C библиотека фунции (3)"
+
+#: src/gtkman:498 src/gtkman:544
+msgid "Devices and special files (4)"
+msgstr "Устройства и специални файлове (4)"
+
+#: src/gtkman:500 src/gtkman:546
+msgid "File formats and conventions (5)"
+msgstr "Файлови формати и конвенции (5)"
+
+#: src/gtkman:501 src/gtkman:547
+msgid "Games et. al (6)"
+msgstr "Игри (6)"
+
+#: src/gtkman:502 src/gtkman:548
+msgid "Miscellanea (7)"
+msgstr "Разни (7)"
+
+#: src/gtkman:504 src/gtkman:550
+msgid "System administration tools and deamons (8)"
+msgstr "Инструменти за системна администрация и деамони (8)"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "GTKMan Визуализатор Ръководства"

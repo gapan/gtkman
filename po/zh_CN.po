@@ -3,8 +3,6 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# GenghisKhan <genghiskhan@gmx.ca>, 2013,2015
-# GenghisKhan <genghiskhan@gmx.ca>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
@@ -12,56 +10,56 @@ msgstr ""
 "POT-Creation-Date: 2021-01-07 22:15+0200\n"
 "PO-Revision-Date: 2021-01-07 20:15+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
-"Language-Team: Hebrew (http://www.transifex.com/gapan/salix/language/he/)\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/gapan/salix/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: he\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/gtkman.ui:47
 msgid "Manual page viewer"
-msgstr "מציג דפי הדרכה"
+msgstr ""
 
 #: src/gtkman.ui:63
 msgid "_File"
-msgstr "_קובץ"
+msgstr ""
 
 #: src/gtkman.ui:117
 msgid "_Edit"
-msgstr "ע_ריכה"
+msgstr ""
 
 #: src/gtkman.ui:141
 msgid "_Search"
-msgstr "_חיפוש"
+msgstr ""
 
 #: src/gtkman.ui:160
 msgid "Find _Next"
-msgstr "מצא את ה_בא"
+msgstr ""
 
 #: src/gtkman.ui:173
 msgid "Find _Previous"
-msgstr "מצא את ה_קודם"
+msgstr ""
 
 #: src/gtkman.ui:192
 msgid "_Help"
-msgstr "_עזרה"
+msgstr ""
 
 #: src/gtkman.ui:228
 msgid "Index"
-msgstr "אינדקס"
+msgstr ""
 
 #: src/gtkman.ui:261
 msgid "Manual page:"
-msgstr "מדריך:"
+msgstr ""
 
 #: src/gtkman.ui:294 src/gtkman.ui:1319
 msgid "Section:"
-msgstr "מחלקה:"
+msgstr ""
 
 #: src/gtkman.ui:368
 msgid "Creating manual page index..."
-msgstr "מחולל כעת אינדקס מדריכים..."
+msgstr ""
 
 #: src/gtkman.ui:398 gtkman.desktop.in.h:2
 msgid "A simple GTK+3 manual page viewer"
@@ -69,31 +67,31 @@ msgstr ""
 
 #: src/gtkman.ui:1076
 msgid "translator-credits"
-msgstr "Rahut Contributors:\n  Isratine Citizen <genghiskhan@gmx.ca>"
+msgstr "翻译致谢"
 
 #: src/gtkman.ui:1104
 msgid "Find"
-msgstr "חיפוש"
+msgstr ""
 
 #: src/gtkman.ui:1178
 msgid "Find what:"
-msgstr "מה למצוא:"
+msgstr ""
 
 #: src/gtkman.ui:1210
 msgid "Match case"
-msgstr "התאם אותיות גדולות/קטנות"
+msgstr ""
 
 #: src/gtkman.ui:1241
 msgid "Manual page index"
-msgstr "אינדקס מדריכים"
+msgstr ""
 
 #: src/gtkman.ui:1408
 msgid "Preferences"
-msgstr "העדפות"
+msgstr ""
 
 #: src/gtkman.ui:1476
 msgid "Manpage width (in characters):"
-msgstr "רוחב דף הדרכה (בתווים):"
+msgstr ""
 
 #: src/gtkman:103
 msgid "ERROR: Couldn't build index."
@@ -106,60 +104,60 @@ msgstr ""
 #: src/gtkman:166
 #, python-format
 msgid "No manual page found for \"%(name)s\""
-msgstr "לא נמצא דף מדריך עבור \"%(name)s\""
+msgstr ""
 
 #: src/gtkman:209
 msgid "USAGE:"
-msgstr "USAGE:"
+msgstr ""
 
 #: src/gtkman:210
 msgid "[OPTIONS] [[section] manpage]"
-msgstr "[OPTIONS] [[section] manpage]"
+msgstr ""
 
 #: src/gtkman:212
 msgid "OPTIONS:"
-msgstr "OPTIONS:"
+msgstr ""
 
 #: src/gtkman:213
 msgid "this help message"
-msgstr "this help message"
+msgstr ""
 
 #: src/gtkman:494 src/gtkman:539
 msgid "Any"
-msgstr "הכל"
+msgstr ""
 
 #: src/gtkman:495 src/gtkman:540
 msgid "User commands (1)"
-msgstr "פקודות משתמש (1)"
+msgstr ""
 
 #: src/gtkman:496 src/gtkman:541
 msgid "System calls (2)"
-msgstr "קריאות מערכת (2)"
+msgstr ""
 
 #: src/gtkman:497 src/gtkman:542
 msgid "C library functions (3)"
-msgstr "פונקציות ספרייה C ‏(3)"
+msgstr ""
 
 #: src/gtkman:498 src/gtkman:544
 msgid "Devices and special files (4)"
-msgstr "התקנים וקבצים מיוחדים (4)"
+msgstr ""
 
 #: src/gtkman:500 src/gtkman:546
 msgid "File formats and conventions (5)"
-msgstr "תסדירי קובץ ונוהגים (5)"
+msgstr ""
 
 #: src/gtkman:501 src/gtkman:547
 msgid "Games et. al (6)"
-msgstr "משחקים ואחרים (6)"
+msgstr ""
 
 #: src/gtkman:502 src/gtkman:548
 msgid "Miscellanea (7)"
-msgstr "שונות (7)"
+msgstr ""
 
 #: src/gtkman:504 src/gtkman:550
 msgid "System administration tools and deamons (8)"
-msgstr "כלי ניהול מערכת ושדונים (8)"
+msgstr ""
 
 #: gtkman.desktop.in.h:1
 msgid "GTKMan Manual Page Viewer"
-msgstr "‏GTKMan מציג דפי הדרכה"
+msgstr ""

@@ -1,163 +1,167 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Dimitris Tzemos <dijemos@gmail.com>, 2011
 # gapan <vlahavas@gmail.com>, 2011
-# gapan <vlahavas@gmail.com>, 2013,2015
+# gapan <vlahavas@gmail.com>, 2013,2015,2021
 # gapan <vlahavas@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2017-09-19 11:03+0000\n"
+"POT-Creation-Date: 2021-01-07 22:15+0200\n"
+"PO-Revision-Date: 2021-01-07 20:28+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/gapan/salix/language/el/)\n"
-"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+3 manual page viewer"
-msgstr "Μια απλή εφαρμογή εμφάνισης σελίδων εγχειριδίου, βασισμένη στο GTK+3"
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "Οποιοδήποτε"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "Συναρτήσεις βιβλιοθήκης γλώσσας C (3)"
-
-#: src/gtkman.glade:1500
-msgid "Creating index"
-msgstr "Δημιουργία ευρετηρίου"
-
-#: src/gtkman.glade:1520
-msgid "Creating manual page index..."
-msgstr "Δημιουργία ευρετηρίου για τις σελίδες εγχειριδίου..."
-
-#: src/gtkman:497 src/gtkman:543
-msgid "Devices and special files (4)"
-msgstr "Συσκευές και ειδικά αρχεία (4)"
-
-#: src/gtkman:499 src/gtkman:545
-msgid "File formats and conventions (5)"
-msgstr "Τύποι αρχείων και συμβάσεις (5)"
-
-#: src/gtkman.glade:730
-msgid "Find"
-msgstr "Εύρεση"
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr "Εύρεση επόμε_νου"
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr "Εύρεση _προηγούμενου"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "Εύρεση του:"
-
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "Εμφάνιση σελίδων εγχειριδίου"
-
-#: src/gtkman:500 src/gtkman:546
-msgid "Games et. al (6)"
-msgstr "Παιγνίδια κλπ (6)"
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr "Ευρετήριο"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr "Πλάτος σελίδας εγχειριδίου (σε χαρακτήρες):"
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "Ευρετήριο σελίδων εγχειριδίου"
-
-#: src/gtkman.glade:1156
+#: src/gtkman.ui:47
 msgid "Manual page viewer"
 msgstr "Εμφάνιση σελίδων εγχειριδίου"
 
-#: src/gtkman.glade:1368
+#: src/gtkman.ui:63
+msgid "_File"
+msgstr "_Αρχείο"
+
+#: src/gtkman.ui:117
+msgid "_Edit"
+msgstr "_Επεξεργασία"
+
+#: src/gtkman.ui:141
+msgid "_Search"
+msgstr "Ανα_ζήτηση"
+
+#: src/gtkman.ui:160
+msgid "Find _Next"
+msgstr "Εύρεση επόμε_νου"
+
+#: src/gtkman.ui:173
+msgid "Find _Previous"
+msgstr "Εύρεση _προηγούμενου"
+
+#: src/gtkman.ui:192
+msgid "_Help"
+msgstr "_Βοήθεια"
+
+#: src/gtkman.ui:228
+msgid "Index"
+msgstr "Ευρετήριο"
+
+#: src/gtkman.ui:261
 msgid "Manual page:"
 msgstr "Σελίδα:"
 
-#: src/gtkman.glade:838
+#: src/gtkman.ui:294 src/gtkman.ui:1319
+msgid "Section:"
+msgstr "Τμήμα:"
+
+#: src/gtkman.ui:368
+msgid "Creating manual page index..."
+msgstr "Δημιουργία ευρετηρίου για τις σελίδες εγχειριδίου..."
+
+#: src/gtkman.ui:398 gtkman.desktop.in.h:2
+msgid "A simple GTK+3 manual page viewer"
+msgstr "Μια απλή εφαρμογή εμφάνισης σελίδων εγχειριδίου, βασισμένη στο GTK+3"
+
+#: src/gtkman.ui:1076
+msgid "translator-credits"
+msgstr "Γιώργος Βλαχάβας <vlahavas~at~gmail~dot~com>"
+
+#: src/gtkman.ui:1104
+msgid "Find"
+msgstr "Εύρεση"
+
+#: src/gtkman.ui:1178
+msgid "Find what:"
+msgstr "Εύρεση του:"
+
+#: src/gtkman.ui:1210
 msgid "Match case"
 msgstr "Ταίριασμα πεζών-κεφαλαίων"
 
-#: src/gtkman:501 src/gtkman:547
-msgid "Miscellanea (7)"
-msgstr "Διάφορα (7)"
+#: src/gtkman.ui:1241
+msgid "Manual page index"
+msgstr "Ευρετήριο σελίδων εγχειριδίου"
 
-#: src/gtkman:156
+#: src/gtkman.ui:1408
+msgid "Preferences"
+msgstr "Προτιμήσεις"
+
+#: src/gtkman.ui:1476
+msgid "Manpage width (in characters):"
+msgstr "Πλάτος σελίδας εγχειριδίου (σε χαρακτήρες):"
+
+#: src/gtkman:103
+msgid "ERROR: Couldn't build index."
+msgstr "ΣΦΑΛΜΑ: Δεν ήταν δυνατό να δημιουργηθεί το ευρετήριο."
+
+#: src/gtkman:115
+msgid "ERROR: man command not found."
+msgstr "ΣΦΑΛΜΑ: Δεν βρέθηκε η εντολή man."
+
+#: src/gtkman:166
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr "Δεν βρέθηκε καμία σελίδα εγχειριδίου για το \"%(name)s\""
 
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr "ΕΠΙΛΟΓΕΣ:"
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "Προτιμήσεις"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "Τμήμα:"
-
-#: src/gtkman:503 src/gtkman:549
-msgid "System administration tools and deamons (8)"
-msgstr "Εργαλεία διαχείρισης συστήματος και δαίμονες (8)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "Κλήσεις συστήματος (2)"
-
-#: src/gtkman:198
+#: src/gtkman:209
 msgid "USAGE:"
 msgstr "ΧΡΗΣΗ:"
 
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "Εντολές χρήστη (1)"
-
-#: src/gtkman:199
+#: src/gtkman:210
 msgid "[OPTIONS] [[section] manpage]"
 msgstr "[ΕΠΙΛΟΓΕΣ] [[ΤΜΗΜΑ] ΣΕΛΙΔΑ]"
 
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "_Επεξεργασία"
+#: src/gtkman:212
+msgid "OPTIONS:"
+msgstr "ΕΠΙΛΟΓΕΣ:"
 
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "_Αρχείο"
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "_Βοήθεια"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr "Ανα_ζήτηση"
-
-#: src/gtkman:202
+#: src/gtkman:213
 msgid "this help message"
 msgstr "αυτό το μήνυμα βοήθειας"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "Γιώργος Βλαχάβας <vlahavas~at~gmail~dot~com>"
+#: src/gtkman:494 src/gtkman:539
+msgid "Any"
+msgstr "Οποιοδήποτε"
+
+#: src/gtkman:495 src/gtkman:540
+msgid "User commands (1)"
+msgstr "Εντολές χρήστη (1)"
+
+#: src/gtkman:496 src/gtkman:541
+msgid "System calls (2)"
+msgstr "Κλήσεις συστήματος (2)"
+
+#: src/gtkman:497 src/gtkman:542
+msgid "C library functions (3)"
+msgstr "Συναρτήσεις βιβλιοθήκης γλώσσας C (3)"
+
+#: src/gtkman:498 src/gtkman:544
+msgid "Devices and special files (4)"
+msgstr "Συσκευές και ειδικά αρχεία (4)"
+
+#: src/gtkman:500 src/gtkman:546
+msgid "File formats and conventions (5)"
+msgstr "Τύποι αρχείων και συμβάσεις (5)"
+
+#: src/gtkman:501 src/gtkman:547
+msgid "Games et. al (6)"
+msgstr "Παιγνίδια κλπ (6)"
+
+#: src/gtkman:502 src/gtkman:548
+msgid "Miscellanea (7)"
+msgstr "Διάφορα (7)"
+
+#: src/gtkman:504 src/gtkman:550
+msgid "System administration tools and deamons (8)"
+msgstr "Εργαλεία διαχείρισης συστήματος και δαίμονες (8)"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "Εμφάνιση σελίδων εγχειριδίου"

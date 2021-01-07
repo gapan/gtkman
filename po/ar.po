@@ -1,161 +1,164 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # محمد الحرقان <malham1@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2017-09-19 12:49+0000\n"
+"POT-Creation-Date: 2021-01-07 22:15+0200\n"
+"PO-Revision-Date: 2021-01-07 20:15+0000\n"
 "Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Arabic (http://www.transifex.com/gapan/salix/language/ar/)\n"
-"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+3 manual page viewer"
-msgstr "عارض صفحة تعليمات GTK+3 البسيطة"
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "أي"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "مكتبة وظائف C (3)"
-
-#: src/gtkman.glade:1500
-msgid "Creating index"
-msgstr "إنشاء فهرس"
-
-#: src/gtkman.glade:1520
-msgid "Creating manual page index..."
-msgstr "إنشاء فهرس صفحات التعليمات..."
-
-#: src/gtkman:497 src/gtkman:543
-msgid "Devices and special files (4)"
-msgstr "العتاد والملفات الخاصة (4)"
-
-#: src/gtkman:499 src/gtkman:545
-msgid "File formats and conventions (5)"
-msgstr "تنسيقات الملفات والاتفاقيات (5)"
-
-#: src/gtkman.glade:730
-msgid "Find"
-msgstr "ايجاد"
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr "ابحث عن التّالي"
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr "إيجاد السابق"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "إيجاد ماذا:"
-
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "GTKMan عارض صفحات التعليمات"
-
-#: src/gtkman:500 src/gtkman:546
-msgid "Games et. al (6)"
-msgstr "ألعاب et. al (6)"
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr "الفهرس"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr ""
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "فهرس صفحات التعليمات"
-
-#: src/gtkman.glade:1156
+#: src/gtkman.ui:47
 msgid "Manual page viewer"
 msgstr "عارض الصفحات التعليمات"
 
-#: src/gtkman.glade:1368
+#: src/gtkman.ui:63
+msgid "_File"
+msgstr "_ملف"
+
+#: src/gtkman.ui:117
+msgid "_Edit"
+msgstr "_حرر"
+
+#: src/gtkman.ui:141
+msgid "_Search"
+msgstr "_بحث"
+
+#: src/gtkman.ui:160
+msgid "Find _Next"
+msgstr "ابحث عن التّالي"
+
+#: src/gtkman.ui:173
+msgid "Find _Previous"
+msgstr "إيجاد السابق"
+
+#: src/gtkman.ui:192
+msgid "_Help"
+msgstr "_مساعدة"
+
+#: src/gtkman.ui:228
+msgid "Index"
+msgstr "الفهرس"
+
+#: src/gtkman.ui:261
 msgid "Manual page:"
 msgstr "صفحة التوثيق:"
 
-#: src/gtkman.glade:838
+#: src/gtkman.ui:294 src/gtkman.ui:1319
+msgid "Section:"
+msgstr "القسم:"
+
+#: src/gtkman.ui:368
+msgid "Creating manual page index..."
+msgstr "إنشاء فهرس صفحات التعليمات..."
+
+#: src/gtkman.ui:398 gtkman.desktop.in.h:2
+msgid "A simple GTK+3 manual page viewer"
+msgstr ""
+
+#: src/gtkman.ui:1076
+msgid "translator-credits"
+msgstr "محمد الحرقان mohammad alhargan"
+
+#: src/gtkman.ui:1104
+msgid "Find"
+msgstr "ايجاد"
+
+#: src/gtkman.ui:1178
+msgid "Find what:"
+msgstr "إيجاد ماذا:"
+
+#: src/gtkman.ui:1210
 msgid "Match case"
 msgstr "طابق الحالة"
 
-#: src/gtkman:501 src/gtkman:547
-msgid "Miscellanea (7)"
-msgstr "Miscellanea (7)"
+#: src/gtkman.ui:1241
+msgid "Manual page index"
+msgstr "فهرس صفحات التعليمات"
 
-#: src/gtkman:156
+#: src/gtkman.ui:1408
+msgid "Preferences"
+msgstr "الإعدادات"
+
+#: src/gtkman.ui:1476
+msgid "Manpage width (in characters):"
+msgstr ""
+
+#: src/gtkman:103
+msgid "ERROR: Couldn't build index."
+msgstr ""
+
+#: src/gtkman:115
+msgid "ERROR: man command not found."
+msgstr ""
+
+#: src/gtkman:166
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr "لا توجد صفحة تعليمات بخصوص \"%(name)s\""
 
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr "خيارات:"
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "الإعدادات"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "القسم:"
-
-#: src/gtkman:503 src/gtkman:549
-msgid "System administration tools and deamons (8)"
-msgstr "أدوات إدارة النظام وdeamons (8)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "استدعاءات النظام (2)"
-
-#: src/gtkman:198
+#: src/gtkman:209
 msgid "USAGE:"
 msgstr "الاستخدام:"
 
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "أوامر المستخدم (1)"
-
-#: src/gtkman:199
+#: src/gtkman:210
 msgid "[OPTIONS] [[section] manpage]"
 msgstr "[خيارات] [[قسم] الصفحة الرئيسية]"
 
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "_حرر"
+#: src/gtkman:212
+msgid "OPTIONS:"
+msgstr "خيارات:"
 
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "_ملف"
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "_مساعدة"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr "_بحث"
-
-#: src/gtkman:202
+#: src/gtkman:213
 msgid "this help message"
 msgstr "رسالة التعليمات هذه"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "محمد الحرقان mohammad alhargan"
+#: src/gtkman:494 src/gtkman:539
+msgid "Any"
+msgstr "أي"
+
+#: src/gtkman:495 src/gtkman:540
+msgid "User commands (1)"
+msgstr "أوامر المستخدم (1)"
+
+#: src/gtkman:496 src/gtkman:541
+msgid "System calls (2)"
+msgstr "استدعاءات النظام (2)"
+
+#: src/gtkman:497 src/gtkman:542
+msgid "C library functions (3)"
+msgstr "مكتبة وظائف C (3)"
+
+#: src/gtkman:498 src/gtkman:544
+msgid "Devices and special files (4)"
+msgstr "العتاد والملفات الخاصة (4)"
+
+#: src/gtkman:500 src/gtkman:546
+msgid "File formats and conventions (5)"
+msgstr "تنسيقات الملفات والاتفاقيات (5)"
+
+#: src/gtkman:501 src/gtkman:547
+msgid "Games et. al (6)"
+msgstr "ألعاب et. al (6)"
+
+#: src/gtkman:502 src/gtkman:548
+msgid "Miscellanea (7)"
+msgstr "Miscellanea (7)"
+
+#: src/gtkman:504 src/gtkman:550
+msgid "System administration tools and deamons (8)"
+msgstr "أدوات إدارة النظام وdeamons (8)"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "GTKMan عارض صفحات التعليمات"

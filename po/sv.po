@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Ingemar Karlsson <ingemar@ingk.se>, 2011,2015
 # gapan <vlahavas@gmail.com>, 2012
@@ -9,153 +9,157 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-24 23:42+0300\n"
-"PO-Revision-Date: 2017-09-19 11:03+0000\n"
-"Last-Translator: Ingemar Karlsson <ingemar@ingk.se>\n"
+"POT-Creation-Date: 2021-01-07 22:15+0200\n"
+"PO-Revision-Date: 2021-01-07 20:15+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/gapan/salix/language/sv/)\n"
-"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/gtkman.glade:17 gtkman.desktop.in.h:2
-msgid "A simple GTK+3 manual page viewer"
-msgstr "En enkel GTK+3 läsare för manualsidor"
-
-#: src/gtkman:493 src/gtkman:538
-msgid "Any"
-msgstr "Alla"
-
-#: src/gtkman:496 src/gtkman:541
-msgid "C library functions (3)"
-msgstr "C-biblioteket funktioner (3)"
-
-#: src/gtkman.glade:1500
-msgid "Creating index"
-msgstr "Skapar index"
-
-#: src/gtkman.glade:1520
-msgid "Creating manual page index..."
-msgstr "Skapar manual sid index"
-
-#: src/gtkman:497 src/gtkman:543
-msgid "Devices and special files (4)"
-msgstr "Enheter och särskilda filer (4)"
-
-#: src/gtkman:499 src/gtkman:545
-msgid "File formats and conventions (5)"
-msgstr "Filformat och konventioner (5)"
-
-#: src/gtkman.glade:730
-msgid "Find"
-msgstr "Sök"
-
-#: src/gtkman.glade:1268
-msgid "Find _Next"
-msgstr "Hitta _Nästa"
-
-#: src/gtkman.glade:1281
-msgid "Find _Previous"
-msgstr "Hitta _Föregående"
-
-#: src/gtkman.glade:804
-msgid "Find what:"
-msgstr "Sök efter:"
-
-#: gtkman.desktop.in.h:1
-msgid "GTKMan Manual Page Viewer"
-msgstr "GTKMan Manual visare"
-
-#: src/gtkman:500 src/gtkman:546
-msgid "Games et. al (6)"
-msgstr "Spel (6)"
-
-#: src/gtkman.glade:1337
-msgid "Index"
-msgstr "Index"
-
-#: src/gtkman.glade:1102
-msgid "Manpage width (in characters):"
-msgstr "Manualsida bredd (i antal tecken):"
-
-#: src/gtkman.glade:868
-msgid "Manual page index"
-msgstr "Manual sid index"
-
-#: src/gtkman.glade:1156
+#: src/gtkman.ui:47
 msgid "Manual page viewer"
 msgstr "Manualsidevisare"
 
-#: src/gtkman.glade:1368
+#: src/gtkman.ui:63
+msgid "_File"
+msgstr "_Arkiv"
+
+#: src/gtkman.ui:117
+msgid "_Edit"
+msgstr "_Redigera"
+
+#: src/gtkman.ui:141
+msgid "_Search"
+msgstr "_Sök"
+
+#: src/gtkman.ui:160
+msgid "Find _Next"
+msgstr "Hitta _Nästa"
+
+#: src/gtkman.ui:173
+msgid "Find _Previous"
+msgstr "Hitta _Föregående"
+
+#: src/gtkman.ui:192
+msgid "_Help"
+msgstr "_Hjälp"
+
+#: src/gtkman.ui:228
+msgid "Index"
+msgstr "Index"
+
+#: src/gtkman.ui:261
 msgid "Manual page:"
 msgstr "Manual sida:"
 
-#: src/gtkman.glade:838
+#: src/gtkman.ui:294 src/gtkman.ui:1319
+msgid "Section:"
+msgstr "Avsnitt:"
+
+#: src/gtkman.ui:368
+msgid "Creating manual page index..."
+msgstr "Skapar manual sid index"
+
+#: src/gtkman.ui:398 gtkman.desktop.in.h:2
+msgid "A simple GTK+3 manual page viewer"
+msgstr ""
+
+#: src/gtkman.ui:1076
+msgid "translator-credits"
+msgstr "Ingemar Karlsson <po@ingk.se>"
+
+#: src/gtkman.ui:1104
+msgid "Find"
+msgstr "Sök"
+
+#: src/gtkman.ui:1178
+msgid "Find what:"
+msgstr "Sök efter:"
+
+#: src/gtkman.ui:1210
 msgid "Match case"
 msgstr "Gör skillnad mellan versaler och gemener"
 
-#: src/gtkman:501 src/gtkman:547
-msgid "Miscellanea (7)"
-msgstr "Övrigt (7)"
+#: src/gtkman.ui:1241
+msgid "Manual page index"
+msgstr "Manual sid index"
 
-#: src/gtkman:156
+#: src/gtkman.ui:1408
+msgid "Preferences"
+msgstr "Inställningar"
+
+#: src/gtkman.ui:1476
+msgid "Manpage width (in characters):"
+msgstr "Manualsida bredd (i antal tecken):"
+
+#: src/gtkman:103
+msgid "ERROR: Couldn't build index."
+msgstr ""
+
+#: src/gtkman:115
+msgid "ERROR: man command not found."
+msgstr ""
+
+#: src/gtkman:166
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr "Ingen manual sida hittades för \" %(name)s \""
 
-#: src/gtkman:201
-msgid "OPTIONS:"
-msgstr "ALTERNATIV:"
-
-#: src/gtkman.glade:1034
-msgid "Preferences"
-msgstr "Inställningar"
-
-#: src/gtkman.glade:946 src/gtkman.glade:1404
-msgid "Section:"
-msgstr "Avsnitt:"
-
-#: src/gtkman:503 src/gtkman:549
-msgid "System administration tools and deamons (8)"
-msgstr "Verktyg för systemadministration och deamons (8)"
-
-#: src/gtkman:495 src/gtkman:540
-msgid "System calls (2)"
-msgstr "System anrop (2)"
-
-#: src/gtkman:198
+#: src/gtkman:209
 msgid "USAGE:"
 msgstr "ANVÄNDNING:"
 
-#: src/gtkman:494 src/gtkman:539
-msgid "User commands (1)"
-msgstr "Användare kommandon (1)"
-
-#: src/gtkman:199
+#: src/gtkman:210
 msgid "[OPTIONS] [[section] manpage]"
 msgstr "[FLAGGOR] [[avsnitt] manpage]"
 
-#: src/gtkman.glade:1225
-msgid "_Edit"
-msgstr "_Redigera"
+#: src/gtkman:212
+msgid "OPTIONS:"
+msgstr "ALTERNATIV:"
 
-#: src/gtkman.glade:1172
-msgid "_File"
-msgstr "_Arkiv"
-
-#: src/gtkman.glade:1300
-msgid "_Help"
-msgstr "_Hjälp"
-
-#: src/gtkman.glade:1249
-msgid "_Search"
-msgstr "_Sök"
-
-#: src/gtkman:202
+#: src/gtkman:213
 msgid "this help message"
 msgstr "detta hjälp meddelande"
 
-#: src/gtkman.glade:695
-msgid "translator-credits"
-msgstr "Ingemar Karlsson <po@ingk.se>"
+#: src/gtkman:494 src/gtkman:539
+msgid "Any"
+msgstr "Alla"
+
+#: src/gtkman:495 src/gtkman:540
+msgid "User commands (1)"
+msgstr "Användare kommandon (1)"
+
+#: src/gtkman:496 src/gtkman:541
+msgid "System calls (2)"
+msgstr "System anrop (2)"
+
+#: src/gtkman:497 src/gtkman:542
+msgid "C library functions (3)"
+msgstr "C-biblioteket funktioner (3)"
+
+#: src/gtkman:498 src/gtkman:544
+msgid "Devices and special files (4)"
+msgstr "Enheter och särskilda filer (4)"
+
+#: src/gtkman:500 src/gtkman:546
+msgid "File formats and conventions (5)"
+msgstr "Filformat och konventioner (5)"
+
+#: src/gtkman:501 src/gtkman:547
+msgid "Games et. al (6)"
+msgstr "Spel (6)"
+
+#: src/gtkman:502 src/gtkman:548
+msgid "Miscellanea (7)"
+msgstr "Övrigt (7)"
+
+#: src/gtkman:504 src/gtkman:550
+msgid "System administration tools and deamons (8)"
+msgstr "Verktyg för systemadministration och deamons (8)"
+
+#: gtkman.desktop.in.h:1
+msgid "GTKMan Manual Page Viewer"
+msgstr "GTKMan Manual visare"
