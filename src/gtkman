@@ -574,7 +574,7 @@ class GTKMan:
         self.set_default_manpage_width()
 
         # Set the system monospace font as the default font
-        self.textview_manpage.modify_font(Pango.FontDescription('monospace'))
+        self.textview_manpage.set_monospace(True)
 
         builder.connect_signals(self)
 
