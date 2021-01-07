@@ -5,15 +5,13 @@ import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 from gi.repository import Gdk
+from gi.repository import GLib
 from gi.repository import Pango
 import os
 import sys
 import configparser
 import threading
 import subprocess
-
-# Initializing the gtk's thread engine
-Gdk.threads_init()
 
 # '_not_set_' is not an actual value.
 # These are edited when running make according to PREFIX and
@@ -48,65 +46,75 @@ class GTKMan:
     config_file = os.path.expanduser('~/.config/gtkman')
     win_height = 0
     win_width = 0
-    section_lists_ready = False
 
+    @threaded
     def manpagelists(self):
-        cmd = ['man', '-w']
-        process = subprocess.Popen(
-            cmd, shell=False, close_fds=True, stdout=subprocess.PIPE)
-        output = process.communicate()[0].decode()
-        status = process.returncode
-        section1 = []
-        section2 = []
-        section3 = []
-        section4 = []
-        section5 = []
-        section6 = []
-        section7 = []
-        section8 = []
-        if status == 0:
-            dirs = output.rsplit('\n')[0].split(':')
-            for i in dirs:
-                for j in os.listdir(i):
-                    Gdk.threads_enter()
-                    self.progressbar_index.pulse()
-                    Gdk.threads_leave()
-                    path = i + '/' + j
-                    if j.startswith('man') and os.path.isdir(path):
-                        for directory, dirnames, filenames in os.walk(path):
-                            for f in filenames:
-                                if f.lower().endswith('.gz') \
-                                        or f.lower().endswith('.xz') \
-                                        or f.lower().endswith('.bz2') \
-                                        or f.lower().endswith('.z'):
-                                    name_section = f.rpartition('.')[0]
-                                else:
-                                    name_section = f
-                                name = name_section.rpartition('.')[0]
-                                section = name_section.rpartition('.')[2]
-                                # There are 8 valid sections
-                                if section.startswith('1'):
-                                    section1.append(name)
-                                elif section.startswith('2'):
-                                    section2.append(name)
-                                elif section.startswith('3'):
-                                    section3.append(name)
-                                elif section.startswith('4'):
-                                    section4.append(name)
-                                elif section.startswith('5'):
-                                    section5.append(name)
-                                elif section.startswith('6'):
-                                    section6.append(name)
-                                elif section.startswith('7'):
-                                    section7.append(name)
-                                elif section.startswith('8'):
-                                    section8.append(name)
-        else:
-            return []
-        return [sorted(set(section1)), sorted(set(section2)),
-                sorted(set(section3)), sorted(set(section4)),
-                sorted(set(section5)), sorted(set(section6)),
-                sorted(set(section7)), sorted(set(section8))]
+        try:
+            cmd = ['man', '-w']
+            process = subprocess.Popen(
+                cmd, shell=False, close_fds=True, stdout=subprocess.PIPE)
+            output = process.communicate()[0].decode()
+            status = process.returncode
+            section1 = []
+            section2 = []
+            section3 = []
+            section4 = []
+            section5 = []
+            section6 = []
+            section7 = []
+            section8 = []
+            if status == 0:
+                dirs = output.rsplit('\n')[0].split(':')
+                for i in dirs:
+                    for j in os.listdir(i):
+                        path = i + '/' + j
+                        if j.startswith('man') and os.path.isdir(path):
+                            for directory, dirnames, filenames in os.walk(path):
+                                for f in filenames:
+                                    if f.lower().endswith('.gz') \
+                                            or f.lower().endswith('.xz') \
+                                            or f.lower().endswith('.bz2') \
+                                            or f.lower().endswith('.z'):
+                                        name_section = f.rpartition('.')[0]
+                                    else:
+                                        name_section = f
+                                    name = name_section.rpartition('.')[0]
+                                    section = name_section.rpartition('.')[2]
+                                    # There are 8 valid sections
+                                    if section.startswith('1'):
+                                        section1.append(name)
+                                    elif section.startswith('2'):
+                                        section2.append(name)
+                                    elif section.startswith('3'):
+                                        section3.append(name)
+                                    elif section.startswith('4'):
+                                        section4.append(name)
+                                    elif section.startswith('5'):
+                                        section5.append(name)
+                                    elif section.startswith('6'):
+                                        section6.append(name)
+                                    elif section.startswith('7'):
+                                        section7.append(name)
+                                    elif section.startswith('8'):
+                                        section8.append(name)
+            else:
+                self.section_lists = []
+                self.create_index()
+                GLib.idle_add(self.label_statusbar.set_text,
+                        _("ERROR: Couldn't build index."))
+                return
+            self.section_lists = [sorted(set(section1)), sorted(set(section2)),
+                    sorted(set(section3)), sorted(set(section4)),
+                    sorted(set(section5)), sorted(set(section6)),
+                    sorted(set(section7)), sorted(set(section8))]
+            self.create_index()
+            GLib.idle_add(self.statusbar.hide)
+            GLib.idle_add(self.imagemenuitem_index.set_sensitive, True)
+            GLib.idle_add(self.toolbutton_index.set_sensitive, True)
+        except FileNotFoundError:
+            GLib.idle_add(self.label_statusbar.set_text,
+                    _("ERROR: man command not found."))
+
 
     def set_default_window_size(self):
         try:
@@ -409,19 +417,8 @@ class GTKMan:
     def on_combobox_index_section_changed(self, widget):
         self.create_index()
 
-    @threaded
     def on_button_index_clicked(self, widget):
-        if not self.section_lists_ready:
-            Gdk.threads_enter()
-            self.window_create_index.show()
-            Gdk.threads_leave()
-            self.section_lists = self.manpagelists()
-            self.section_lists_ready = True
-        Gdk.threads_enter()
-        self.create_index()
-        self.window_create_index.hide()
-        self.dialog_index.show()
-        Gdk.threads_leave()
+        GLib.idle_add(self.dialog_index.show)
 
     def on_button_prefs_ok_clicked(self, widget):
         man_width = int(self.spinbutton_width.get_value())
@@ -491,6 +488,9 @@ class GTKMan:
         self.entry_search = builder.get_object('entry_search')
         self.combobox_section = builder.get_object('combobox_section')
         self.liststore_section = builder.get_object('liststore_section')
+        self.imagemenuitem_index = builder.get_object('imagemenuitem_index')
+        self.toolbutton_index = builder.get_object('toolbutton_index')
+
         # Populate the man section combobox
         self.liststore_section.append([0, _('Any')])
         self.liststore_section.append([1, _('User commands (1)')])
@@ -509,6 +509,8 @@ class GTKMan:
             'imagemenuitem_findnext')
         self.imagemenuitem_findprev = builder.get_object(
             'imagemenuitem_findprev')
+        self.statusbar = builder.get_object('statusbar')
+        self.label_statusbar = builder.get_object('label_statusbar')
 
         #
         # Find dialog
@@ -527,10 +529,8 @@ class GTKMan:
         self.aboutdialog = builder.get_object('aboutdialog')
 
         #
-        # Creating index window
+        # Creating index bar
         #
-        self.window_create_index = builder.get_object('window_create_index')
-        self.progressbar_index = builder.get_object('progressbar_index')
         self.combobox_index_section = builder.get_object(
             'combobox_index_section')
         self.liststore_index_section = builder.get_object(
@@ -577,6 +577,9 @@ class GTKMan:
         self.textview_manpage.set_monospace(True)
 
         builder.connect_signals(self)
+
+        # build the man page lists
+        self.manpagelists()
 
 if __name__ == "__main__":
     app = GTKMan()

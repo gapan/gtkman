@@ -84,6 +84,7 @@
                         <property name="can_focus">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <property name="sensitive">False</property>
                         <signal name="activate" handler="on_button_index_clicked" swapped="no"/>
                         <accelerator key="i" signal="activate" modifiers="GDK_CONTROL_MASK"/>
                       </object>
@@ -226,6 +227,7 @@
                 <property name="can_focus">False</property>
                 <property name="label" translatable="yes">Index</property>
                 <property name="stock_id">gtk-index</property>
+                <property name="sensitive">False</property>
                 <signal name="clicked" handler="on_button_index_clicked" swapped="no"/>
               </object>
               <packing>
@@ -352,6 +354,30 @@
             <property name="expand">True</property>
             <property name="fill">True</property>
             <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkStatusbar" id="statusbar">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <object class="GtkLabel" id="label_statusbar">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes">Creating manual page index...</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
           </packing>
         </child>
       </object>
@@ -1488,51 +1514,5 @@ Public License instead of this License.  But first, please read
       <action-widget response="0">button_prefs_cancel</action-widget>
       <action-widget response="0">button_prefs_ok</action-widget>
     </action-widgets>
-  </object>
-  <object class="GtkWindow" id="window_create_index">
-    <property name="can_focus">False</property>
-    <property name="title" translatable="yes">Creating index</property>
-    <property name="resizable">False</property>
-    <property name="modal">True</property>
-    <property name="window_position">center-on-parent</property>
-    <property name="destroy_with_parent">True</property>
-    <property name="icon_name">gtkman</property>
-    <property name="skip_taskbar_hint">True</property>
-    <property name="skip_pager_hint">True</property>
-    <property name="focus_on_map">False</property>
-    <property name="deletable">False</property>
-    <property name="transient_for">gtkman</property>
-    <child>
-      <object class="GtkVBox" id="vbox3">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <property name="homogeneous">True</property>
-        <child>
-          <object class="GtkLabel" id="label4">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="label" translatable="yes">Creating manual page index...</property>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">False</property>
-            <property name="padding">10</property>
-            <property name="position">0</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkProgressBar" id="progressbar_index">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">False</property>
-            <property name="padding">10</property>
-            <property name="position">1</property>
-          </packing>
-        </child>
-      </object>
-    </child>
   </object>
 </interface>
