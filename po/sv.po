@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Ingemar Karlsson <ingemar@ingk.se>, 2011,2015
+# Ingemar Karlsson <ingemar@ingk.se>, 2011,2015,2021
 # gapan <vlahavas@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-07 22:15+0200\n"
-"PO-Revision-Date: 2021-01-07 20:15+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2011-02-17 11:03+0000\n"
+"Last-Translator: Ingemar Karlsson <ingemar@ingk.se>, 2011,2015,2021\n"
 "Language-Team: Swedish (http://www.transifex.com/gapan/salix/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: src/gtkman.ui:47
 msgid "Manual page viewer"
-msgstr "Manualsidevisare"
+msgstr "Manualläsare"
 
 #: src/gtkman.ui:63
 msgid "_File"
@@ -65,7 +65,7 @@ msgstr "Skapar manual sid index"
 
 #: src/gtkman.ui:398 gtkman.desktop.in.h:2
 msgid "A simple GTK+3 manual page viewer"
-msgstr ""
+msgstr "En enkel GTK+3 läsare för manualer"
 
 #: src/gtkman.ui:1076
 msgid "translator-credits"
@@ -97,11 +97,11 @@ msgstr "Manualsida bredd (i antal tecken):"
 
 #: src/gtkman:103
 msgid "ERROR: Couldn't build index."
-msgstr ""
+msgstr "FEL: Kunde inte bygga index."
 
 #: src/gtkman:115
 msgid "ERROR: man command not found."
-msgstr ""
+msgstr "FEL: man kommandot hittades inte"
 
 #: src/gtkman:166
 #, python-format

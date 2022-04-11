@@ -5,13 +5,14 @@
 # Translators:
 # Gregory <wolfr2@gmail.com>, 2012,2015
 # Gregory <wolfr2@gmail.com>, 2012
+# Serg Bormant <bormant@mail.ru>, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-07 22:15+0200\n"
-"PO-Revision-Date: 2021-01-07 20:15+0000\n"
-"Last-Translator: gapan <vlahavas@gmail.com>\n"
+"PO-Revision-Date: 2011-02-17 11:03+0000\n"
+"Last-Translator: Serg Bormant <bormant@mail.ru>, 2021\n"
 "Language-Team: Russian (http://www.transifex.com/gapan/salix/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,7 +66,7 @@ msgstr "Создается индекс страницы руководства.
 
 #: src/gtkman.ui:398 gtkman.desktop.in.h:2
 msgid "A simple GTK+3 manual page viewer"
-msgstr ""
+msgstr "Простой просмотрщик страниц man на GTK+3"
 
 #: src/gtkman.ui:1076
 msgid "translator-credits"
@@ -97,11 +98,11 @@ msgstr "Ширина man-страниц (в символах):"
 
 #: src/gtkman:103
 msgid "ERROR: Couldn't build index."
-msgstr ""
+msgstr "ОШИБКА: Невозможно построить индекс."
 
 #: src/gtkman:115
 msgid "ERROR: man command not found."
-msgstr ""
+msgstr "ОШИБКА: Команда man не найдена."
 
 #: src/gtkman:166
 #, python-format
