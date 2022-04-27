@@ -108,7 +108,7 @@ class GTKMan:
                     sorted(set(section7)), sorted(set(section8))]
             self.create_index()
             GLib.idle_add(self.statusbar.hide)
-            GLib.idle_add(self.imagemenuitem_index.set_sensitive, True)
+            GLib.idle_add(self.menuitem_index.set_sensitive, True)
             GLib.idle_add(self.toolbutton_index.set_sensitive, True)
         except FileNotFoundError:
             GLib.idle_add(self.label_statusbar.set_text,
@@ -179,8 +179,8 @@ class GTKMan:
             self.textbuffer_manpage.set_text(output)
 
     def on_entry_search_activate(self, widget):
-        self.imagemenuitem_findnext.set_sensitive(False)
-        self.imagemenuitem_findprev.set_sensitive(False)
+        self.menuitem_findnext.set_sensitive(False)
+        self.menuitem_findprev.set_sensitive(False)
         self.manpage_show()
 
     def on_entry_search_icon_release(self, widget, icon, event):
@@ -213,10 +213,10 @@ class GTKMan:
         print('   -h, --help        ', _('this help message'))
 
     @threaded
-    def on_imagemenuitem_new_activate(self, wdiget):
+    def on_menuitem_new_activate(self, wdiget):
         subprocess.Popen(['gtkman'], shell=False)
 
-    def on_imagemenuitem_prefs_activate(self, widget):
+    def on_menuitem_prefs_activate(self, widget):
         try:
             self.config.read(self.config_file)
             man_width = self.config.getint('man', 'width')
@@ -226,11 +226,11 @@ class GTKMan:
             self.spinbutton_width.set_value(80)
         self.dialog_prefs.show()
 
-    def on_imagemenuitem_find_activate(self, widget):
+    def on_menuitem_find_activate(self, widget):
         self.entry_find.set_text('')
         self.dialog_find.show()
 
-    def on_imagemenuitem_findnext_activate(self, widget):
+    def on_menuitem_findnext_activate(self, widget):
         sel_start_iter = self.textbuffer_manpage.get_iter_at_mark(
             self.textbuffer_manpage.get_insert())
         cur_pos = self.textbuffer_manpage.get_property("cursor-position")
@@ -267,7 +267,7 @@ class GTKMan:
                 if count == length_all:
                     return False
 
-    def on_imagemenuitem_findprev_activate(self, widget):
+    def on_menuitem_findprev_activate(self, widget):
         sel_start_iter = self.textbuffer_manpage.get_iter_at_mark(
             self.textbuffer_manpage.get_insert())
         cur_pos = self.textbuffer_manpage.get_property("cursor-position")
@@ -309,8 +309,8 @@ class GTKMan:
         self.dialog_find.hide()
 
     def on_entry_find_activate(self, widget):
-        self.imagemenuitem_findnext.set_sensitive(False)
-        self.imagemenuitem_findprev.set_sensitive(False)
+        self.menuitem_findnext.set_sensitive(False)
+        self.menuitem_findprev.set_sensitive(False)
         self.dialog_find.hide()
         text = self.entry_find.get_text()
         length = len(text)
@@ -340,8 +340,8 @@ class GTKMan:
                 self.textview_manpage.scroll_to_mark(
                     self.textbuffer_manpage.get_insert(), 0, 0, 0, 0)
                 found = True
-                self.imagemenuitem_findnext.set_sensitive(True)
-                self.imagemenuitem_findprev.set_sensitive(True)
+                self.menuitem_findnext.set_sensitive(True)
+                self.menuitem_findprev.set_sensitive(True)
             else:
                 sel_start_iter.forward_char()
                 sel_end_iter.forward_char()
@@ -349,7 +349,7 @@ class GTKMan:
                 if count == length_all:
                     return False
 
-    def on_imagemenuitem_about_activate(self, widget):
+    def on_menuitem_about_activate(self, widget):
         self.aboutdialog.show()
 
     def on_dialog_find_delete_event(self, widget, event):
@@ -487,7 +487,7 @@ class GTKMan:
         self.entry_search = builder.get_object('entry_search')
         self.combobox_section = builder.get_object('combobox_section')
         self.liststore_section = builder.get_object('liststore_section')
-        self.imagemenuitem_index = builder.get_object('imagemenuitem_index')
+        self.menuitem_index = builder.get_object('menuitem_index')
         self.toolbutton_index = builder.get_object('toolbutton_index')
 
         # Populate the man section combobox
@@ -504,10 +504,10 @@ class GTKMan:
             [8, _('System administration tools and deamons (8)')])
         self.combobox_section.set_active(0)
         # Menu items that need to be toggled
-        self.imagemenuitem_findnext = builder.get_object(
-            'imagemenuitem_findnext')
-        self.imagemenuitem_findprev = builder.get_object(
-            'imagemenuitem_findprev')
+        self.menuitem_findnext = builder.get_object(
+            'menuitem_findnext')
+        self.menuitem_findprev = builder.get_object(
+            'menuitem_findprev')
         self.statusbar = builder.get_object('statusbar')
         self.label_statusbar = builder.get_object('label_statusbar')
 

@@ -9,14 +9,6 @@
     <property name="step-increment">1</property>
     <property name="page-increment">10</property>
   </object>
-  <object class="GtkImage" id="image1">
-    <property name="visible">True</property>
-    <property name="can-focus">False</property>
-  </object>
-  <object class="GtkImage" id="image2">
-    <property name="visible">True</property>
-    <property name="can-focus">False</property>
-  </object>
   <object class="GtkListStore" id="liststore_index">
     <columns>
       <!-- column-name SectionNumber -->
@@ -69,24 +61,22 @@
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImageMenuItem" id="imagemenuitem_new">
-                        <property name="label">gtk-new</property>
+                      <object class="GtkMenuItem" id="menuitem_new">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">New</property>
                         <property name="use-underline">True</property>
-                        <property name="use-stock">True</property>
-                        <signal name="activate" handler="on_imagemenuitem_new_activate" swapped="no"/>
+                        <signal name="activate" handler="on_menuitem_new_activate" swapped="no"/>
                         <accelerator key="n" signal="activate" modifiers="GDK_CONTROL_MASK"/>
                       </object>
                     </child>
                     <child>
-                      <object class="GtkImageMenuItem" id="imagemenuitem_index">
-                        <property name="label">gtk-index</property>
+                      <object class="GtkMenuItem" id="menuitem_index">
                         <property name="visible">True</property>
                         <property name="sensitive">False</property>
                         <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Index</property>
                         <property name="use-underline">True</property>
-                        <property name="use-stock">True</property>
                         <signal name="activate" handler="on_button_index_clicked" swapped="no"/>
                         <accelerator key="i" signal="activate" modifiers="GDK_CONTROL_MASK"/>
                       </object>
@@ -98,12 +88,11 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkImageMenuItem" id="imagemenuitem_exit">
-                        <property name="label">gtk-quit</property>
+                      <object class="GtkMenuItem" id="menuitem_exit">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Quit</property>
                         <property name="use-underline">True</property>
-                        <property name="use-stock">True</property>
                         <signal name="activate" handler="gtk_main_quit" swapped="no"/>
                         <accelerator key="q" signal="activate" modifiers="GDK_CONTROL_MASK"/>
                       </object>
@@ -123,13 +112,12 @@
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImageMenuItem" id="imagemenuitem_prefs">
-                        <property name="label">gtk-preferences</property>
+                      <object class="GtkMenuItem" id="menuitem_prefs">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Preferences</property>
                         <property name="use-underline">True</property>
-                        <property name="use-stock">True</property>
-                        <signal name="activate" handler="on_imagemenuitem_prefs_activate" swapped="no"/>
+                        <signal name="activate" handler="on_menuitem_prefs_activate" swapped="no"/>
                       </object>
                     </child>
                   </object>
@@ -147,39 +135,34 @@
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImageMenuItem" id="imagemenuitem_find">
-                        <property name="label">gtk-find</property>
+                      <object class="GtkMenuItem" id="menuitem_find">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Find</property>
                         <property name="use-underline">True</property>
-                        <property name="use-stock">True</property>
-                        <signal name="activate" handler="on_imagemenuitem_find_activate" swapped="no"/>
+                        <signal name="activate" handler="on_menuitem_find_activate" swapped="no"/>
                         <accelerator key="f" signal="activate" modifiers="GDK_CONTROL_MASK"/>
                       </object>
                     </child>
                     <child>
-                      <object class="GtkImageMenuItem" id="imagemenuitem_findnext">
-                        <property name="label" translatable="yes">Find _Next</property>
+                      <object class="GtkMenuItem" id="menuitem_findnext">
                         <property name="visible">True</property>
                         <property name="sensitive">False</property>
                         <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Find Next</property>
                         <property name="use-underline">True</property>
-                        <property name="image">image1</property>
-                        <property name="use-stock">False</property>
-                        <signal name="activate" handler="on_imagemenuitem_findnext_activate" swapped="no"/>
+                        <signal name="activate" handler="on_menuitem_findnext_activate" swapped="no"/>
                         <accelerator key="F3" signal="activate"/>
                       </object>
                     </child>
                     <child>
-                      <object class="GtkImageMenuItem" id="imagemenuitem_findprev">
-                        <property name="label" translatable="yes">Find _Previous</property>
+                      <object class="GtkMenuItem" id="menuitem_findprev">
                         <property name="visible">True</property>
                         <property name="sensitive">False</property>
                         <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Find Previous</property>
                         <property name="use-underline">True</property>
-                        <property name="image">image2</property>
-                        <property name="use-stock">False</property>
-                        <signal name="activate" handler="on_imagemenuitem_findprev_activate" swapped="no"/>
+                        <signal name="activate" handler="on_menuitem_findprev_activate" swapped="no"/>
                         <accelerator key="F3" signal="activate" modifiers="GDK_SHIFT_MASK"/>
                       </object>
                     </child>
@@ -198,13 +181,11 @@
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <child>
-                      <object class="GtkImageMenuItem" id="imagemenuitem_about">
-                        <property name="label">gtk-about</property>
+                      <object class="GtkMenuItem" id="menuitem_about">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="use-underline">True</property>
-                        <property name="use-stock">True</property>
-                        <signal name="activate" handler="on_imagemenuitem_about_activate" swapped="no"/>
+                        <property name="label" translatable="yes">About</property>
+                        <signal name="activate" handler="on_menuitem_about_activate" swapped="no"/>
                       </object>
                     </child>
                   </object>
@@ -254,7 +235,8 @@
                   <object class="GtkBox" id="hbox1">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="spacing">5</property>
+                    <property name="margin-start">6</property>
+                    <property name="spacing">6</property>
                     <child>
                       <object class="GtkLabel" id="label1">
                         <property name="visible">True</property>
@@ -276,7 +258,7 @@
                         <property name="can-default">True</property>
                         <property name="has-default">True</property>
                         <property name="invisible-char">●</property>
-                        <property name="secondary-icon-stock">gtk-jump-to</property>
+                        <property name="secondary-icon-name">go-jump</property>
                         <property name="primary-icon-activatable">False</property>
                         <signal name="activate" handler="on_entry_search_activate" swapped="no"/>
                         <signal name="icon-release" handler="on_entry_search_icon_release" swapped="no"/>
@@ -348,7 +330,6 @@
                 <property name="right-margin">10</property>
                 <property name="cursor-visible">False</property>
                 <property name="buffer">textbuffer_manpage</property>
-                <property name="monospace">True</property>
               </object>
             </child>
           </object>
