@@ -229,7 +229,6 @@
                 <property name="sensitive">False</property>
                 <property name="can-focus">False</property>
                 <property name="label" translatable="yes">Index</property>
-                <property name="stock-id">gtk-index</property>
                 <signal name="clicked" handler="on_button_index_clicked" swapped="no"/>
               </object>
               <packing>
