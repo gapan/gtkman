@@ -243,7 +243,7 @@ class GTKMan:
         sel_end_iter.forward_char()
         count = cur_pos
         found = False
-        match_case = self.checkbutton_matchcase.get_active()
+        match_case = self.switch_matchcase.get_active()
         length_all = self.textbuffer_manpage.get_char_count()
         while not found:
             if match_case == True:
@@ -282,7 +282,7 @@ class GTKMan:
         sel_end_iter.backward_char()
         count = cur_pos
         found = False
-        match_case = self.checkbutton_matchcase.get_active()
+        match_case = self.switch_matchcase.get_active()
         while not found:
             if match_case == True:
                 text1 = self.textbuffer_manpage.get_text(
@@ -320,7 +320,7 @@ class GTKMan:
         if length_all == 0:
             return False
         found = False
-        match_case = self.checkbutton_matchcase.get_active()
+        match_case = self.switch_matchcase.get_active()
         sel_start_iter = self.textbuffer_manpage.get_start_iter()
         sel_end_iter = self.textbuffer_manpage.get_start_iter()
         sel_end_iter.forward_chars(length)
@@ -519,8 +519,8 @@ class GTKMan:
         self.button_findcancel = builder.get_object('button_findcancel')
         self.entry_find = builder.get_object('entry_find')
         self.entry_find.set_text('')
-        self.checkbutton_matchcase = builder.get_object(
-            'checkbutton_matchcase')
+        self.switch_matchcase = builder.get_object(
+            'switch_matchcase')
 
         #
         # About dialog
