@@ -10,4 +10,4 @@ displayed in simple text form using the default system monospace font.
 GTKMan is available in many different languages. The translation project
 is located at transifex.com and you can help with translating in your
 language using the respective resource at the following URL:
-http://www.transifex.com/projects/p/salix/resource/gtkman
+https://www.transifex.com/gapan/salix/gtkman/
