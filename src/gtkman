@@ -6,6 +6,7 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 from gi.repository import Gdk
 from gi.repository import GLib
+from gi.repository import Pango
 import os
 import sys
 import configparser
@@ -176,7 +177,12 @@ class GTKMan:
             manpage = self.manpage_stripchars(searchstr)
             section = self.combobox_section.get_active()
             output = self.manpage(section, manpage)
-            self.textbuffer_manpage.set_text(output)
+            self.textbuffer_set_mono_text(output)
+
+    def textbuffer_set_mono_text(self, text):
+            self.textbuffer_manpage.set_text(text)
+            start, end = self.textbuffer_manpage.get_bounds()
+            self.textbuffer_manpage.apply_tag(self.tag_mono, start, end)
 
     def on_entry_search_activate(self, widget):
         self.menuitem_findnext.set_sensitive(False)
@@ -370,7 +376,7 @@ class GTKMan:
         section = self.liststore_index.get_value(iter, 0)
         manpage = self.liststore_index.get_value(iter, 1)
         output = self.manpage(section, manpage)
-        self.textbuffer_manpage.set_text(output)
+        self.textbuffer_set_mono_text(output)
         self.entry_search.set_text(manpage)
         self.combobox_section.set_active(section)
 
@@ -382,7 +388,7 @@ class GTKMan:
             section = self.liststore_index.get_value(iter, 0)
             manpage = self.liststore_index.get_value(iter, 1)
             output = self.manpage(section, manpage)
-            self.textbuffer_manpage.set_text(output)
+            self.textbuffer_set_mono_text(output)
             self.entry_search.set_text(manpage)
             self.combobox_section.set_active(section)
         except TypeError:
@@ -452,7 +458,7 @@ class GTKMan:
                 manpage = self.manpage_stripchars(searchstr)
                 output = self.manpage(section, manpage)
                 self.combobox_section.set_active(section)
-                self.textbuffer_manpage.set_text(output)
+                self.textbuffer_set_mono_text(output)
                 self.entry_search.set_text(manpage)
             except ValueError:
                 self.display_help()
@@ -466,7 +472,7 @@ class GTKMan:
                 manpage = self.manpage_stripchars(searchstr)
                 section = 0
                 output = self.manpage(section, manpage)
-                self.textbuffer_manpage.set_text(output)
+                self.textbuffer_set_mono_text(output)
                 self.entry_search.set_text(manpage)
 
     def __init__(self):
@@ -572,8 +578,10 @@ class GTKMan:
         # Set default manpage width
         self.set_default_manpage_width()
 
-        # Set the system monospace font as the default font
-        self.textview_manpage.set_monospace(True)
+        # Create a tag that will format the man page text as monospace. Needs
+        # to be applied every time the textview is updated.
+        self.tag_mono = self.textbuffer_manpage.create_tag("Mono",
+                font_desc=Pango.FontDescription('monospace'))
 
         builder.connect_signals(self)
 
