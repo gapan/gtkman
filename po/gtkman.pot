@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 22:15+0200\n"
+"POT-Creation-Date: 2022-04-27 20:21+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,144 +17,164 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/gtkman.ui:47
+#: src/gtkman.ui:39
 msgid "Manual page viewer"
 msgstr ""
 
-#: src/gtkman.ui:63
+#: src/gtkman.ui:57
 msgid "_File"
 msgstr ""
 
-#: src/gtkman.ui:117
-msgid "_Edit"
+#: src/gtkman.ui:67
+msgid "New"
 msgstr ""
 
-#: src/gtkman.ui:141
-msgid "_Search"
-msgstr ""
-
-#: src/gtkman.ui:160
-msgid "Find _Next"
-msgstr ""
-
-#: src/gtkman.ui:173
-msgid "Find _Previous"
-msgstr ""
-
-#: src/gtkman.ui:192
-msgid "_Help"
-msgstr ""
-
-#: src/gtkman.ui:228
+#: src/gtkman.ui:78 src/gtkman.ui:212
 msgid "Index"
 msgstr ""
 
-#: src/gtkman.ui:261
-msgid "Manual page:"
+#: src/gtkman.ui:94
+msgid "Quit"
 msgstr ""
 
-#: src/gtkman.ui:294 src/gtkman.ui:1319
-msgid "Section:"
+#: src/gtkman.ui:108
+msgid "_Edit"
 msgstr ""
 
-#: src/gtkman.ui:368
-msgid "Creating manual page index..."
-msgstr ""
-
-#: src/gtkman.ui:398 gtkman.desktop.in.h:2
-msgid "A simple GTK+3 manual page viewer"
-msgstr ""
-
-#: src/gtkman.ui:1076
-msgid "translator-credits"
-msgstr ""
-
-#: src/gtkman.ui:1104
-msgid "Find"
-msgstr ""
-
-#: src/gtkman.ui:1178
-msgid "Find what:"
-msgstr ""
-
-#: src/gtkman.ui:1210
-msgid "Match case"
-msgstr ""
-
-#: src/gtkman.ui:1241
-msgid "Manual page index"
-msgstr ""
-
-#: src/gtkman.ui:1408
+#: src/gtkman.ui:118 src/gtkman.ui:1410
 msgid "Preferences"
 msgstr ""
 
-#: src/gtkman.ui:1476
+#: src/gtkman.ui:131
+msgid "_Search"
+msgstr ""
+
+#: src/gtkman.ui:141 src/gtkman.ui:1088 src/gtkman.ui:1125
+msgid "Find"
+msgstr ""
+
+#: src/gtkman.ui:152
+msgid "Find Next"
+msgstr ""
+
+#: src/gtkman.ui:163
+msgid "Find Previous"
+msgstr ""
+
+#: src/gtkman.ui:177
+msgid "_Help"
+msgstr ""
+
+#: src/gtkman.ui:187
+msgid "About"
+msgstr ""
+
+#: src/gtkman.ui:244
+msgid "Manual page:"
+msgstr ""
+
+#: src/gtkman.ui:277 src/gtkman.ui:1323
+msgid "Section:"
+msgstr ""
+
+#: src/gtkman.ui:350
+msgid "Creating manual page index..."
+msgstr ""
+
+#: src/gtkman.ui:381 gtkman.desktop.in.h:2
+msgid "A simple GTK+3 manual page viewer"
+msgstr ""
+
+#: src/gtkman.ui:1059
+msgid "translator-credits"
+msgstr ""
+
+#: src/gtkman.ui:1111 src/gtkman.ui:1268
+msgid "Cancel"
+msgstr ""
+
+#: src/gtkman.ui:1162
+msgid "Find what:"
+msgstr ""
+
+#: src/gtkman.ui:1212
+msgid "Match case"
+msgstr ""
+
+#: src/gtkman.ui:1245
+msgid "Manual page index"
+msgstr ""
+
+#: src/gtkman.ui:1284
+msgid "Open"
+msgstr ""
+
+#: src/gtkman.ui:1481
 msgid "Manpage width (in characters):"
 msgstr ""
 
-#: src/gtkman:103
+#: src/gtkman:104
 msgid "ERROR: Couldn't build index."
 msgstr ""
 
-#: src/gtkman:115
+#: src/gtkman:116
 msgid "ERROR: man command not found."
 msgstr ""
 
-#: src/gtkman:166
+#: src/gtkman:167
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr ""
 
-#: src/gtkman:209
+#: src/gtkman:215
 msgid "USAGE:"
 msgstr ""
 
-#: src/gtkman:210
+#: src/gtkman:216
 msgid "[OPTIONS] [[section] manpage]"
 msgstr ""
 
-#: src/gtkman:212
+#: src/gtkman:218
 msgid "OPTIONS:"
 msgstr ""
 
-#: src/gtkman:213
+#: src/gtkman:219
 msgid "this help message"
 msgstr ""
 
-#: src/gtkman:494 src/gtkman:539
+#: src/gtkman:500 src/gtkman:545
 msgid "Any"
 msgstr ""
 
-#: src/gtkman:495 src/gtkman:540
+#: src/gtkman:501 src/gtkman:546
 msgid "User commands (1)"
 msgstr ""
 
-#: src/gtkman:496 src/gtkman:541
+#: src/gtkman:502 src/gtkman:547
 msgid "System calls (2)"
 msgstr ""
 
-#: src/gtkman:497 src/gtkman:542
+#: src/gtkman:503 src/gtkman:548
 msgid "C library functions (3)"
 msgstr ""
 
-#: src/gtkman:498 src/gtkman:544
+#: src/gtkman:504 src/gtkman:550
 msgid "Devices and special files (4)"
 msgstr ""
 
-#: src/gtkman:500 src/gtkman:546
+#: src/gtkman:506 src/gtkman:552
 msgid "File formats and conventions (5)"
 msgstr ""
 
-#: src/gtkman:501 src/gtkman:547
+#: src/gtkman:507 src/gtkman:553
 msgid "Games et. al (6)"
 msgstr ""
 
-#: src/gtkman:502 src/gtkman:548
+#: src/gtkman:508 src/gtkman:554
 msgid "Miscellanea (7)"
 msgstr ""
 
-#: src/gtkman:504 src/gtkman:550
+#: src/gtkman:510 src/gtkman:556
 msgid "System administration tools and deamons (8)"
 msgstr ""
 
