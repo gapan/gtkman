@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 22:15+0200\n"
+"POT-Creation-Date: 2022-04-27 20:21+0300\n"
 "PO-Revision-Date: 2011-02-17 11:03+0000\n"
 "Last-Translator: The Cat, 2020-2021\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/gapan/salix/language/pt_BR/)\n"
@@ -20,144 +20,164 @@ msgstr ""
 "Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: src/gtkman.ui:47
+#: src/gtkman.ui:39
 msgid "Manual page viewer"
 msgstr "Visualizador de página manual"
 
-#: src/gtkman.ui:63
+#: src/gtkman.ui:57
 msgid "_File"
 msgstr "_Arquivo"
 
-#: src/gtkman.ui:117
-msgid "_Edit"
-msgstr "_Editar"
+#: src/gtkman.ui:67
+msgid "New"
+msgstr ""
 
-#: src/gtkman.ui:141
-msgid "_Search"
-msgstr "_Busca"
-
-#: src/gtkman.ui:160
-msgid "Find _Next"
-msgstr "Encontrar_Próximo"
-
-#: src/gtkman.ui:173
-msgid "Find _Previous"
-msgstr "Encontrar_Anterior"
-
-#: src/gtkman.ui:192
-msgid "_Help"
-msgstr "_Ajuda"
-
-#: src/gtkman.ui:228
+#: src/gtkman.ui:78 src/gtkman.ui:212
 msgid "Index"
 msgstr "Índice"
 
-#: src/gtkman.ui:261
-msgid "Manual page:"
-msgstr "Página manual:"
+#: src/gtkman.ui:94
+msgid "Quit"
+msgstr ""
 
-#: src/gtkman.ui:294 src/gtkman.ui:1319
-msgid "Section:"
-msgstr "Sessão"
+#: src/gtkman.ui:108
+msgid "_Edit"
+msgstr "_Editar"
 
-#: src/gtkman.ui:368
-msgid "Creating manual page index..."
-msgstr "Criando índice manual de página."
-
-#: src/gtkman.ui:398 gtkman.desktop.in.h:2
-msgid "A simple GTK+3 manual page viewer"
-msgstr "Um simples visualizador de páginas do manual GTK+3"
-
-#: src/gtkman.ui:1076
-msgid "translator-credits"
-msgstr "tradutor-créditos"
-
-#: src/gtkman.ui:1104
-msgid "Find"
-msgstr "Localizar"
-
-#: src/gtkman.ui:1178
-msgid "Find what:"
-msgstr "Localizar como:"
-
-#: src/gtkman.ui:1210
-msgid "Match case"
-msgstr "Caso correspondente"
-
-#: src/gtkman.ui:1241
-msgid "Manual page index"
-msgstr "Índice manual de página"
-
-#: src/gtkman.ui:1408
+#: src/gtkman.ui:118 src/gtkman.ui:1410
 msgid "Preferences"
 msgstr "Preferências"
 
-#: src/gtkman.ui:1476
+#: src/gtkman.ui:131
+msgid "_Search"
+msgstr "_Busca"
+
+#: src/gtkman.ui:141 src/gtkman.ui:1088 src/gtkman.ui:1125
+msgid "Find"
+msgstr "Localizar"
+
+#: src/gtkman.ui:152
+msgid "Find Next"
+msgstr ""
+
+#: src/gtkman.ui:163
+msgid "Find Previous"
+msgstr ""
+
+#: src/gtkman.ui:177
+msgid "_Help"
+msgstr "_Ajuda"
+
+#: src/gtkman.ui:187
+msgid "About"
+msgstr ""
+
+#: src/gtkman.ui:244
+msgid "Manual page:"
+msgstr "Página manual:"
+
+#: src/gtkman.ui:277 src/gtkman.ui:1323
+msgid "Section:"
+msgstr "Sessão"
+
+#: src/gtkman.ui:350
+msgid "Creating manual page index..."
+msgstr "Criando índice manual de página."
+
+#: src/gtkman.ui:381 gtkman.desktop.in.h:2
+msgid "A simple GTK+3 manual page viewer"
+msgstr "Um simples visualizador de páginas do manual GTK+3"
+
+#: src/gtkman.ui:1059
+msgid "translator-credits"
+msgstr "tradutor-créditos"
+
+#: src/gtkman.ui:1111 src/gtkman.ui:1268
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/gtkman.ui:1162
+msgid "Find what:"
+msgstr "Localizar como:"
+
+#: src/gtkman.ui:1212
+msgid "Match case"
+msgstr "Caso correspondente"
+
+#: src/gtkman.ui:1245
+msgid "Manual page index"
+msgstr "Índice manual de página"
+
+#: src/gtkman.ui:1284
+msgid "Open"
+msgstr "Abrir"
+
+#: src/gtkman.ui:1481
 msgid "Manpage width (in characters):"
 msgstr "Tamanho do documento (em caracteres):"
 
-#: src/gtkman:103
+#: src/gtkman:104
 msgid "ERROR: Couldn't build index."
 msgstr "ERRO: Não foi possível criar o índice."
 
-#: src/gtkman:115
+#: src/gtkman:116
 msgid "ERROR: man command not found."
 msgstr "ERRO: o comando man não foi encontrado."
 
-#: src/gtkman:166
+#: src/gtkman:167
 #, python-format
 msgid "No manual page found for \"%(name)s\""
 msgstr "Pagina manual não encontrada para \"%(name)s\""
 
-#: src/gtkman:209
+#: src/gtkman:215
 msgid "USAGE:"
 msgstr "UTILIZAÇÃO:"
 
-#: src/gtkman:210
+#: src/gtkman:216
 msgid "[OPTIONS] [[section] manpage]"
 msgstr "[OPÇÕES][[seção] página do manual]"
 
-#: src/gtkman:212
+#: src/gtkman:218
 msgid "OPTIONS:"
 msgstr "OPÇÕES:"
 
-#: src/gtkman:213
+#: src/gtkman:219
 msgid "this help message"
 msgstr "Esta mensagem de ajuda"
 
-#: src/gtkman:494 src/gtkman:539
+#: src/gtkman:500 src/gtkman:545
 msgid "Any"
 msgstr "Qualquer"
 
-#: src/gtkman:495 src/gtkman:540
+#: src/gtkman:501 src/gtkman:546
 msgid "User commands (1)"
 msgstr "Comandos de usuário (1)"
 
-#: src/gtkman:496 src/gtkman:541
+#: src/gtkman:502 src/gtkman:547
 msgid "System calls (2)"
 msgstr "Chamadas de sistema (2)"
 
-#: src/gtkman:497 src/gtkman:542
+#: src/gtkman:503 src/gtkman:548
 msgid "C library functions (3)"
 msgstr "Funções da biblioteca C (3)"
 
-#: src/gtkman:498 src/gtkman:544
+#: src/gtkman:504 src/gtkman:550
 msgid "Devices and special files (4)"
 msgstr "Dispositivos e arquivos especiais (4)"
 
-#: src/gtkman:500 src/gtkman:546
+#: src/gtkman:506 src/gtkman:552
 msgid "File formats and conventions (5)"
 msgstr "Formatos de arquivos e convenções (5)"
 
-#: src/gtkman:501 src/gtkman:547
+#: src/gtkman:507 src/gtkman:553
 msgid "Games et. al (6)"
 msgstr "Jogos et. al (6)"
 
-#: src/gtkman:502 src/gtkman:548
+#: src/gtkman:508 src/gtkman:554
 msgid "Miscellanea (7)"
 msgstr "Miscelânea (7)"
 
-#: src/gtkman:504 src/gtkman:550
+#: src/gtkman:510 src/gtkman:556
 msgid "System administration tools and deamons (8)"
 msgstr "Ferramentas de administração do sistema"
 
