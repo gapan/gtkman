@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Davidmp <medipas@gmail.com>, 2016,2021
+# Davidmp <medipas@gmail.com>, 2016,2021-2022
 msgid ""
 msgstr ""
 "Project-Id-Version: Salix\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-27 20:21+0300\n"
 "PO-Revision-Date: 2011-02-17 11:03+0000\n"
-"Last-Translator: Davidmp <medipas@gmail.com>, 2016,2021\n"
+"Last-Translator: Davidmp <medipas@gmail.com>, 2016,2021-2022\n"
 "Language-Team: Catalan (http://www.transifex.com/gapan/salix/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,7 +28,7 @@ msgstr "_Fitxer"
 
 #: src/gtkman.ui:67
 msgid "New"
-msgstr ""
+msgstr "Nou"
 
 #: src/gtkman.ui:78 src/gtkman.ui:212
 msgid "Index"
@@ -36,7 +36,7 @@ msgstr "Índex"
 
 #: src/gtkman.ui:94
 msgid "Quit"
-msgstr ""
+msgstr "Surt"
 
 #: src/gtkman.ui:108
 msgid "_Edit"
@@ -56,11 +56,11 @@ msgstr "Cerca"
 
 #: src/gtkman.ui:152
 msgid "Find Next"
-msgstr ""
+msgstr "Troba'n el següent"
 
 #: src/gtkman.ui:163
 msgid "Find Previous"
-msgstr ""
+msgstr "Troba'n l'anterior"
 
 #: src/gtkman.ui:177
 msgid "_Help"
@@ -68,7 +68,7 @@ msgstr "A_juda"
 
 #: src/gtkman.ui:187
 msgid "About"
-msgstr ""
+msgstr "Quant a"
 
 #: src/gtkman.ui:244
 msgid "Manual page:"
